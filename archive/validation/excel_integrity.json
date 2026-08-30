@@ -5,7 +5,7 @@
   "files": [
     {
       "file": "study_phase2/excel/AISurgeon_RAG_vs_WEB_study_master.xlsx",
-      "bytes": 1351054,
+      "bytes": 1351052,
       "data_rows": 800,
       "sheet_names": [
         "00_README",
@@ -24,7 +24,7 @@
     },
     {
       "file": "study_phase2/excel/GPT55_MEDIUM_RAG.xlsx",
-      "bytes": 124033,
+      "bytes": 124032,
       "data_rows": 200,
       "sheet_names": [
         "00_README",
@@ -33,7 +33,7 @@
     },
     {
       "file": "study_phase2/excel/GPT55_MEDIUM_WEB.xlsx",
-      "bytes": 134901,
+      "bytes": 134900,
       "data_rows": 200,
       "sheet_names": [
         "00_README",
@@ -42,7 +42,7 @@
     },
     {
       "file": "study_phase2/excel/GPT56_SOL_HIGH_RAG.xlsx",
-      "bytes": 107344,
+      "bytes": 107343,
       "data_rows": 200,
       "sheet_names": [
         "00_README",
@@ -51,7 +51,7 @@
     },
     {
       "file": "study_phase2/excel/GPT56_SOL_HIGH_WEB.xlsx",
-      "bytes": 117586,
+      "bytes": 117585,
       "data_rows": 200,
       "sheet_names": [
         "00_README",
@@ -60,7 +60,7 @@
     },
     {
       "file": "study_phase2/ratings/citation_audit.xlsx",
-      "bytes": 133025,
+      "bytes": 133024,
       "data_rows": null,
       "sheet_names": [
         "CITATION_AUDIT"
@@ -68,7 +68,7 @@
     },
     {
       "file": "study_phase2/ratings/clinical_ratings_blinded.xlsx",
-      "bytes": 122361,
+      "bytes": 122360,
       "data_rows": null,
       "sheet_names": [
         "RATINGS_BLINDED"

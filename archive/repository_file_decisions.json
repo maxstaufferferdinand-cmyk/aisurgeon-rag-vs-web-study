@@ -176,7 +176,7 @@
       "category": "reviewed_reproducibility_artifact",
       "reason": "Explicitly selected by the archive allowlist and subject to repository validation.",
       "bytes": 478,
-      "sha256": "5c5d9d34592ae6547a580543b4d31094363357cd19d2d5be23cece0508f8a51e"
+      "sha256": "931b97eba0c5ef886ffa9cf9d5d698d3fd73961a43ba02ee0ad50d59bbc652a5"
     },
     {
       "path": "archive/repository_allowlist.txt",
@@ -239,40 +239,40 @@
       "decision": "include",
       "category": "reviewed_reproducibility_artifact",
       "reason": "Explicitly selected by the archive allowlist and subject to repository validation.",
-      "bytes": 1351054,
-      "sha256": "a626969a0ec67bd61888d996d416c9d0b0beec147237b677404f5191e93d9087"
+      "bytes": 1351052,
+      "sha256": "b413a64099e6668f331aaef4ce74ac7bd10c939e39675c5fc1c7d8eca68c14eb"
     },
     {
       "path": "archive/study_phase2/excel/GPT55_MEDIUM_RAG.xlsx",
       "decision": "include",
       "category": "reviewed_reproducibility_artifact",
       "reason": "Explicitly selected by the archive allowlist and subject to repository validation.",
-      "bytes": 124033,
-      "sha256": "4d1289cc8bbffcead89ed37ad88441d34a54b8a054193be1d6865d78fdb5d794"
+      "bytes": 124032,
+      "sha256": "9130cdc7ebe8ada21c5bf98d6fe9858ae832ee8f9412c58cfe5626416a96fc7f"
     },
     {
       "path": "archive/study_phase2/excel/GPT55_MEDIUM_WEB.xlsx",
       "decision": "include",
       "category": "reviewed_reproducibility_artifact",
       "reason": "Explicitly selected by the archive allowlist and subject to repository validation.",
-      "bytes": 134901,
-      "sha256": "7fd4baa7eb2148783a7c9b9a157be8c9d0d64a3ece3371d2830eef32d2ee0574"
+      "bytes": 134900,
+      "sha256": "e604082209ad32eb887e0ee9ffae2cf3c0b8c3a2f30a5ff67c24de6f32ca7253"
     },
     {
       "path": "archive/study_phase2/excel/GPT56_SOL_HIGH_RAG.xlsx",
       "decision": "include",
       "category": "reviewed_reproducibility_artifact",
       "reason": "Explicitly selected by the archive allowlist and subject to repository validation.",
-      "bytes": 107344,
-      "sha256": "a217f5fe058b33cbd010b4f717ee756a8412fd1a024d0e6effdc21b82b4d9112"
+      "bytes": 107343,
+      "sha256": "dbb76f3b14821d43e86ceb1ef2d739b9dc07897f5636cd0e7df27bd15b834f8f"
     },
     {
       "path": "archive/study_phase2/excel/GPT56_SOL_HIGH_WEB.xlsx",
       "decision": "include",
       "category": "reviewed_reproducibility_artifact",
       "reason": "Explicitly selected by the archive allowlist and subject to repository validation.",
-      "bytes": 117586,
-      "sha256": "020a1e2d7b58da1b8033aa91d92839570cdb8ed6dbe5c6db364012ba76548fe6"
+      "bytes": 117585,
+      "sha256": "59f8d0e9a8a1fd8535b22581abffc4bcdd8ca37c439766c32f36bdfc6710a18d"
     },
     {
       "path": "archive/study_phase2/manifest/study_manifest_at_freeze_v2_500usd_redacted.json",
@@ -319,16 +319,16 @@
       "decision": "include",
       "category": "reviewed_reproducibility_artifact",
       "reason": "Explicitly selected by the archive allowlist and subject to repository validation.",
-      "bytes": 133025,
-      "sha256": "07aea346dee5ed6b1f4b276f64f47897c7ed7c0e1c7221c59e00d32f5b63efe1"
+      "bytes": 133024,
+      "sha256": "85342c45c4808843caebce6cda79d448e2b2d74a51d354744f05c1bd4ad0ce90"
     },
     {
       "path": "archive/study_phase2/ratings/clinical_ratings_blinded.xlsx",
       "decision": "include",
       "category": "reviewed_reproducibility_artifact",
       "reason": "Explicitly selected by the archive allowlist and subject to repository validation.",
-      "bytes": 122361,
-      "sha256": "7b4e3b2d8f0083991a9c81d6dee749f10ec457da2c5b7d201a1ad63ee1a9ff1b"
+      "bytes": 122360,
+      "sha256": "554177c99e1754d705d8b9456cd3f85d2e936a999b34f13f3640e1498976de3d"
     },
     {
       "path": "archive/study_phase2/reports/technical_completion_report_redacted.json",
@@ -392,7 +392,7 @@
       "category": "reviewed_reproducibility_artifact",
       "reason": "Explicitly selected by the archive allowlist and subject to repository validation.",
       "bytes": 548,
-      "sha256": "5881fb60136daa11129607c73f1938c067a16bb0efe4266b3f0fe5af1ba0aa34"
+      "sha256": "2a1f96a195f59948a05a096609b0bc58f0871ca7be7bbaa96245597b06224cb1"
     },
     {
       "path": "archive/validation/excel_integrity.json",
@@ -400,7 +400,7 @@
       "category": "reviewed_reproducibility_artifact",
       "reason": "Explicitly selected by the archive allowlist and subject to repository validation.",
       "bytes": 1729,
-      "sha256": "89c5dd5365969bc0f7ae41b4b3af4bb265ea7ddf45251770747a44d9ce5c75ae"
+      "sha256": "a180c877ad6d031eab511fbc8fc35ff20204ce94ca06de2407a1b26fd6d2a387"
     },
     {
       "path": "archive/validation/hash_integrity.json",
@@ -424,7 +424,7 @@
       "category": "reviewed_reproducibility_artifact",
       "reason": "Explicitly selected by the archive allowlist and subject to repository validation.",
       "bytes": 853,
-      "sha256": "80c6f508682696dfd4f24d7ce03a48c23f6446e698f3e57da995460a36d58c05"
+      "sha256": "05601b700ae8e1be640147d50310b250c0a2c4e781825541d6fe07dd6d721f1b"
     },
     {
       "path": "archive/validation/isolated/cli_rag_phase1_validation.json",
