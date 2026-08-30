@@ -1,0 +1,1152 @@
+{
+  "actual_external_api_cost_usd": 80.93783728,
+  "api_attempts_sha256": "65b361ce4ad25a73f847f574546bbb87b443afcb3b88f21d4ff958703ac9a961",
+  "approved_candidate_input_sha256": "c87a274eed277c262bc3b2343f3c56aad8f80c19eacbff3e63d76adbdf17e69c",
+  "approved_provisional_gold_input_sha256": "c87a274eed277c262bc3b2343f3c56aad8f80c19eacbff3e63d76adbdf17e69c",
+  "clinical_rating_status": "pending_two_independent_blinded_reviews",
+  "corpus": {
+    "canonical_files": 29,
+    "corpus_snapshot_id": "cs-f61b3d4e90089c1b890c23cb",
+    "embeddings": 4469,
+    "retrieval_units": 4469,
+    "snapshot_manifest_sha256": "ec9b09cdc53bf73c63e28c150e0f081eef920c32c34edde65912b207a9da7938",
+    "source_pdf_count": 12
+  },
+  "cost_ceiling_supersession_manifest": "outputs/study_phase2/manifest/history/400usd_pre_owner_approval/supersession_manifest.json",
+  "cost_ceiling_usd": 500.0,
+  "cost_counters_reset": false,
+  "created_at_utc": "2026-08-29T14:57:51.825340Z",
+  "design": {
+    "concurrency": 1,
+    "max_output_tokens": 6000,
+    "max_web_tool_calls": 6,
+    "planned_rag_results": 400,
+    "planned_results": 800,
+    "planned_web_results": 400,
+    "randomization_seed": 20260829,
+    "repetitions": [
+      "1_primary",
+      "2_reproducibility"
+    ],
+    "sampling_parameters": {
+      "temperature": "not_set",
+      "top_logprobs": "not_set",
+      "top_p": "not_set"
+    },
+    "service_tier": "default",
+    "systems": [
+      "WEB",
+      "RAG"
+    ]
+  },
+  "development_cost_pilot": {
+    "attempts_sha256": "5140ecfc006ea85bf50d26889fdf4552925ea83d640b343322c60b0b16d2025f",
+    "main_frozen_max_output_tokens": 6000,
+    "main_frozen_max_tool_calls": 6,
+    "maximum_observed_web_actions": 6,
+    "pilot_requested_max_tool_calls": 5,
+    "results_sha256": "f4d0ce4e06ec8cf095646886c4cc713e03dbccc7804100e2e7c5f706d3ba7de1",
+    "status": "complete",
+    "summary": {
+      "conservative_main_cost_usd": 391.91676000000007,
+      "conservative_remaining_cost_per_cell_usd": 0.4898959500000001,
+      "conservative_total_projection_usd": 394.0843100800001,
+      "cost_limit_usd": 500.0,
+      "created_at_utc": "2026-08-29T16:00:06.905469Z",
+      "expected_main_cost_usd": 86.69957600000001,
+      "experiment_id": "development_cost_pilot",
+      "group_costs": {
+        "gpt55_medium:RAG": {
+          "max_cost_usd": 0.085895,
+          "mean_cost_usd": 0.054384,
+          "median_cost_usd": 0.07052,
+          "n": 5
+        },
+        "gpt55_medium:WEB": {
+          "max_cost_usd": 0.218529,
+          "mean_cost_usd": 0.1510752,
+          "median_cost_usd": 0.143859,
+          "n": 5
+        },
+        "gpt56_sol_high:RAG": {
+          "max_cost_usd": 0.073052,
+          "mean_cost_usd": 0.045297,
+          "median_cost_usd": 0.058832,
+          "n": 5
+        },
+        "gpt56_sol_high:WEB": {
+          "max_cost_usd": 0.27571860000000004,
+          "mean_cost_usd": 0.18274168000000002,
+          "median_cost_usd": 0.1712826,
+          "n": 5
+        }
+      },
+      "pilot_results": 20,
+      "pilot_total_cost_usd": 2.1674894,
+      "preparation_query_embedding_cost_usd": 6.068e-05,
+      "projection_method": "Per model/system: observed pilot maximum x three permitted attempts x 200 cells; preparation and pilot actuals added. This is an empirical retry-inclusive projection, not a contractual provider-price cap.",
+      "within_cost_limit": true
+    }
+  },
+  "final_freeze_at_utc": "2026-08-29T16:00:47.150547Z",
+  "freeze_approval_basis": "study_owner_pre_freeze_approval",
+  "gemini_calls_in_phase2": 0,
+  "gold_freeze_hash": "b336637a1c954fdeef0d21635a7778b95b008fa947ee88f5ec1652430346c3bd",
+  "guidelines": {
+    "MI_CLEAR_LLM_2025": "https://doi.org/10.3348/kjr.2025.1522",
+    "REFINE": "https://refinechecklist.github.io/refine/checklist.html"
+  },
+  "human_freeze_path": "outputs/study_phase2/questions/study_questions_frozen.jsonl",
+  "independent_question_set_review_completed": false,
+  "later_independent_blinded_answer_review_required": true,
+  "main_integrity": {
+    "api_attempts": 802,
+    "complete_results": 800,
+    "planned_results": 800,
+    "recorded_results": 800,
+    "retries": 2,
+    "transparent_failures": 0,
+    "unique_attempt_ids": 802,
+    "unique_run_ids": 800
+  },
+  "main_results_sha256": "890106ad4512da5bb6e91f970826a1fc536597bbbd22f6dc78945fc1400a5617",
+  "main_study_calls_allowed": false,
+  "model_availability_verification_sha256": "f5b3111dde88ddeb992b3230a12373589f50433b1f3765a6d7b84a63b1a6784c",
+  "model_availability_verified_at_utc": "2026-08-29T16:00:24.147279Z",
+  "model_configurations": [
+    {
+      "dated_snapshot": true,
+      "display_name": "GPT-5.5 / medium",
+      "model_config_id": "gpt55_medium",
+      "reasoning_effort": "medium",
+      "requested_model": "gpt-5.5-2026-04-23",
+      "snapshot_limitation": null
+    },
+    {
+      "dated_snapshot": false,
+      "display_name": "GPT-5.6 Sol / high",
+      "model_config_id": "gpt56_sol_high",
+      "reasoning_effort": "high",
+      "requested_model": "gpt-5.6-sol",
+      "snapshot_limitation": "Am Studienzugriffstag war in der offiziellen Modelldokumentation kein datierter GPT-5.6-Sol-Snapshot aufgeführt."
+    }
+  ],
+  "no_patient_data_processed": true,
+  "official_model_verification": {
+    "accessed_at": "2026-08-29",
+    "gpt_5_5_current_dated_snapshot": "gpt-5.5-2026-04-23",
+    "gpt_5_5_url": "https://developers.openai.com/api/docs/models/gpt-5.5",
+    "gpt_5_6_sol_dated_snapshot_available": false,
+    "gpt_5_6_sol_url": "https://developers.openai.com/api/docs/models/gpt-5.6-sol",
+    "live_verification_sha256": "01688fb47c20f30952c585d9d0a84db37650600807c52ec4df8141be65f1a77d",
+    "live_verification_status": "verified",
+    "live_verification_timestamp_utc": "2026-08-29T14:54:36.528894Z",
+    "pricing_url": "https://developers.openai.com/api/docs/pricing"
+  },
+  "pre_human_randomization_manifest_sha256": "ae50ac9ac37a12fe3a98bac8f8934f7901df06535058a2f5b0848bb1ad789b11",
+  "pre_run_freeze_hashes": {
+    "docs/STATISTICAL_ANALYSIS_PLAN_RAG_VS_WEB.md": "288dce10ddb2552502008396432a7c914d97a879847d524e654946534362e196",
+    "docs/STUDY_PROTOCOL_RAG_VS_WEB.md": "14fbd86f7a3e842f2f36907d944692c9542ab18a3adf6e3539411c2402ccb3f3",
+    "outputs/study_phase2/manifest/price_table.json": "fb959009c1cdeba1ec41c7f0c09a4afab28d39b1b07d09176dd03a1622ad61c5",
+    "outputs/study_phase2/manifest/protocol_deviations.json": "28a70162a4d9d1dda3ffa066d0e7abfbf01538770a13660431c5571c7dcd234e",
+    "outputs/study_phase2/manifest/retrieval_config.json": "e57de219135229a1fc025f1065a931376cd01832cb2e58bddd394ed5a6d4f752",
+    "outputs/study_phase2/manifest/web_search_config.json": "860edc72a9ee7bc8d7b802a15c70d3d11fd6b2671bc90d5f737d3e9d4b3e349c",
+    "outputs/study_phase2/prompts/COMMON_TASK_v1.txt": "c3cbd83a81ddebf5a89b72c64309d7a87d9c8dab6fa348419db1c08dcc6213b2",
+    "outputs/study_phase2/prompts/RESPONSE_SCHEMA_v1.json": "95928fd72ee26e05704371cd15db761c9ca09dda1a8865b6f41b71fe14213dac",
+    "outputs/study_phase2/prompts/SOURCE_POLICY_RAG_v1.txt": "c4c2f4ec49755042587eedd9b3480a56bdcc2b37e99ede5545065378b4cfe3ff",
+    "outputs/study_phase2/prompts/SOURCE_POLICY_WEB_v1.txt": "a67219ea6c00a3c196fc4d6f658f6afb9e10f7c0d8cbe3cd05ea7bebc4035b79",
+    "outputs/study_phase2/questions/question_candidates.jsonl": "c87a274eed277c262bc3b2343f3c56aad8f80c19eacbff3e63d76adbdf17e69c",
+    "outputs/study_phase2/questions/question_gold_provisional.jsonl": "c87a274eed277c262bc3b2343f3c56aad8f80c19eacbff3e63d76adbdf17e69c",
+    "outputs/study_phase2/questions/study_owner_pre_freeze_approval.json": "a17e5e376f79ec80fa5d01f29e90dba25c3392c8490991eea77e44f1bf4ae76a"
+  },
+  "preparation_api_usage": {
+    "created_at_utc": "2026-08-29T14:57:51.742233Z",
+    "other_external_calls": 0,
+    "query_embedding_calls": 100,
+    "query_embedding_cost_usd": 6.068e-05,
+    "query_embedding_tokens": 3034,
+    "query_embeddings": [
+      {
+        "estimated_cost_usd": 8.200000000000001e-07,
+        "input_tokens": 41,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "1c82a7ea7e8ec2f73f11a6c5bbad3e20728f4f3ffa917281d5116d5c81ff44ff",
+        "question_id": "study-q-001"
+      },
+      {
+        "estimated_cost_usd": 6.800000000000001e-07,
+        "input_tokens": 34,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "2db8d8ad36fd568ed3867a0af40db27088edafb75c960cf1f07790383f2717e0",
+        "question_id": "study-q-002"
+      },
+      {
+        "estimated_cost_usd": 6.6e-07,
+        "input_tokens": 33,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "5b0734a147aee15a0c9212e33b3e1d69d13aadffe5c43a0bcbb4cbd75b57b580",
+        "question_id": "study-q-003"
+      },
+      {
+        "estimated_cost_usd": 6.6e-07,
+        "input_tokens": 33,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "90188a319424f981364e9f40fd95300b8f6f2c53a63f18e671d2d6ef2e4d9d01",
+        "question_id": "study-q-004"
+      },
+      {
+        "estimated_cost_usd": 6.2e-07,
+        "input_tokens": 31,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "f244410060ce5f00aa010dc839cf54479995aab346b50ce0f105606dd8a07521",
+        "question_id": "study-q-005"
+      },
+      {
+        "estimated_cost_usd": 8.8e-07,
+        "input_tokens": 44,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "b3b4bc0d32dccd5aee85dfbd63ffd83f39439172184151ed78ed0ac451f4d749",
+        "question_id": "study-q-006"
+      },
+      {
+        "estimated_cost_usd": 7.8e-07,
+        "input_tokens": 39,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "9c6c64ac519aef9b196529c2c49662829c99a6fe9d39ed2aa3b5871d6ee8e35b",
+        "question_id": "study-q-007"
+      },
+      {
+        "estimated_cost_usd": 7.000000000000001e-07,
+        "input_tokens": 35,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "a002662b117699d84223aae4b807480970dd80a860fd9f6d154c849dfdae8cfd",
+        "question_id": "study-q-008"
+      },
+      {
+        "estimated_cost_usd": 8.000000000000001e-07,
+        "input_tokens": 40,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "07b402c5d8cf3a1ccc3a9645854c28dcf8e69d9b3e037696d235518832870b9c",
+        "question_id": "study-q-009"
+      },
+      {
+        "estimated_cost_usd": 7.6e-07,
+        "input_tokens": 38,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "6b7cf17d487504c2275f8d539280bb86f3ecf3cc88a963458a68177c03757082",
+        "question_id": "study-q-010"
+      },
+      {
+        "estimated_cost_usd": 8.000000000000001e-07,
+        "input_tokens": 40,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "b6919508eaf774d2b43542e1d5cda5ce9b7c6ae2e658c8683d15a0271ef72dc9",
+        "question_id": "study-q-011"
+      },
+      {
+        "estimated_cost_usd": 7.2e-07,
+        "input_tokens": 36,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "3ca4f2e801c7d335b38394fbfbca87c2ba5fc4e6b5ff2cca1500583b98417899",
+        "question_id": "study-q-012"
+      },
+      {
+        "estimated_cost_usd": 6.2e-07,
+        "input_tokens": 31,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "fdb00f74869260f62a7e447f1ab138793f2df716522572c7df3fd66e052dc4ae",
+        "question_id": "study-q-013"
+      },
+      {
+        "estimated_cost_usd": 8.200000000000001e-07,
+        "input_tokens": 41,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "8fd26c41de7f6c0f09e1b8a0ab45407d07c9dd65cdcb694d36f0c10a57e697b1",
+        "question_id": "study-q-014"
+      },
+      {
+        "estimated_cost_usd": 7.8e-07,
+        "input_tokens": 39,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "dbddfb8c6b7a639267c285cf4286a165de5fa658451c21b7168174ea4d743249",
+        "question_id": "study-q-015"
+      },
+      {
+        "estimated_cost_usd": 6.800000000000001e-07,
+        "input_tokens": 34,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "ea135ee8d3d26704194f19bdb075055cf97b0526f391edb61c52e904333ea416",
+        "question_id": "study-q-016"
+      },
+      {
+        "estimated_cost_usd": 6.4e-07,
+        "input_tokens": 32,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "4f993c326e5dd8cec73e2f86167fb24c315b7087cfc39f817b87305204ccbe93",
+        "question_id": "study-q-017"
+      },
+      {
+        "estimated_cost_usd": 6.6e-07,
+        "input_tokens": 33,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "ef3a4584ca42bcf02bdf79892c611cf0a7c9230b93b9728b7d7f3e31b0243731",
+        "question_id": "study-q-018"
+      },
+      {
+        "estimated_cost_usd": 7.2e-07,
+        "input_tokens": 36,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "b5e4f5bd43068267745117ea44820c076554bce7890d985a1c7991beb17d2c1e",
+        "question_id": "study-q-019"
+      },
+      {
+        "estimated_cost_usd": 5.8e-07,
+        "input_tokens": 29,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "c25e78ed6cb18c2f16e6dad68b54a6e70dbf3568260a786fe9d4f2aaf82e3d0b",
+        "question_id": "study-q-020"
+      },
+      {
+        "estimated_cost_usd": 6.4e-07,
+        "input_tokens": 32,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "4b0cc4e2d063779615ece1685600b3259bf96bd6c3b741a2c11eaa2015e01dc2",
+        "question_id": "study-q-021"
+      },
+      {
+        "estimated_cost_usd": 8.4e-07,
+        "input_tokens": 42,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "f17aade471fd2d40c520336457cea43839ba9ea775302da731b89eed86aad248",
+        "question_id": "study-q-022"
+      },
+      {
+        "estimated_cost_usd": 5.2e-07,
+        "input_tokens": 26,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "3edc017d8001cdd28df2bbada87fd349eba3030796bb0b96771fe85d5d8e2228",
+        "question_id": "study-q-023"
+      },
+      {
+        "estimated_cost_usd": 5.2e-07,
+        "input_tokens": 26,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "4b69f194d9494d573aea20d436857b83837f48ee39dc24e74766f15aa7c43939",
+        "question_id": "study-q-024"
+      },
+      {
+        "estimated_cost_usd": 6e-07,
+        "input_tokens": 30,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "33129f8aead1368004dc0fad4a6b7e2dfe90392403de03fe22affdf6c0bf600c",
+        "question_id": "study-q-025"
+      },
+      {
+        "estimated_cost_usd": 7.2e-07,
+        "input_tokens": 36,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "466f6cbeeba7a818e6e05d3bea1c947f75b4e94318ef0418c09ed1e4fd4a4703",
+        "question_id": "study-q-026"
+      },
+      {
+        "estimated_cost_usd": 9.000000000000001e-07,
+        "input_tokens": 45,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "459c5c8260d093a0510167fb2c749d18965cee8bbff31a322fb1a4adb8571c92",
+        "question_id": "study-q-027"
+      },
+      {
+        "estimated_cost_usd": 7.8e-07,
+        "input_tokens": 39,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "299285154e7f7ef310f891007a9f03f8f445e9dcfd350c08e6f64e7140a78b15",
+        "question_id": "study-q-028"
+      },
+      {
+        "estimated_cost_usd": 6e-07,
+        "input_tokens": 30,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "6ec62732027651fd0621e8274d6ec4c9e351b51a8f042abd65ad0b47263e0e1e",
+        "question_id": "study-q-029"
+      },
+      {
+        "estimated_cost_usd": 7.2e-07,
+        "input_tokens": 36,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "db1d12e902dec29f1acf6d725f89fc97ef6d805a7a12c0b1148c074cd2feae5b",
+        "question_id": "study-q-030"
+      },
+      {
+        "estimated_cost_usd": 8.8e-07,
+        "input_tokens": 44,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "2d7747090d8d710bb01990bbee365d8de3ec19c8226fc1d98f3a6787af48e40a",
+        "question_id": "study-q-031"
+      },
+      {
+        "estimated_cost_usd": 6.6e-07,
+        "input_tokens": 33,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "818a31f88524174d4f1242fe1fd6999ff6c4cbe80d7e6698bbe95c3023c88f9e",
+        "question_id": "study-q-032"
+      },
+      {
+        "estimated_cost_usd": 5e-07,
+        "input_tokens": 25,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "2e48b50ec1af77b816ccbb04a00bd30790fa354ef76182dd87d8af84a66bf486",
+        "question_id": "study-q-033"
+      },
+      {
+        "estimated_cost_usd": 6.800000000000001e-07,
+        "input_tokens": 34,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "c6ab0f1285d136b6106e4a925fb5742b19992da29617f99df55aca0be5f6f889",
+        "question_id": "study-q-034"
+      },
+      {
+        "estimated_cost_usd": 6e-07,
+        "input_tokens": 30,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "235f6d287ab36803c3828ec626d3e2d3e77fa3cc0669f8136ae3136e202e1876",
+        "question_id": "study-q-035"
+      },
+      {
+        "estimated_cost_usd": 6e-07,
+        "input_tokens": 30,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "88445036e2afd87030c1e2450779858490d0d36cbb5313e27b4109b8a65fe4ea",
+        "question_id": "study-q-036"
+      },
+      {
+        "estimated_cost_usd": 6.2e-07,
+        "input_tokens": 31,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "1ebdfa0a894b4cf35485d4df801b05ac4d0520dd043db269fd110da62c860bd7",
+        "question_id": "study-q-037"
+      },
+      {
+        "estimated_cost_usd": 7.000000000000001e-07,
+        "input_tokens": 35,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "ac7acb9384db1ff4f37934aaf78ae17b6bd958682d413562cb75e33bc4dba640",
+        "question_id": "study-q-038"
+      },
+      {
+        "estimated_cost_usd": 6.6e-07,
+        "input_tokens": 33,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "83c11587f5288129651b657e712b8acd27d501f800c260aa67453bc8a7f37c82",
+        "question_id": "study-q-039"
+      },
+      {
+        "estimated_cost_usd": 8.000000000000001e-07,
+        "input_tokens": 40,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "efe1ace6a4a1715c87853be11433115c894503f9c7195f450282f46f8960f696",
+        "question_id": "study-q-040"
+      },
+      {
+        "estimated_cost_usd": 1.04e-06,
+        "input_tokens": 52,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "c667a79d82c04094795efab2282f47978a32b58ebcb4916ab0ed5b680853a620",
+        "question_id": "study-q-041"
+      },
+      {
+        "estimated_cost_usd": 3.8e-07,
+        "input_tokens": 19,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "85a4e69a62f0b02d83e2db40ccbca4be8695f9dfd6a0444f8cab9eb6c8d5968d",
+        "question_id": "study-q-042"
+      },
+      {
+        "estimated_cost_usd": 4.8e-07,
+        "input_tokens": 24,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "e2dc90bc90a6790ded1e81f8f986ad0d5b5ec3abb9336087567a92b7ed5f2cfa",
+        "question_id": "study-q-043"
+      },
+      {
+        "estimated_cost_usd": 6.800000000000001e-07,
+        "input_tokens": 34,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "b45031a2cf5568e7e73e568ef98abc5beb02f44da9bb06647c90598557633fc8",
+        "question_id": "study-q-044"
+      },
+      {
+        "estimated_cost_usd": 8.000000000000001e-07,
+        "input_tokens": 40,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "e26fb238605cb6c2565e3c1c587d51f34a40c7e649f9cf366f59d68639de9d65",
+        "question_id": "study-q-045"
+      },
+      {
+        "estimated_cost_usd": 5.2e-07,
+        "input_tokens": 26,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "7a5112910648b756ba215e13a3c8dcacd651486730eb35309f09886647e9e28f",
+        "question_id": "study-q-046"
+      },
+      {
+        "estimated_cost_usd": 4.2e-07,
+        "input_tokens": 21,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "6588e950e1931d9774d4841f2dafcbe50d53bbdd1eb14bd9613c31a9a6e76a64",
+        "question_id": "study-q-047"
+      },
+      {
+        "estimated_cost_usd": 6.4e-07,
+        "input_tokens": 32,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "1b30e90bba51226eca4d51838480cace9f6c6d2fadac049bdfdd862e462f6537",
+        "question_id": "study-q-048"
+      },
+      {
+        "estimated_cost_usd": 9.400000000000001e-07,
+        "input_tokens": 47,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "fd0e87c77bc7b2ef0f9917eeb31eac22552bd39b4a54dc0dd6a4ac17ec2f906a",
+        "question_id": "study-q-049"
+      },
+      {
+        "estimated_cost_usd": 5.8e-07,
+        "input_tokens": 29,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "a822cc41e725c6a1ed9d3248a7c62a07494060d25271b93ded3352d952f68aa2",
+        "question_id": "study-q-050"
+      },
+      {
+        "estimated_cost_usd": 4.4e-07,
+        "input_tokens": 22,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "0254537382d5f0f0d39086e56e6a5e0e53a7773ee5cbe6c8c8c4f5c6c24e0050",
+        "question_id": "study-q-051"
+      },
+      {
+        "estimated_cost_usd": 6e-07,
+        "input_tokens": 30,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "af32bf36ac3c9724c3caa9f7221531f88a4147a0e7b6235aafcb4f84c5c465db",
+        "question_id": "study-q-052"
+      },
+      {
+        "estimated_cost_usd": 8.4e-07,
+        "input_tokens": 42,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "5c98405e1b02e0f4cc2dac91351faac4ce20fb9c4f91a57de3ec257f4ad2da46",
+        "question_id": "study-q-053"
+      },
+      {
+        "estimated_cost_usd": 4.6000000000000004e-07,
+        "input_tokens": 23,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "c993fa5a770df03032e5b05ec444c3c1da162cf5c8566db2d68e9b4ec9da663f",
+        "question_id": "study-q-054"
+      },
+      {
+        "estimated_cost_usd": 4.6000000000000004e-07,
+        "input_tokens": 23,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "51a809504ddb0aa2cc700ce2dccc265f96a66be525363e361ed99046e7737ca2",
+        "question_id": "study-q-055"
+      },
+      {
+        "estimated_cost_usd": 4.8e-07,
+        "input_tokens": 24,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "44dd46b32b905d5930cce067b5bb549ecb69b8391f51b5b4847e285164e0f137",
+        "question_id": "study-q-056"
+      },
+      {
+        "estimated_cost_usd": 3.2e-07,
+        "input_tokens": 16,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "147bcdc423bfba4d0d41b4109fb411cdf2e9e58cd75a1f4a08fd478cb4f0285c",
+        "question_id": "study-q-057"
+      },
+      {
+        "estimated_cost_usd": 6e-07,
+        "input_tokens": 30,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "13b92579faf25e23bf2039e112a0e5dca847fdff808d88484a29746adb0eeb6e",
+        "question_id": "study-q-058"
+      },
+      {
+        "estimated_cost_usd": 5.2e-07,
+        "input_tokens": 26,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "a0cdccd41b13798067114b85cbb5d15bf352325c64504f791bfbd7a5692d70e8",
+        "question_id": "study-q-059"
+      },
+      {
+        "estimated_cost_usd": 5.2e-07,
+        "input_tokens": 26,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "14a5166409e0f45ecb8678d515c387de42f7a0d5818d14ca2a3dd929a32f59a0",
+        "question_id": "study-q-060"
+      },
+      {
+        "estimated_cost_usd": 4.4e-07,
+        "input_tokens": 22,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "89aaea83effad52188119e7905195e2ac93f369d74c0af0fe3dd06e75f2b4084",
+        "question_id": "study-q-061"
+      },
+      {
+        "estimated_cost_usd": 5.4e-07,
+        "input_tokens": 27,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "498a862c8925a90a6883af0c86ec6da9b7c45a8e7483a1549659dd84b3faab0d",
+        "question_id": "study-q-062"
+      },
+      {
+        "estimated_cost_usd": 5e-07,
+        "input_tokens": 25,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "90b2c3d4db34f79e5b53993204170809728453f0c93817893b4af9270836ba59",
+        "question_id": "study-q-063"
+      },
+      {
+        "estimated_cost_usd": 3.4000000000000003e-07,
+        "input_tokens": 17,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "ebabb5b4a907c87a6a523bde2fc91ca05b79747bd7618de008a062d54a3add72",
+        "question_id": "study-q-064"
+      },
+      {
+        "estimated_cost_usd": 5.6e-07,
+        "input_tokens": 28,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "2dcc5c1080a6e365dc0de79d3ab92aee6a4e284e35567b46895e008a5aad1b28",
+        "question_id": "study-q-065"
+      },
+      {
+        "estimated_cost_usd": 4.4e-07,
+        "input_tokens": 22,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "e4f93419c58b9f8a4748d7884513339da565b5d721eeabf2cd1f269379aa6939",
+        "question_id": "study-q-066"
+      },
+      {
+        "estimated_cost_usd": 7.2e-07,
+        "input_tokens": 36,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "e63b240aad43845b0cf0f235a120cba746d7966bdef2782294d075916ced00dc",
+        "question_id": "study-q-067"
+      },
+      {
+        "estimated_cost_usd": 7.4e-07,
+        "input_tokens": 37,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "4847647c2cc0774b39ad3d83996c838fad2af54fdd4f18f62eda14ac1ddf020b",
+        "question_id": "study-q-068"
+      },
+      {
+        "estimated_cost_usd": 4.4e-07,
+        "input_tokens": 22,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "14c3d3e16b5b5db9a7f1033cc8feeb1a493235ff4c10760014f3a6085968d248",
+        "question_id": "study-q-069"
+      },
+      {
+        "estimated_cost_usd": 6e-07,
+        "input_tokens": 30,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "31f557a02703c57d1edb1266ab6d5a3fa8378bd2d00b23023ea3bf1c54c517e6",
+        "question_id": "study-q-070"
+      },
+      {
+        "estimated_cost_usd": 6.2e-07,
+        "input_tokens": 31,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "ce832ed73c10cd8c3aa13dce9f6ee44297ff908f74d3729483527cc5d3dec6e7",
+        "question_id": "study-q-071"
+      },
+      {
+        "estimated_cost_usd": 5.6e-07,
+        "input_tokens": 28,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "97cec491777f28f8b9a4d1cbf75856b35a93e247d9ceac2ad1a05a4573a63947",
+        "question_id": "study-q-072"
+      },
+      {
+        "estimated_cost_usd": 4.8e-07,
+        "input_tokens": 24,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "0fcd570da7427211390c8b2e4ea20819abdae3dbeb75cb030f0304676f2c85e6",
+        "question_id": "study-q-073"
+      },
+      {
+        "estimated_cost_usd": 3e-07,
+        "input_tokens": 15,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "7b572d630f6a58c89180da54b984644e3f423b7f4706675a538584e1a2fbba61",
+        "question_id": "study-q-074"
+      },
+      {
+        "estimated_cost_usd": 8.6e-07,
+        "input_tokens": 43,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "3ddd059087e80cf84b92a66660faafc223a2265ac493768147641f038bd4ce24",
+        "question_id": "study-q-075"
+      },
+      {
+        "estimated_cost_usd": 4.8e-07,
+        "input_tokens": 24,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "f19840b39ace6766a000d947c3ec6167d57d3768075a8823c8b80b0affd08a5d",
+        "question_id": "study-q-076"
+      },
+      {
+        "estimated_cost_usd": 4.8e-07,
+        "input_tokens": 24,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "90e7a8ccec24b6cb83073faeba24e65545ab585683e65623b69631ff156650cf",
+        "question_id": "study-q-077"
+      },
+      {
+        "estimated_cost_usd": 5.2e-07,
+        "input_tokens": 26,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "311e77cc151d4026494a41fbbf6057c1557bf476cf20d38b69ab5009f29e1759",
+        "question_id": "study-q-078"
+      },
+      {
+        "estimated_cost_usd": 4.0000000000000003e-07,
+        "input_tokens": 20,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "64f764de5d848ea38e1378d9305843f376aa3f6bdd665519a4b4a52077debef1",
+        "question_id": "study-q-079"
+      },
+      {
+        "estimated_cost_usd": 3.4000000000000003e-07,
+        "input_tokens": 17,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "1034f6423abfa0885c23ec5d329610f824be28cb112968549dc966c55e1618aa",
+        "question_id": "study-q-080"
+      },
+      {
+        "estimated_cost_usd": 7.2e-07,
+        "input_tokens": 36,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "6b02e4fbecf924ea2755b4963411d31c3d13aadef7bda3ebe63d39a177758db3",
+        "question_id": "study-q-081"
+      },
+      {
+        "estimated_cost_usd": 6.4e-07,
+        "input_tokens": 32,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "73771139a1b574eb5be727a99e7f9a595d6a043aecd055fc0bbfb1b2871695d0",
+        "question_id": "study-q-082"
+      },
+      {
+        "estimated_cost_usd": 5.2e-07,
+        "input_tokens": 26,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "042f018d7d7e0c4dafa1751b12b4d47757a2b5e06bc1b6487e45ae94a9fe36f5",
+        "question_id": "study-q-083"
+      },
+      {
+        "estimated_cost_usd": 5.2e-07,
+        "input_tokens": 26,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "0fb6b9c7aa7b9ac7a3f60cb8f021d13f141eae25d0aef2c85ee4e1ec2a5a3c06",
+        "question_id": "study-q-084"
+      },
+      {
+        "estimated_cost_usd": 6.6e-07,
+        "input_tokens": 33,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "47f5ae4e9061b4ddf3b9be8ce9f666b23e41beb7f9af67085eb4b740e60dbea4",
+        "question_id": "study-q-085"
+      },
+      {
+        "estimated_cost_usd": 5e-07,
+        "input_tokens": 25,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "f836cce4650d91b437adabae70c3ad4891c8ae1a9d37bcbfef291503cc25b7ec",
+        "question_id": "study-q-086"
+      },
+      {
+        "estimated_cost_usd": 5.4e-07,
+        "input_tokens": 27,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "cebfd0f0db5bc654947f0c4c6c90eb7ed7ffbf5a41a18d8003eb81499ed6060a",
+        "question_id": "study-q-087"
+      },
+      {
+        "estimated_cost_usd": 6e-07,
+        "input_tokens": 30,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "20324f925223a8129ba17e356f9201180f7dd7bdc0a72f5bf4a2652e4e5ffa05",
+        "question_id": "study-q-088"
+      },
+      {
+        "estimated_cost_usd": 4.8e-07,
+        "input_tokens": 24,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "d1c9c42fcd1ae5a41c372c60d3c3f7febfe74fe36b963f9ec0028741f21adc71",
+        "question_id": "study-q-089"
+      },
+      {
+        "estimated_cost_usd": 6e-07,
+        "input_tokens": 30,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "7432fcfce7d06f1c23cab90a321fd0ce38ea79112a5bb30e8e5d59403aa61c14",
+        "question_id": "study-q-090"
+      },
+      {
+        "estimated_cost_usd": 5.2e-07,
+        "input_tokens": 26,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "dcecf16e2acfbaafe6ee738ff37b59ffa15fee57bbf8310dd6be53ddae8775ed",
+        "question_id": "study-q-091"
+      },
+      {
+        "estimated_cost_usd": 5.2e-07,
+        "input_tokens": 26,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "01ecfa64258f7d262cb4a02dc1711bea0e30fa125b5a2d9a12911afcbbf1a962",
+        "question_id": "study-q-092"
+      },
+      {
+        "estimated_cost_usd": 3.8e-07,
+        "input_tokens": 19,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "604b4f42a2ccd864d1b17b378af2c10f902ee1239e1d10182967a602d977ccfa",
+        "question_id": "study-q-093"
+      },
+      {
+        "estimated_cost_usd": 5.4e-07,
+        "input_tokens": 27,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "5bfda4077e44f4339daa4871ed4339a589eab1bbd32e12950aabdc8118c43267",
+        "question_id": "study-q-094"
+      },
+      {
+        "estimated_cost_usd": 4.8e-07,
+        "input_tokens": 24,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "44bbeda913820f627125e73261304219b1eef7a1145be8f9c973640258ada0f0",
+        "question_id": "study-q-095"
+      },
+      {
+        "estimated_cost_usd": 5e-07,
+        "input_tokens": 25,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "8ef73845ff6f9f2dac1c0c380fc47e6bd6dc54e05c63eebac97c93248e81ce61",
+        "question_id": "study-q-096"
+      },
+      {
+        "estimated_cost_usd": 6.6e-07,
+        "input_tokens": 33,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "7a1ec73dfb907ce7e73095936dcae9ffb55f03153419927d5d5e41c0712d4a0b",
+        "question_id": "study-q-097"
+      },
+      {
+        "estimated_cost_usd": 4.6000000000000004e-07,
+        "input_tokens": 23,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "fb02302ea448150ef98a034d1fb5be31ce5867ed93005e2e2af7f79945e5a676",
+        "question_id": "study-q-098"
+      },
+      {
+        "estimated_cost_usd": 4.2e-07,
+        "input_tokens": 21,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "05b76c875d4baab1e3de0eb008f45b0d02ee79a45a714060b1304fc3c79713e9",
+        "question_id": "study-q-099"
+      },
+      {
+        "estimated_cost_usd": 4.2e-07,
+        "input_tokens": 21,
+        "model": "text-embedding-3-small",
+        "provider": "openai",
+        "purpose": "provisional_question_coverage_audit",
+        "question_hash": "41472c3f87b828f950965a1963a7c25190db476be3abf955a2548ed64388a96d",
+        "question_id": "study-q-100"
+      }
+    ]
+  },
+  "protocol_deviations": [
+    {
+      "amended_requirement": "study_owner_pre_freeze_approval",
+      "deviation_id": "PD-001",
+      "mitigation": "retain all question hashes; report limitation; preserve mandatory two-reviewer blinded answer assessment and citation audit",
+      "previous_requirement": "two independent question reviewers and adjudication before freeze",
+      "question_or_gold_content_changed": false,
+      "reason": "explicit study-owner directive before any main-study call",
+      "recorded_at_utc": "2026-08-29T15:58:53.203120Z",
+      "scientific_impact": "question/gold independence is absent; clinical accuracy cannot be inferred until later independent blinded answer ratings",
+      "title": "Study-owner approval replaces independent question freeze",
+      "type": "pre_freeze_protocol_amendment"
+    },
+    {
+      "amended_cost_ceiling_usd": 500.0,
+      "cost_counters_reset": false,
+      "deviation_id": "PD-002",
+      "historical_artifacts_preserved": true,
+      "previous_cost_ceiling_usd": 400.0,
+      "reason": "explicit study-owner directive before main-study execution",
+      "recorded_at_utc": "2026-08-29T15:58:53.203120Z",
+      "title": "Cumulative Phase-2 cost ceiling increased to 500 USD",
+      "type": "pre_freeze_cost_ceiling_amendment"
+    }
+  ],
+  "protocol_version": "rag-vs-web-1.1.0",
+  "question_freeze_hash": "b336637a1c954fdeef0d21635a7778b95b008fa947ee88f5ec1652430346c3bd",
+  "question_freeze_review_sha256": "cd62ce4b5df97fc2f1071c0ba9d84f53fe0b5d7c00cf2693a6fa145a3276d401",
+  "question_review_workbook_sha256": "cd62ce4b5df97fc2f1071c0ba9d84f53fe0b5d7c00cf2693a6fa145a3276d401",
+  "question_review_workbook_used_for_approval": false,
+  "question_set_freeze_basis": "study_owner_pre_freeze_approval",
+  "question_set_independent_clinical_validation": false,
+  "question_set_independently_clinically_validated": false,
+  "questions": {
+    "candidate_jsonl_sha256": "c87a274eed277c262bc3b2343f3c56aad8f80c19eacbff3e63d76adbdf17e69c",
+    "covered_by_local_corpus": 80,
+    "frozen_jsonl_sha256": "b336637a1c954fdeef0d21635a7778b95b008fa947ee88f5ec1652430346c3bd",
+    "human_review_status": "study_owner_pre_freeze_approval",
+    "independent_clinical_validation": false,
+    "not_covered_by_local_corpus": 20,
+    "partially_covered": 0,
+    "phase1_vte_questions_reused": 0,
+    "provisional_gold_sha256": "c87a274eed277c262bc3b2343f3c56aad8f80c19eacbff3e63d76adbdf17e69c",
+    "total": 100
+  },
+  "randomization_manifest_sha256": "d8daf7a01f9ebb069903698863d50977ffdaf59510bb7b2b75fc33ee915604a5",
+  "reviewer_names_or_signatures_recorded": false,
+  "schema_versions": {
+    "api_attempt": "api-attempt-1.1.0",
+    "question": "study-question-1.0.0",
+    "structured_response": "rag-vs-web-response-v1",
+    "study_result": "study-result-1.1.0"
+  },
+  "status": "TECHNICAL_STUDY_COMPLETE_CLINICAL_RATING_PENDING",
+  "study_owner_pre_freeze_approval": {
+    "approval_scope": "exact unchanged 100-question candidate and provisional-gold files, including existing gold IDs and coverage assignments",
+    "approval_type": "study_owner_pre_freeze_approval",
+    "approved_by_role": "study_owner",
+    "comments_recorded": false,
+    "independent_clinical_question_validation_claimed": false,
+    "independent_question_set_review_completed": false,
+    "later_blinded_answer_accuracy_review_required": true,
+    "question_candidates_sha256": "c87a274eed277c262bc3b2343f3c56aad8f80c19eacbff3e63d76adbdf17e69c",
+    "question_count": 100,
+    "question_gold_provisional_sha256": "c87a274eed277c262bc3b2343f3c56aad8f80c19eacbff3e63d76adbdf17e69c",
+    "recorded_at_utc": "2026-08-29T15:58:53.203120Z",
+    "review_workbook": {
+      "path": "${PROJECT_ROOT}/outputs/study_phase2/questions/question_freeze_review.xlsx",
+      "question_rows": 100,
+      "reviewer_and_adjudication_fields_intentionally_blank": true,
+      "sha256": "cd62ce4b5df97fc2f1071c0ba9d84f53fe0b5d7c00cf2693a6fa145a3276d401",
+      "used_as_independent_review": false
+    },
+    "reviewer_name_recorded": false,
+    "schema_version": "study-owner-prefreeze-approval-1.0.0",
+    "signature_recorded": false,
+    "status": "study_owner_pre_freeze_approval_recorded"
+  },
+  "study_owner_pre_freeze_approval_sha256": "a17e5e376f79ec80fa5d01f29e90dba25c3392c8490991eea77e44f1bf4ae76a",
+  "superseded_cost_ceiling_usd": 400.0,
+  "technical_completion_at_utc": "2026-08-29T20:48:28.207113Z"
+}

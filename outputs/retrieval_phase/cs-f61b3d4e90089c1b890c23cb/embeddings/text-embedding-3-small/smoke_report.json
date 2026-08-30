@@ -1,0 +1,57 @@
+{
+  "checkpoint_count": 1,
+  "checkpointed_embedding_count": 3,
+  "completed_at_utc": "2026-08-16T17:21:46.068943+00:00",
+  "corpus_snapshot_id": "cs-f61b3d4e90089c1b890c23cb",
+  "database_embedding_count": 3,
+  "dimension": 1536,
+  "distance_metric": "cosine",
+  "estimated_cost_usd": 4.336e-05,
+  "expected_embedding_count": 4469,
+  "first_import": {
+    "inserted": 3,
+    "submitted": 3
+  },
+  "input_tokens": 2168,
+  "mode": "smoke",
+  "model": "text-embedding-3-small",
+  "new_records": 3,
+  "passed": true,
+  "persistence_idempotent": true,
+  "price_as_of": "2026-08-16",
+  "price_usd_per_million_input_tokens": 0.02,
+  "provider_calls_this_run": 1,
+  "schema_version": "embedding-run-summary-1.0.0",
+  "second_import": {
+    "inserted": 0,
+    "submitted": 3
+  },
+  "smoke_similarity_checks": [
+    {
+      "cosine_distance": 0.0,
+      "query_retrieval_unit_id": "ru-d10e86bce3fced3d62e2d85c",
+      "rank": 1,
+      "self_top_1": true,
+      "top_retrieval_unit_id": "ru-d10e86bce3fced3d62e2d85c"
+    },
+    {
+      "cosine_distance": 0.0,
+      "query_retrieval_unit_id": "ru-068e5dc809613aa6a5a26144",
+      "rank": 1,
+      "self_top_1": true,
+      "top_retrieval_unit_id": "ru-068e5dc809613aa6a5a26144"
+    },
+    {
+      "cosine_distance": 0.0,
+      "query_retrieval_unit_id": "ru-4cc5e1b503ff9207656a8304",
+      "rank": 1,
+      "self_top_1": true,
+      "top_retrieval_unit_id": "ru-4cc5e1b503ff9207656a8304"
+    }
+  ],
+  "smoke_unit_ids": [
+    "ru-d10e86bce3fced3d62e2d85c",
+    "ru-068e5dc809613aa6a5a26144",
+    "ru-4cc5e1b503ff9207656a8304"
+  ]
+}

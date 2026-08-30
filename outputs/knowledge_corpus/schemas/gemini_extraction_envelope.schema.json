@@ -1,0 +1,1352 @@
+{
+  "$defs": {
+    "AlgorithmEdge": {
+      "additionalProperties": false,
+      "properties": {
+        "exact_visible_label": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Exact Visible Label"
+        },
+        "from_node_id": {
+          "minLength": 1,
+          "title": "From Node Id",
+          "type": "string"
+        },
+        "to_node_id": {
+          "minLength": 1,
+          "title": "To Node Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "from_node_id",
+        "to_node_id"
+      ],
+      "title": "AlgorithmEdge",
+      "type": "object"
+    },
+    "AlgorithmNode": {
+      "additionalProperties": false,
+      "properties": {
+        "exact_visible_text": {
+          "minLength": 1,
+          "title": "Exact Visible Text",
+          "type": "string"
+        },
+        "node_id": {
+          "minLength": 1,
+          "title": "Node Id",
+          "type": "string"
+        },
+        "node_type": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Node Type"
+        }
+      },
+      "required": [
+        "node_id",
+        "exact_visible_text"
+      ],
+      "title": "AlgorithmNode",
+      "type": "object"
+    },
+    "ExtractedRecord": {
+      "additionalProperties": false,
+      "description": "One source-grounded record before deterministic provenance enrichment.",
+      "properties": {
+        "active_substance_names": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Active Substance Names",
+          "type": "array"
+        },
+        "active_substance_original_names": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Active Substance Original Names",
+          "type": "array"
+        },
+        "adverse_reaction_term": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Adverse Reaction Term"
+        },
+        "age_adjustment": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Age Adjustment"
+        },
+        "algorithm_edges": {
+          "items": {
+            "$ref": "#/$defs/AlgorithmEdge"
+          },
+          "title": "Algorithm Edges",
+          "type": "array"
+        },
+        "algorithm_nodes": {
+          "items": {
+            "$ref": "#/$defs/AlgorithmNode"
+          },
+          "title": "Algorithm Nodes",
+          "type": "array"
+        },
+        "amount": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Amount"
+        },
+        "amount_unit": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Amount Unit"
+        },
+        "answer_eligible": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Answer Eligible"
+        },
+        "authorisation_numbers": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Authorisation Numbers",
+          "type": "array"
+        },
+        "canonical_role": {
+          "anyOf": [
+            {
+              "enum": [
+                "primary",
+                "secondary_representation",
+                "historical_record",
+                "historical_secondary",
+                "quarantined"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Canonical Role"
+        },
+        "caption": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Caption"
+        },
+        "combination_partners": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Combination Partners",
+          "type": "array"
+        },
+        "comparator": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Comparator"
+        },
+        "component_name": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Component Name"
+        },
+        "component_role": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Component Role"
+        },
+        "confidence": {
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "title": "Confidence",
+          "type": "number"
+        },
+        "consensus_strength": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Consensus Strength"
+        },
+        "discontinuation_rule": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Discontinuation Rule"
+        },
+        "document_order": {
+          "anyOf": [
+            {
+              "minimum": 1,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Document Order"
+        },
+        "dose_unit": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Dose Unit"
+        },
+        "dose_value": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Dose Value"
+        },
+        "duration": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Duration"
+        },
+        "embedding_eligible": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Embedding Eligible"
+        },
+        "evidence_level": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Evidence Level"
+        },
+        "exact_source_text": {
+          "minLength": 1,
+          "title": "Exact Source Text",
+          "type": "string"
+        },
+        "exact_source_text_raw_sha256": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Exact Source Text Raw Sha256"
+        },
+        "exact_text_de": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Exact Text De"
+        },
+        "exclusion_reason": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Exclusion Reason"
+        },
+        "explicit_linked_rationale_record_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Explicit Linked Rationale Record Ids",
+          "type": "array"
+        },
+        "fertility_information": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Fertility Information"
+        },
+        "footnotes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Footnotes",
+          "type": "array"
+        },
+        "frequency": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Frequency"
+        },
+        "frequency_category": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Frequency Category"
+        },
+        "hepatic_adjustment": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Hepatic Adjustment"
+        },
+        "indication": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Indication"
+        },
+        "indications": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Indications",
+          "type": "array"
+        },
+        "interruption_rule": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Interruption Rule"
+        },
+        "intervention": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Intervention"
+        },
+        "item_number_status": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Item Number Status"
+        },
+        "item_type": {
+          "anyOf": [
+            {
+              "enum": [
+                "recommendation",
+                "statement",
+                "consensus_statement",
+                "other"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Item Type"
+        },
+        "keywords": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Keywords",
+          "type": "array"
+        },
+        "lactation_information": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Lactation Information"
+        },
+        "linked_item_numbers": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Linked Item Numbers",
+          "type": "array"
+        },
+        "linked_reference_labels": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Linked Reference Labels",
+          "type": "array"
+        },
+        "linked_table_figure_labels": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Linked Table Figure Labels",
+          "type": "array"
+        },
+        "loading_dose": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Loading Dose"
+        },
+        "local_render_reference": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Local Render Reference"
+        },
+        "maintenance_dose": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Maintenance Dose"
+        },
+        "marketing_authorisation_holder": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Marketing Authorisation Holder"
+        },
+        "maximum_dose": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Maximum Dose"
+        },
+        "medication_mentions_original": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Medication Mentions Original",
+          "type": "array"
+        },
+        "normalized_entities": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Normalized Entities",
+          "type": "array"
+        },
+        "normalized_search_text": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Normalized Search Text"
+        },
+        "normalized_search_text_sha256": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Normalized Search Text Sha256"
+        },
+        "original_product_name": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Original Product Name"
+        },
+        "outcome": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Outcome"
+        },
+        "pdf_pages_1based": {
+          "items": {
+            "type": "integer"
+          },
+          "minItems": 1,
+          "title": "Pdf Pages 1Based",
+          "type": "array"
+        },
+        "pharmaceutical_form": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Pharmaceutical Form"
+        },
+        "population": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Population"
+        },
+        "populations": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Populations",
+          "type": "array"
+        },
+        "pregnancy_information": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Pregnancy Information"
+        },
+        "preparation_instruction": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Preparation Instruction"
+        },
+        "primary_record_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Primary Record Id"
+        },
+        "primary_record_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Primary Record Ids",
+          "type": "array"
+        },
+        "primary_search_eligible": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Primary Search Eligible"
+        },
+        "printed_page_label": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Printed Page Label"
+        },
+        "printed_source_item_number": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Printed Source Item Number"
+        },
+        "product_name": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Product Name"
+        },
+        "qualifiers": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Qualifiers",
+          "type": "array"
+        },
+        "recommendation_grade": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Recommendation Grade"
+        },
+        "record_type": {
+          "enum": [
+            "document_metadata",
+            "chapter_structure",
+            "grading_system",
+            "formal_item",
+            "rationale_block",
+            "guideline_reference",
+            "table_figure_algorithm",
+            "drug_product",
+            "active_substance",
+            "composition",
+            "therapeutic_indication",
+            "dosing_rule",
+            "preparation_administration",
+            "contraindication",
+            "warning",
+            "interaction",
+            "pregnancy_lactation_fertility",
+            "adverse_reaction",
+            "overdose",
+            "pharmacodynamics",
+            "pharmacokinetics",
+            "excipient",
+            "incompatibility",
+            "storage_handling",
+            "regulatory_metadata"
+          ],
+          "title": "Record Type",
+          "type": "string"
+        },
+        "renal_adjustment": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Renal Adjustment"
+        },
+        "repair_provenance": {
+          "additionalProperties": {
+            "type": "string"
+          },
+          "title": "Repair Provenance",
+          "type": "object"
+        },
+        "retrieval_eligible": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Retrieval Eligible"
+        },
+        "retrieval_exclusion_reason": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Retrieval Exclusion Reason"
+        },
+        "review_flags": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Review Flags",
+          "type": "array"
+        },
+        "revision_date": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Revision Date"
+        },
+        "route": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Route"
+        },
+        "routes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Routes",
+          "type": "array"
+        },
+        "secondary_relation_type": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Secondary Relation Type"
+        },
+        "section_path": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Section Path",
+          "type": "array"
+        },
+        "semantic_description_de": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Semantic Description De"
+        },
+        "semantic_summary_de": {
+          "minLength": 1,
+          "title": "Semantic Summary De",
+          "type": "string"
+        },
+        "setting": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Setting"
+        },
+        "source_identifier": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source Identifier"
+        },
+        "source_item_number": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source Item Number"
+        },
+        "source_zone": {
+          "anyOf": [
+            {
+              "enum": [
+                "main_body",
+                "foreword_or_preface",
+                "table_of_contents",
+                "summary",
+                "appendix",
+                "change_table",
+                "historical_table",
+                "references",
+                "other_secondary_material"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source Zone"
+        },
+        "status": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Status"
+        },
+        "strength": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Strength"
+        },
+        "structured_field_provenance": {
+          "additionalProperties": {
+            "type": "string"
+          },
+          "title": "Structured Field Provenance",
+          "type": "object"
+        },
+        "supporting_pdf_pages_1based": {
+          "items": {
+            "type": "integer"
+          },
+          "title": "Supporting Pdf Pages 1Based",
+          "type": "array"
+        },
+        "supporting_source_text": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Supporting Source Text"
+        },
+        "system_organ_class": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "System Organ Class"
+        },
+        "table_rows": {
+          "items": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "title": "Table Rows",
+          "type": "array"
+        },
+        "title": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Title"
+        },
+        "toxicity_adjustment": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Toxicity Adjustment"
+        },
+        "treatment_context": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Treatment Context"
+        },
+        "uncertainty_reason": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Uncertainty Reason"
+        },
+        "visual_kind": {
+          "anyOf": [
+            {
+              "enum": [
+                "table",
+                "figure",
+                "algorithm",
+                "other"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Visual Kind"
+        }
+      },
+      "required": [
+        "record_type",
+        "pdf_pages_1based",
+        "exact_source_text",
+        "semantic_summary_de",
+        "confidence"
+      ],
+      "title": "ExtractedRecord",
+      "type": "object"
+    },
+    "PageAssessment": {
+      "additionalProperties": false,
+      "properties": {
+        "pdf_page_1based": {
+          "minimum": 1,
+          "title": "Pdf Page 1Based",
+          "type": "integer"
+        },
+        "printed_page_label": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Printed Page Label"
+        },
+        "reason_de": {
+          "minLength": 1,
+          "title": "Reason De",
+          "type": "string"
+        },
+        "relevant_record_types": {
+          "items": {
+            "enum": [
+              "document_metadata",
+              "chapter_structure",
+              "grading_system",
+              "formal_item",
+              "rationale_block",
+              "guideline_reference",
+              "table_figure_algorithm",
+              "drug_product",
+              "active_substance",
+              "composition",
+              "therapeutic_indication",
+              "dosing_rule",
+              "preparation_administration",
+              "contraindication",
+              "warning",
+              "interaction",
+              "pregnancy_lactation_fertility",
+              "adverse_reaction",
+              "overdose",
+              "pharmacodynamics",
+              "pharmacokinetics",
+              "excipient",
+              "incompatibility",
+              "storage_handling",
+              "regulatory_metadata"
+            ],
+            "type": "string"
+          },
+          "title": "Relevant Record Types",
+          "type": "array"
+        },
+        "review_flags": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Review Flags",
+          "type": "array"
+        },
+        "section_path": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Section Path",
+          "type": "array"
+        },
+        "status": {
+          "enum": [
+            "extracted",
+            "blank",
+            "front_matter",
+            "table_of_contents",
+            "references",
+            "appendix",
+            "label_or_leaflet_noncanonical",
+            "unreadable_flagged"
+          ],
+          "title": "Status",
+          "type": "string"
+        }
+      },
+      "required": [
+        "pdf_page_1based",
+        "status",
+        "reason_de"
+      ],
+      "title": "PageAssessment",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "document_type": {
+      "enum": [
+        "guideline",
+        "drug_label"
+      ],
+      "title": "Document Type",
+      "type": "string"
+    },
+    "owner_pdf_pages_1based": {
+      "items": {
+        "type": "integer"
+      },
+      "minItems": 1,
+      "title": "Owner Pdf Pages 1Based",
+      "type": "array"
+    },
+    "page_assessments": {
+      "items": {
+        "$ref": "#/$defs/PageAssessment"
+      },
+      "title": "Page Assessments",
+      "type": "array"
+    },
+    "records": {
+      "items": {
+        "$ref": "#/$defs/ExtractedRecord"
+      },
+      "title": "Records",
+      "type": "array"
+    },
+    "request_pdf_pages_1based": {
+      "items": {
+        "type": "integer"
+      },
+      "minItems": 1,
+      "title": "Request Pdf Pages 1Based",
+      "type": "array"
+    },
+    "source_file_name": {
+      "minLength": 1,
+      "title": "Source File Name",
+      "type": "string"
+    },
+    "source_id": {
+      "minLength": 1,
+      "title": "Source Id",
+      "type": "string"
+    },
+    "task_family": {
+      "minLength": 1,
+      "title": "Task Family",
+      "type": "string"
+    }
+  },
+  "required": [
+    "source_id",
+    "source_file_name",
+    "document_type",
+    "task_family",
+    "request_pdf_pages_1based",
+    "owner_pdf_pages_1based",
+    "page_assessments"
+  ],
+  "title": "ExtractionEnvelope",
+  "type": "object"
+}

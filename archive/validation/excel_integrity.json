@@ -1,0 +1,78 @@
+{
+  "schema_version": "archive-excel-validation-1.0.0",
+  "status": "passed",
+  "issues": [],
+  "files": [
+    {
+      "file": "study_phase2/excel/AISurgeon_RAG_vs_WEB_study_master.xlsx",
+      "bytes": 1351054,
+      "data_rows": 800,
+      "sheet_names": [
+        "00_README",
+        "01_MANIFEST",
+        "02_QUESTIONS_GOLD",
+        "03_ALL_RESULTS",
+        "04_API_ATTEMPTS",
+        "05_CLAIMS_SOURCES",
+        "06_RESOURCE_SUMMARY",
+        "07_REPRODUCIBILITY",
+        "08_RATINGS_BLINDED",
+        "09_ADJUDICATION",
+        "10_FINAL_STATISTICS",
+        "11_REFINE_MI_CLEAR"
+      ]
+    },
+    {
+      "file": "study_phase2/excel/GPT55_MEDIUM_RAG.xlsx",
+      "bytes": 124034,
+      "data_rows": 200,
+      "sheet_names": [
+        "00_README",
+        "RESULTS"
+      ]
+    },
+    {
+      "file": "study_phase2/excel/GPT55_MEDIUM_WEB.xlsx",
+      "bytes": 134902,
+      "data_rows": 200,
+      "sheet_names": [
+        "00_README",
+        "RESULTS"
+      ]
+    },
+    {
+      "file": "study_phase2/excel/GPT56_SOL_HIGH_RAG.xlsx",
+      "bytes": 107345,
+      "data_rows": 200,
+      "sheet_names": [
+        "00_README",
+        "RESULTS"
+      ]
+    },
+    {
+      "file": "study_phase2/excel/GPT56_SOL_HIGH_WEB.xlsx",
+      "bytes": 117589,
+      "data_rows": 200,
+      "sheet_names": [
+        "00_README",
+        "RESULTS"
+      ]
+    },
+    {
+      "file": "study_phase2/ratings/citation_audit.xlsx",
+      "bytes": 133026,
+      "data_rows": null,
+      "sheet_names": [
+        "CITATION_AUDIT"
+      ]
+    },
+    {
+      "file": "study_phase2/ratings/clinical_ratings_blinded.xlsx",
+      "bytes": 122361,
+      "data_rows": null,
+      "sheet_names": [
+        "RATINGS_BLINDED"
+      ]
+    }
+  ]
+}

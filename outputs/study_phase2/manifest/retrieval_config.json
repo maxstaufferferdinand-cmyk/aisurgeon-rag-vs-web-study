@@ -1,0 +1,23 @@
+{
+  "ann_index": null,
+  "bridge_direction": "smPC_to_guideline",
+  "channels": [
+    "exact",
+    "fts_german",
+    "fts_simple",
+    "trigram",
+    "dense_exact"
+  ],
+  "corpus_snapshot_id": "cs-f61b3d4e90089c1b890c23cb",
+  "embedding_dimension": 1536,
+  "embedding_model": "text-embedding-3-small",
+  "fusion": "reciprocal_rank_fusion",
+  "max_evidence": 14,
+  "query_embedding_cache": "permitted_and_logged_per_run",
+  "query_normalization": "query_normalization.py",
+  "relation_limit": 30,
+  "relation_seed_limit": 5,
+  "rrf_k": 60,
+  "top_k": 10,
+  "version": "phase1-hybrid-rrf-bridge-frozen-v1"
+}

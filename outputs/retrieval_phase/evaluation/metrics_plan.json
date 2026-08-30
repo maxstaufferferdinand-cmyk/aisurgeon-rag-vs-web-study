@@ -1,0 +1,88 @@
+{
+  "answer_metrics": {
+    "correct_abstention_rate": "abstained / gold-should-abstain",
+    "exclusion_leakage_rate": "policy-excluded retrieved IDs / all retrieved IDs",
+    "false_abstention_rate": "abstained / gold-answerable",
+    "harmful_unsupported_claim_rate": "potentially harmful unsupported claims / all assessed claims",
+    "support_label_macro_f1": [
+      "supported",
+      "partially_supported",
+      "no_validated_evidence"
+    ],
+    "unsupported_claim_rate": "unsupported claims / all assessed claims"
+  },
+  "citation_metrics": {
+    "citation_completeness": "cited adjudicated evidence / all required evidence",
+    "citation_precision": "cited adjudicated evidence / all cited evidence",
+    "entity_attribution_accuracy": "mean of human entity-attribution assessments",
+    "exact_dose_accuracy": "exact value, unit, interval and route assessment",
+    "source_span_sufficiency": "mean of human span-sufficiency assessments"
+  },
+  "mandatory_slices": [
+    "split",
+    "primary_stratum",
+    "sampling_scope",
+    "source_role",
+    "source_status",
+    "document_component",
+    "single_vs_multi_turn"
+  ],
+  "operations_metrics": {
+    "cost_load": "sum and mean using the recorded price-list timestamp",
+    "latency_ms": [
+      "p50",
+      "p95",
+      "p99"
+    ],
+    "stability_top10_jaccard": "pairwise Jaccard over repeated runs per question",
+    "token_load": [
+      "input",
+      "output",
+      "cached",
+      "embedding"
+    ]
+  },
+  "ranking_metrics": {
+    "complete_multi_evidence_coverage_at_k": {
+      "k": [
+        5,
+        10,
+        20
+      ]
+    },
+    "evidence_recall_at_k": {
+      "k": [
+        5,
+        10,
+        20
+      ],
+      "unit": "question"
+    },
+    "mrr": {
+      "relevance": "human-adjudicated evidence IDs"
+    },
+    "ndcg_at_k": {
+      "gain": "graded when available, binary otherwise",
+      "k": [
+        5,
+        10,
+        20
+      ]
+    },
+    "precision_at_k": {
+      "denominator": "k",
+      "k": [
+        5,
+        10,
+        20
+      ]
+    }
+  },
+  "reporting_constraints": [
+    "No synthetic_draft item is an independent clinical gold label.",
+    "Report denominators and confidence intervals with human-adjudicated results.",
+    "No-evidence means only no sufficient evidence in the released snapshot after full fallback."
+  ],
+  "schema_version": "retrieval-metrics-plan-1.0.0",
+  "status": "planned_not_clinically_validated"
+}

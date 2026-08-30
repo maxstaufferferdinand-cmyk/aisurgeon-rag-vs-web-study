@@ -1,0 +1,30 @@
+name: aisurgeon-retrieval
+
+services:
+  postgres:
+    image: pgvector/pgvector:0.8.6-pg18-trixie@sha256:78bf48b801e792f99e3ac62b5036fd3876e9be48afda16c1e331af1c75ceb2ff
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${AISURGEON_DB_NAME:-aisurgeon_retrieval}
+      POSTGRES_USER: ${AISURGEON_DB_USER:-aisurgeon}
+      POSTGRES_PASSWORD: ${AISURGEON_DB_PASSWORD:?set AISURGEON_DB_PASSWORD in .env.retrieval}
+      POSTGRES_INITDB_ARGS: --data-checksums --encoding=UTF8 --locale=C.UTF-8
+    ports:
+      - "127.0.0.1:${AISURGEON_DB_PORT:-55432}:5432"
+    volumes:
+      - retrieval_pgdata:/var/lib/postgresql
+    healthcheck:
+      test:
+        - CMD-SHELL
+        - pg_isready -U "$${POSTGRES_USER}" -d "$${POSTGRES_DB}" && psql -U "$${POSTGRES_USER}" -d "$${POSTGRES_DB}" -Atqc 'SELECT 1'
+      interval: 5s
+      timeout: 5s
+      retries: 20
+      start_period: 10s
+    security_opt:
+      - no-new-privileges:true
+    shm_size: 256mb
+
+volumes:
+  retrieval_pgdata:
+    name: aisurgeon_retrieval_pgdata

@@ -1,0 +1,1104 @@
+{
+  "answer_status": {
+    "no_validated_evidence": 116,
+    "partially_supported": 117,
+    "supported": 567
+  },
+  "api_window_utc": {
+    "end": "2026-08-29T20:28:20.303142Z",
+    "start": "2026-08-29T16:02:12.958252Z"
+  },
+  "clinical_accuracy_claimed": false,
+  "clinical_rating_status": "pending_two_independent_blinded_reviews_and_citation_audit",
+  "corpus_snapshot_id": "cs-f61b3d4e90089c1b890c23cb",
+  "cost_breakdown_usd": {
+    "cumulative_phase2": 80.93783728,
+    "development_cost_pilot": 2.1674894,
+    "main_study": 78.7702872,
+    "preparation_query_embeddings": 6.068e-05,
+    "retry_cost": 0.46746600000000005
+  },
+  "cost_limit_usd": 500.0,
+  "created_at_utc": "2026-08-29T20:48:36.659835Z",
+  "excel_integrity": {
+    "files": [
+      {
+        "autofilter": "A1:BV801",
+        "file": "${PROJECT_ROOT}/outputs/study_phase2/excel/AISurgeon_RAG_vs_WEB_study_master.xlsx",
+        "freeze_panes": "A2",
+        "result_rows": 800,
+        "sheets": [
+          "00_README",
+          "01_MANIFEST",
+          "02_QUESTIONS_GOLD",
+          "03_ALL_RESULTS",
+          "04_API_ATTEMPTS",
+          "05_CLAIMS_SOURCES",
+          "06_RESOURCE_SUMMARY",
+          "07_REPRODUCIBILITY",
+          "08_RATINGS_BLINDED",
+          "09_ADJUDICATION",
+          "10_FINAL_STATISTICS",
+          "11_REFINE_MI_CLEAR"
+        ],
+        "status": "passed",
+        "unique_run_ids": 800
+      },
+      {
+        "autofilter": "A1:BV201",
+        "file": "${PROJECT_ROOT}/outputs/study_phase2/excel/GPT55_MEDIUM_WEB.xlsx",
+        "freeze_panes": "A2",
+        "result_rows": 200,
+        "sheets": [
+          "00_README",
+          "03_ALL_RESULTS"
+        ],
+        "status": "passed",
+        "unique_run_ids": 200
+      },
+      {
+        "autofilter": "A1:BV201",
+        "file": "${PROJECT_ROOT}/outputs/study_phase2/excel/GPT55_MEDIUM_RAG.xlsx",
+        "freeze_panes": "A2",
+        "result_rows": 200,
+        "sheets": [
+          "00_README",
+          "03_ALL_RESULTS"
+        ],
+        "status": "passed",
+        "unique_run_ids": 200
+      },
+      {
+        "autofilter": "A1:BV201",
+        "file": "${PROJECT_ROOT}/outputs/study_phase2/excel/GPT56_SOL_HIGH_WEB.xlsx",
+        "freeze_panes": "A2",
+        "result_rows": 200,
+        "sheets": [
+          "00_README",
+          "03_ALL_RESULTS"
+        ],
+        "status": "passed",
+        "unique_run_ids": 200
+      },
+      {
+        "autofilter": "A1:BV201",
+        "file": "${PROJECT_ROOT}/outputs/study_phase2/excel/GPT56_SOL_HIGH_RAG.xlsx",
+        "freeze_panes": "A2",
+        "result_rows": 200,
+        "sheets": [
+          "00_README",
+          "03_ALL_RESULTS"
+        ],
+        "status": "passed",
+        "unique_run_ids": 200
+      }
+    ],
+    "status": "passed"
+  },
+  "execution": {
+    "api_attempts": 802,
+    "complete_results": 800,
+    "planned_results": 800,
+    "recorded_results": 800,
+    "retries": 2,
+    "transparent_failures": 0,
+    "unique_attempt_ids": 802,
+    "unique_run_ids": 800
+  },
+  "external_api_cost_usd_including_preparation_and_pilot": 80.93783728,
+  "historical_corpus_embedding_setup": {
+    "dimension": 1536,
+    "embedding_count": 4469,
+    "estimated_cost_usd": 0.02435718,
+    "included_in_phase2_cost": false,
+    "input_tokens": 1217859,
+    "model": "text-embedding-3-small"
+  },
+  "http_status": {
+    "200": 800,
+    "None": 2
+  },
+  "limitations": [
+    "Independent clinical ratings, citation audit and adjudication are pending.",
+    "The question/gold set was approved by the study owner and was not independently clinically validated.",
+    "GPT-5.6 Sol was available only as an undated alias at study freeze.",
+    "The synthetic 80/20 benchmark weighting is not a prevalence estimate.",
+    "Provenance validators do not establish clinical correctness.",
+    "The locally controlled snapshot is limited to three guidelines and nine medicinal-product-information PDFs.",
+    "The snapshot retains 2,785 pre-existing review-severity extraction flags as documented QA limitations.",
+    "Costs are estimates from the frozen public price table; official account reconciliation is disabled without an admin key.",
+    "All 400 main-study RAG cells used transparently recorded query-embedding cache hits from the 100-question pre-freeze audit.",
+    "Gemini was not called in Phase 2, and no patient data were processed."
+  ],
+  "model_availability_verification": {
+    "detected_gpt55_dated_snapshots": [
+      "gpt-5.5-2026-04-23"
+    ],
+    "detected_gpt56_sol_dated_snapshots": [],
+    "frozen_gpt55_snapshot": "gpt-5.5-2026-04-23",
+    "frozen_gpt56_sol_request": "gpt-5.6-sol",
+    "gpt56_sol_alias_limitation": true,
+    "issues": [],
+    "official_sources_only": true,
+    "page_sha256": {
+      "gpt55": "178d9c8c0c1a5400108da7bf760bce67dc15c76ba52e9e9bfa868a20acde0e9f",
+      "gpt56_sol": "0d62edc64c86525e6fa3bec263732d742db76864d0942f50ef7d42fd35ed8f27",
+      "pricing": "e1975d9c39f1a0880ab9d7375081679f2edc2331050f1b9ae518a311fafea938"
+    },
+    "pricing_page_retrieved": true,
+    "schema_version": "official-model-availability-verification-1.0.0",
+    "status": "verified",
+    "urls": {
+      "gpt55": "https://developers.openai.com/api/docs/models/gpt-5.5",
+      "gpt56_sol": "https://developers.openai.com/api/docs/models/gpt-5.6-sol",
+      "pricing": "https://developers.openai.com/api/docs/pricing"
+    },
+    "verified_at_utc": "2026-08-29T16:00:24.147279Z"
+  },
+  "model_configurations": [
+    {
+      "dated_snapshot": true,
+      "display_name": "GPT-5.5 / medium",
+      "model_config_id": "gpt55_medium",
+      "reasoning_effort": "medium",
+      "requested_model": "gpt-5.5-2026-04-23",
+      "snapshot_limitation": null
+    },
+    {
+      "dated_snapshot": false,
+      "display_name": "GPT-5.6 Sol / high",
+      "model_config_id": "gpt56_sol_high",
+      "reasoning_effort": "high",
+      "requested_model": "gpt-5.6-sol",
+      "snapshot_limitation": "Am Studienzugriffstag war in der offiziellen Modelldokumentation kein datierter GPT-5.6-Sol-Snapshot aufgeführt."
+    }
+  ],
+  "model_identity_mismatches": 0,
+  "models": [
+    [
+      "gpt-5.5-2026-04-23",
+      "gpt-5.5-2026-04-23",
+      "medium"
+    ],
+    [
+      "gpt-5.6-sol",
+      "gpt-5.6-sol",
+      "high"
+    ]
+  ],
+  "pricing": {
+    "cost_reconciliation_status": [
+      "not_reconciled_admin_key_not_required"
+    ],
+    "effective_as_of": "2026-08-29",
+    "price_version": "openai-public-prices-2026-08-29-v2-cap-500",
+    "source": "https://developers.openai.com/api/docs/pricing"
+  },
+  "protocol_deviations": [
+    {
+      "amended_requirement": "study_owner_pre_freeze_approval",
+      "deviation_id": "PD-001",
+      "mitigation": "retain all question hashes; report limitation; preserve mandatory two-reviewer blinded answer assessment and citation audit",
+      "previous_requirement": "two independent question reviewers and adjudication before freeze",
+      "question_or_gold_content_changed": false,
+      "reason": "explicit study-owner directive before any main-study call",
+      "recorded_at_utc": "2026-08-29T15:58:53.203120Z",
+      "scientific_impact": "question/gold independence is absent; clinical accuracy cannot be inferred until later independent blinded answer ratings",
+      "title": "Study-owner approval replaces independent question freeze",
+      "type": "pre_freeze_protocol_amendment"
+    },
+    {
+      "amended_cost_ceiling_usd": 500.0,
+      "cost_counters_reset": false,
+      "deviation_id": "PD-002",
+      "historical_artifacts_preserved": true,
+      "previous_cost_ceiling_usd": 400.0,
+      "reason": "explicit study-owner directive before main-study execution",
+      "recorded_at_utc": "2026-08-29T15:58:53.203120Z",
+      "title": "Cumulative Phase-2 cost ceiling increased to 500 USD",
+      "type": "pre_freeze_cost_ceiling_amendment"
+    }
+  ],
+  "query_embeddings": {
+    "cache_use_transparently_recorded_per_rag_result": true,
+    "main_study_cache_hits": 400,
+    "main_study_cost_usd": 0.0,
+    "main_study_provider_calls": 0,
+    "main_study_tokens": 0,
+    "model": "text-embedding-3-small",
+    "preparation_calls": 100,
+    "preparation_cost_usd": 6.068e-05,
+    "preparation_tokens": 3034
+  },
+  "question_distribution": {
+    "benchmark_weighting_not_prevalence_estimate": true,
+    "covered_by_local_corpus": 80,
+    "not_covered_by_local_corpus": 20
+  },
+  "question_set_freeze_basis": "study_owner_pre_freeze_approval",
+  "question_set_independent_clinical_validation": false,
+  "rating_prerequisite": "Complete two independent blinded clinical reviews, citation audit, and adjudication in the provided workbooks.",
+  "rating_resume": "PYTHONPATH=src uv run python scripts/import_rag_vs_web_ratings.py",
+  "reproducibility": {
+    "absolute_cost_difference_usd": {
+      "iqr": 0.037276499999999976,
+      "mean": 0.027675425,
+      "median": 0.006599999999999967,
+      "n": 400,
+      "p50": 0.006599999999999967,
+      "p95": 0.11924394999999993,
+      "standard_deviation": 0.0423374990997251
+    },
+    "absolute_end_to_end_difference_ms": {
+      "iqr": 5495.207191910595,
+      "mean": 6009.432858266518,
+      "median": 2451.0333389625885,
+      "n": 400,
+      "p50": 2451.0333389625885,
+      "p95": 21732.84003014554,
+      "standard_deviation": 10849.399546257948
+    },
+    "absolute_token_difference": {
+      "iqr": 6211.5,
+      "mean": 4050.0575,
+      "median": 221.5,
+      "n": 400,
+      "p50": 221.5,
+      "p95": 18954.34999999999,
+      "standard_deviation": 6975.111123642522
+    },
+    "answer_status_agreement_rate": 0.8675,
+    "answer_token_cosine_similarity": {
+      "iqr": 0.29786220130163854,
+      "mean": 0.5824591854640797,
+      "median": 0.645622871532836,
+      "n": 400,
+      "p50": 0.645622871532836,
+      "p95": 0.9527221981778027,
+      "standard_deviation": 0.2859486600448182
+    },
+    "claim_exact_set_jaccard": {
+      "iqr": 0.0,
+      "mean": 0.06282738095238095,
+      "median": 0.0,
+      "n": 400,
+      "p50": 0.0,
+      "p95": 0.4049999999999955,
+      "standard_deviation": 0.21917225703526066
+    },
+    "clinical_rating_agreement": "pending independent human ratings",
+    "evidence_allowlist_jaccard": {
+      "iqr": 0.0,
+      "mean": 1.0,
+      "median": 1.0,
+      "n": 400,
+      "p50": 1.0,
+      "p95": 1.0,
+      "standard_deviation": 0.0
+    },
+    "pairs_complete": 400,
+    "pairs_expected": 400,
+    "recommendation_exact_set_jaccard": {
+      "iqr": 0.0,
+      "mean": 0.22195833333333334,
+      "median": 0.0,
+      "n": 400,
+      "p50": 0.0,
+      "p95": 1.0,
+      "standard_deviation": 0.4143642968063685
+    },
+    "semantic_method": "local deterministic bag-of-token cosine; no LLM judge",
+    "source_ref_jaccard": {
+      "iqr": 0.6666666666666667,
+      "mean": 0.6330148809523809,
+      "median": 0.6666666666666666,
+      "n": 400,
+      "p50": 0.6666666666666666,
+      "p95": 1.0,
+      "standard_deviation": 0.3797238202167171
+    }
+  },
+  "resource_effects_mean_of_two_runs": [
+    {
+      "analysis_period": "mean_of_two_runs",
+      "bootstrap_resamples": 10000,
+      "metric": "total_estimated_cost_usd",
+      "model_config_id": "gpt55_medium",
+      "paired_difference_ci95_high": -0.08183516487500002,
+      "paired_difference_ci95_low": -0.10951643274999999,
+      "paired_difference_rag_minus_web_mean": -0.09555714,
+      "paired_ratio_rag_over_web_mean": 0.40062054094303784,
+      "questions_paired": 100,
+      "rag_mean": 0.04469835,
+      "rag_median": 0.046095,
+      "rag_p95": 0.07731350000000001,
+      "web_mean": 0.14025549,
+      "web_median": 0.118029,
+      "web_p95": 0.280448125
+    },
+    {
+      "analysis_period": "mean_of_two_runs",
+      "bootstrap_resamples": 10000,
+      "metric": "end_to_end_ms",
+      "model_config_id": "gpt55_medium",
+      "paired_difference_ci95_high": -10786.060216779486,
+      "paired_difference_ci95_low": -14149.436107749745,
+      "paired_difference_rag_minus_web_mean": -12435.968024388421,
+      "paired_ratio_rag_over_web_mean": 0.5002336468402735,
+      "questions_paired": 100,
+      "rag_mean": 10419.36786158767,
+      "rag_median": 10292.88039149833,
+      "rag_p95": 17346.402817242775,
+      "web_mean": 22855.335885976092,
+      "web_median": 21697.095215757145,
+      "web_p95": 34894.7556707164
+    },
+    {
+      "analysis_period": "mean_of_two_runs",
+      "bootstrap_resamples": 10000,
+      "metric": "api_wall_ms",
+      "model_config_id": "gpt55_medium",
+      "paired_difference_ci95_high": -11069.874555285263,
+      "paired_difference_ci95_low": -14460.114444561797,
+      "paired_difference_rag_minus_web_mean": -12761.641878403025,
+      "paired_ratio_rag_over_web_mean": 0.47937737913068973,
+      "questions_paired": 100,
+      "rag_mean": 9881.065202975878,
+      "rag_median": 9803.004867979325,
+      "rag_p95": 16745.06709166744,
+      "web_mean": 22642.707081378903,
+      "web_median": 21513.503406516975,
+      "web_p95": 34684.92660321644
+    },
+    {
+      "analysis_period": "mean_of_two_runs",
+      "bootstrap_resamples": 10000,
+      "metric": "time_to_first_token_ms",
+      "model_config_id": "gpt55_medium",
+      "paired_difference_ci95_high": -8459.994952133755,
+      "paired_difference_ci95_low": -10840.597856011023,
+      "paired_difference_rag_minus_web_mean": -9615.491622246918,
+      "paired_ratio_rag_over_web_mean": 0.36247453253596384,
+      "questions_paired": 100,
+      "rag_mean": 4404.877019805135,
+      "rag_median": 4273.702828533715,
+      "rag_p95": 7350.335799905588,
+      "web_mean": 14020.368642052053,
+      "web_median": 13151.57097656629,
+      "web_p95": 24200.25070844858
+    },
+    {
+      "analysis_period": "mean_of_two_runs",
+      "bootstrap_resamples": 10000,
+      "metric": "total_tokens",
+      "model_config_id": "gpt55_medium",
+      "paired_difference_ci95_high": -12462.460500000001,
+      "paired_difference_ci95_low": -16284.86625,
+      "paired_difference_rag_minus_web_mean": -14315.69,
+      "paired_ratio_rag_over_web_mean": 0.3379350262909142,
+      "questions_paired": 100,
+      "rag_mean": 5406.45,
+      "rag_median": 5192.25,
+      "rag_p95": 11077.125,
+      "web_mean": 19722.14,
+      "web_median": 16638.5,
+      "web_p95": 38012.7
+    },
+    {
+      "analysis_period": "mean_of_two_runs",
+      "bootstrap_resamples": 10000,
+      "metric": "input_tokens",
+      "model_config_id": "gpt55_medium",
+      "paired_difference_ci95_high": -11813.297375,
+      "paired_difference_ci95_low": -15480.53475,
+      "paired_difference_rag_minus_web_mean": -13576.92,
+      "paired_ratio_rag_over_web_mean": 0.31851151831910185,
+      "questions_paired": 100,
+      "rag_mean": 4598.43,
+      "rag_median": 4362.5,
+      "rag_p95": 10301.699999999999,
+      "web_mean": 18175.35,
+      "web_median": 15162.25,
+      "web_p95": 36021.325
+    },
+    {
+      "analysis_period": "mean_of_two_runs",
+      "bootstrap_resamples": 10000,
+      "metric": "output_tokens",
+      "model_config_id": "gpt55_medium",
+      "paired_difference_ci95_high": -633.44925,
+      "paired_difference_ci95_low": -845.9768750000001,
+      "paired_difference_rag_minus_web_mean": -738.77,
+      "paired_ratio_rag_over_web_mean": 0.5709483967520924,
+      "questions_paired": 100,
+      "rag_mean": 808.02,
+      "rag_median": 832.0,
+      "rag_p95": 1431.075,
+      "web_mean": 1546.79,
+      "web_median": 1525.25,
+      "web_p95": 2259.875
+    },
+    {
+      "analysis_period": "mean_of_two_runs",
+      "bootstrap_resamples": 10000,
+      "metric": "reasoning_tokens",
+      "model_config_id": "gpt55_medium",
+      "paired_difference_ci95_high": -395.69425,
+      "paired_difference_ci95_low": -527.2655,
+      "paired_difference_rag_minus_web_mean": -460.435,
+      "paired_ratio_rag_over_web_mean": 0.4701724860747646,
+      "questions_paired": 100,
+      "rag_mean": 281.275,
+      "rag_median": 277.5,
+      "rag_p95": 516.0,
+      "web_mean": 741.71,
+      "web_median": 714.25,
+      "web_p95": 1236.35
+    },
+    {
+      "analysis_period": "mean_of_two_runs",
+      "bootstrap_resamples": 10000,
+      "metric": "total_estimated_cost_usd",
+      "model_config_id": "gpt56_sol_high",
+      "paired_difference_ci95_high": -0.12381945705000003,
+      "paired_difference_ci95_low": -0.1540037883,
+      "paired_difference_rag_minus_web_mean": -0.138642716,
+      "paired_ratio_rag_over_web_mean": 0.26203127188807546,
+      "questions_paired": 100,
+      "rag_mean": 0.03512744,
+      "rag_median": 0.0359245,
+      "rag_p95": 0.06665075,
+      "web_mean": 0.173770156,
+      "web_median": 0.1703246,
+      "web_p95": 0.3094251
+    },
+    {
+      "analysis_period": "mean_of_two_runs",
+      "bootstrap_resamples": 10000,
+      "metric": "end_to_end_ms",
+      "model_config_id": "gpt56_sol_high",
+      "paired_difference_ci95_high": -23492.629706327265,
+      "paired_difference_ci95_low": -30596.254914172256,
+      "paired_difference_rag_minus_web_mean": -26825.281526740873,
+      "paired_ratio_rag_over_web_mean": 0.31044712921711254,
+      "questions_paired": 100,
+      "rag_mean": 9299.845970058232,
+      "rag_median": 8539.947359735379,
+      "rag_p95": 17550.174476881508,
+      "web_mean": 36125.127496799105,
+      "web_median": 32954.64931472088,
+      "web_p95": 75347.95312360511
+    },
+    {
+      "analysis_period": "mean_of_two_runs",
+      "bootstrap_resamples": 10000,
+      "metric": "api_wall_ms",
+      "model_config_id": "gpt56_sol_high",
+      "paired_difference_ci95_high": -23717.783330460912,
+      "paired_difference_ci95_low": -30887.79132104201,
+      "paired_difference_rag_minus_web_mean": -27140.31260520278,
+      "paired_ratio_rag_over_web_mean": 0.29343218084763345,
+      "questions_paired": 100,
+      "rag_mean": 8760.224097663304,
+      "rag_median": 8030.664025776787,
+      "rag_p95": 17028.06125051866,
+      "web_mean": 35900.536702866084,
+      "web_median": 32790.60718699475,
+      "web_p95": 74573.93245107378
+    },
+    {
+      "analysis_period": "mean_of_two_runs",
+      "bootstrap_resamples": 10000,
+      "metric": "time_to_first_token_ms",
+      "model_config_id": "gpt56_sol_high",
+      "paired_difference_ci95_high": -21196.070562883804,
+      "paired_difference_ci95_low": -27402.579711244558,
+      "paired_difference_rag_minus_web_mean": -24185.17694164475,
+      "paired_ratio_rag_over_web_mean": 0.2081660391858994,
+      "questions_paired": 100,
+      "rag_mean": 4840.618628496304,
+      "rag_median": 4493.896120751742,
+      "rag_p95": 10688.812105273244,
+      "web_mean": 29025.795570141054,
+      "web_median": 25992.037651187275,
+      "web_p95": 59144.457832240725
+    },
+    {
+      "analysis_period": "mean_of_two_runs",
+      "bootstrap_resamples": 10000,
+      "metric": "total_tokens",
+      "model_config_id": "gpt56_sol_high",
+      "paired_difference_ci95_high": -24354.098375,
+      "paired_difference_ci95_low": -29269.912,
+      "paired_difference_rag_minus_web_mean": -26781.685,
+      "paired_ratio_rag_over_web_mean": 0.2000291746683048,
+      "questions_paired": 100,
+      "rag_mean": 5228.4,
+      "rag_median": 4959.5,
+      "rag_p95": 10897.125,
+      "web_mean": 32010.085,
+      "web_median": 30560.5,
+      "web_p95": 51453.5
+    },
+    {
+      "analysis_period": "mean_of_two_runs",
+      "bootstrap_resamples": 10000,
+      "metric": "input_tokens",
+      "model_config_id": "gpt56_sol_high",
+      "paired_difference_ci95_high": -23166.904375000002,
+      "paired_difference_ci95_low": -27903.9055,
+      "paired_difference_rag_minus_web_mean": -25542.435,
+      "paired_ratio_rag_over_web_mean": 0.1893318907479011,
+      "questions_paired": 100,
+      "rag_mean": 4598.43,
+      "rag_median": 4362.5,
+      "rag_p95": 10301.699999999999,
+      "web_mean": 30140.865,
+      "web_median": 28610.5,
+      "web_p95": 47333.424999999996
+    },
+    {
+      "analysis_period": "mean_of_two_runs",
+      "bootstrap_resamples": 10000,
+      "metric": "output_tokens",
+      "model_config_id": "gpt56_sol_high",
+      "paired_difference_ci95_high": -1088.344,
+      "paired_difference_ci95_low": -1399.79625,
+      "paired_difference_rag_minus_web_mean": -1239.25,
+      "paired_ratio_rag_over_web_mean": 0.37677365182642025,
+      "questions_paired": 100,
+      "rag_mean": 629.97,
+      "rag_median": 589.25,
+      "rag_p95": 1270.9999999999998,
+      "web_mean": 1869.22,
+      "web_median": 1760.75,
+      "web_p95": 3244.3749999999995
+    },
+    {
+      "analysis_period": "mean_of_two_runs",
+      "bootstrap_resamples": 10000,
+      "metric": "reasoning_tokens",
+      "model_config_id": "gpt56_sol_high",
+      "paired_difference_ci95_high": -910.9370000000001,
+      "paired_difference_ci95_low": -1173.243375,
+      "paired_difference_rag_minus_web_mean": -1041.67,
+      "paired_ratio_rag_over_web_mean": 0.25032850583144156,
+      "questions_paired": 100,
+      "rag_mean": 279.92,
+      "rag_median": 243.25,
+      "rag_p95": 746.525,
+      "web_mean": 1321.59,
+      "web_median": 1223.25,
+      "web_p95": 2540.5499999999997
+    }
+  ],
+  "resource_effects_run_1_primary": [
+    {
+      "analysis_period": "1_primary",
+      "bootstrap_resamples": 10000,
+      "metric": "total_estimated_cost_usd",
+      "model_config_id": "gpt55_medium",
+      "paired_difference_ci95_high": -0.083870638,
+      "paired_difference_ci95_low": -0.11478037875,
+      "paired_difference_rag_minus_web_mean": -0.09938912999999999,
+      "paired_ratio_rag_over_web_mean": 0.4168825389765027,
+      "questions_paired": 100,
+      "rag_mean": 0.04711725,
+      "rag_median": 0.0468775,
+      "rag_p95": 0.07913199999999998,
+      "web_mean": 0.14650638,
+      "web_median": 0.132164,
+      "web_p95": 0.2819857499999999
+    },
+    {
+      "analysis_period": "1_primary",
+      "bootstrap_resamples": 10000,
+      "metric": "end_to_end_ms",
+      "model_config_id": "gpt55_medium",
+      "paired_difference_ci95_high": -11155.930759706622,
+      "paired_difference_ci95_low": -15034.84096067326,
+      "paired_difference_rag_minus_web_mean": -13149.2616536282,
+      "paired_ratio_rag_over_web_mean": 0.49120060540165583,
+      "questions_paired": 100,
+      "rag_mean": 10500.945212407969,
+      "rag_median": 10570.060724567156,
+      "rag_p95": 18586.56204494764,
+      "web_mean": 23650.20686603617,
+      "web_median": 22781.44833748229,
+      "web_p95": 39126.55506723676
+    },
+    {
+      "analysis_period": "1_primary",
+      "bootstrap_resamples": 10000,
+      "metric": "api_wall_ms",
+      "model_config_id": "gpt55_medium",
+      "paired_difference_ci95_high": -11499.572145218815,
+      "paired_difference_ci95_low": -15326.309879101027,
+      "paired_difference_rag_minus_web_mean": -13475.132209162693,
+      "paired_ratio_rag_over_web_mean": 0.472476124423981,
+      "questions_paired": 100,
+      "rag_mean": 10038.384070402244,
+      "rag_median": 10103.179492987692,
+      "rag_p95": 18028.353995271027,
+      "web_mean": 23513.516279564938,
+      "web_median": 22672.212397505064,
+      "web_p95": 39015.31773907481
+    },
+    {
+      "analysis_period": "1_primary",
+      "bootstrap_resamples": 10000,
+      "metric": "time_to_first_token_ms",
+      "model_config_id": "gpt55_medium",
+      "paired_difference_ci95_high": -8882.419156477496,
+      "paired_difference_ci95_low": -11570.083854231256,
+      "paired_difference_rag_minus_web_mean": -10191.825211306568,
+      "paired_ratio_rag_over_web_mean": 0.3614078867377069,
+      "questions_paired": 100,
+      "rag_mean": 4462.209506803192,
+      "rag_median": 4140.28472697828,
+      "rag_p95": 7968.188937561354,
+      "web_mean": 14654.03471810976,
+      "web_median": 13038.358352496289,
+      "web_p95": 27738.634242769327
+    },
+    {
+      "analysis_period": "1_primary",
+      "bootstrap_resamples": 10000,
+      "metric": "total_tokens",
+      "model_config_id": "gpt55_medium",
+      "paired_difference_ci95_high": -13090.574,
+      "paired_difference_ci95_low": -17313.52825,
+      "paired_difference_rag_minus_web_mean": -15173.26,
+      "paired_ratio_rag_over_web_mean": 0.33409678581759883,
+      "questions_paired": 100,
+      "rag_mean": 5402.6,
+      "rag_median": 5188.0,
+      "rag_p95": 11170.25,
+      "web_mean": 20575.86,
+      "web_median": 17746.0,
+      "web_p95": 39321.45
+    },
+    {
+      "analysis_period": "1_primary",
+      "bootstrap_resamples": 10000,
+      "metric": "input_tokens",
+      "model_config_id": "gpt55_medium",
+      "paired_difference_ci95_high": -12427.504500000001,
+      "paired_difference_ci95_low": -16440.28975,
+      "paired_difference_rag_minus_web_mean": -14411.79,
+      "paired_ratio_rag_over_web_mean": 0.31552619253648223,
+      "questions_paired": 100,
+      "rag_mean": 4598.43,
+      "rag_median": 4362.5,
+      "rag_p95": 10301.699999999999,
+      "web_mean": 19010.22,
+      "web_median": 16012.5,
+      "web_p95": 36730.15
+    },
+    {
+      "analysis_period": "1_primary",
+      "bootstrap_resamples": 10000,
+      "metric": "output_tokens",
+      "model_config_id": "gpt55_medium",
+      "paired_difference_ci95_high": -652.20975,
+      "paired_difference_ci95_low": -874.34325,
+      "paired_difference_rag_minus_web_mean": -761.47,
+      "paired_ratio_rag_over_web_mean": 0.5662584710789295,
+      "questions_paired": 100,
+      "rag_mean": 804.17,
+      "rag_median": 806.5,
+      "rag_p95": 1383.9999999999998,
+      "web_mean": 1565.64,
+      "web_median": 1547.5,
+      "web_p95": 2399.5
+    },
+    {
+      "analysis_period": "1_primary",
+      "bootstrap_resamples": 10000,
+      "metric": "reasoning_tokens",
+      "model_config_id": "gpt55_medium",
+      "paired_difference_ci95_high": -402.55975,
+      "paired_difference_ci95_low": -548.3205,
+      "paired_difference_rag_minus_web_mean": -473.3,
+      "paired_ratio_rag_over_web_mean": 0.5193356683456862,
+      "questions_paired": 100,
+      "rag_mean": 280.67,
+      "rag_median": 239.5,
+      "rag_p95": 516.0,
+      "web_mean": 753.97,
+      "web_median": 634.5,
+      "web_p95": 1369.55
+    },
+    {
+      "analysis_period": "1_primary",
+      "bootstrap_resamples": 10000,
+      "metric": "total_estimated_cost_usd",
+      "model_config_id": "gpt56_sol_high",
+      "paired_difference_ci95_high": -0.11637913615,
+      "paired_difference_ci95_low": -0.150549183,
+      "paired_difference_rag_minus_web_mean": -0.133632134,
+      "paired_ratio_rag_over_web_mean": 0.29578814174087664,
+      "questions_paired": 100,
+      "rag_mean": 0.03542743,
+      "rag_median": 0.034647,
+      "rag_p95": 0.06714175,
+      "web_mean": 0.169059564,
+      "web_median": 0.1561918,
+      "web_p95": 0.3197631
+    },
+    {
+      "analysis_period": "1_primary",
+      "bootstrap_resamples": 10000,
+      "metric": "end_to_end_ms",
+      "model_config_id": "gpt56_sol_high",
+      "paired_difference_ci95_high": -19350.119293558964,
+      "paired_difference_ci95_low": -26990.51710623369,
+      "paired_difference_rag_minus_web_mean": -23024.52527076588,
+      "paired_ratio_rag_over_web_mean": 0.370321904665331,
+      "questions_paired": 100,
+      "rag_mean": 9013.763212691993,
+      "rag_median": 8280.227472947445,
+      "rag_p95": 17357.813625817653,
+      "web_mean": 32038.288483457873,
+      "web_median": 26156.034810468554,
+      "web_p95": 67824.1006428725
+    },
+    {
+      "analysis_period": "1_primary",
+      "bootstrap_resamples": 10000,
+      "metric": "api_wall_ms",
+      "model_config_id": "gpt56_sol_high",
+      "paired_difference_ci95_high": -19716.17435863655,
+      "paired_difference_ci95_low": -27441.01459841279,
+      "paired_difference_rag_minus_web_mean": -23350.360354373697,
+      "paired_ratio_rag_over_web_mean": 0.35248523642273794,
+      "questions_paired": 100,
+      "rag_mean": 8551.318591294112,
+      "rag_median": 7898.110889480449,
+      "rag_p95": 16831.29737059935,
+      "web_mean": 31901.67894566781,
+      "web_median": 26052.97161801718,
+      "web_p95": 67628.16380567382
+    },
+    {
+      "analysis_period": "1_primary",
+      "bootstrap_resamples": 10000,
+      "metric": "time_to_first_token_ms",
+      "model_config_id": "gpt56_sol_high",
+      "paired_difference_ci95_high": -18125.74874747466,
+      "paired_difference_ci95_low": -25358.41269436304,
+      "paired_difference_rag_minus_web_mean": -21564.46766346693,
+      "paired_ratio_rag_over_web_mean": 0.25893532863773194,
+      "questions_paired": 100,
+      "rag_mean": 4590.728639157023,
+      "rag_median": 4253.511090006214,
+      "rag_p95": 10719.182657147756,
+      "web_mean": 26155.196302623954,
+      "web_median": 20333.346383529715,
+      "web_p95": 60501.551142003154
+    },
+    {
+      "analysis_period": "1_primary",
+      "bootstrap_resamples": 10000,
+      "metric": "total_tokens",
+      "model_config_id": "gpt56_sol_high",
+      "paired_difference_ci95_high": -23328.394500000002,
+      "paired_difference_ci95_low": -28999.5985,
+      "paired_difference_rag_minus_web_mean": -26127.47,
+      "paired_ratio_rag_over_web_mean": 0.21760375498413848,
+      "questions_paired": 100,
+      "rag_mean": 5227.61,
+      "rag_median": 4947.0,
+      "rag_p95": 10801.5,
+      "web_mean": 31355.08,
+      "web_median": 29815.5,
+      "web_p95": 53143.19999999999
+    },
+    {
+      "analysis_period": "1_primary",
+      "bootstrap_resamples": 10000,
+      "metric": "input_tokens",
+      "model_config_id": "gpt56_sol_high",
+      "paired_difference_ci95_high": -22317.06375,
+      "paired_difference_ci95_low": -27608.727000000003,
+      "paired_difference_rag_minus_web_mean": -24935.05,
+      "paired_ratio_rag_over_web_mean": 0.20606243065288082,
+      "questions_paired": 100,
+      "rag_mean": 4598.43,
+      "rag_median": 4362.5,
+      "rag_p95": 10301.699999999999,
+      "web_mean": 29533.48,
+      "web_median": 28085.0,
+      "web_p95": 49105.19999999998
+    },
+    {
+      "analysis_period": "1_primary",
+      "bootstrap_resamples": 10000,
+      "metric": "output_tokens",
+      "model_config_id": "gpt56_sol_high",
+      "paired_difference_ci95_high": -1009.7195,
+      "paired_difference_ci95_low": -1381.3905000000002,
+      "paired_difference_rag_minus_web_mean": -1192.42,
+      "paired_ratio_rag_over_web_mean": 0.41261887723673646,
+      "questions_paired": 100,
+      "rag_mean": 629.18,
+      "rag_median": 567.0,
+      "rag_p95": 1344.25,
+      "web_mean": 1821.6,
+      "web_median": 1609.0,
+      "web_p95": 3470.1
+    },
+    {
+      "analysis_period": "1_primary",
+      "bootstrap_resamples": 10000,
+      "metric": "reasoning_tokens",
+      "model_config_id": "gpt56_sol_high",
+      "paired_difference_ci95_high": -850.75775,
+      "paired_difference_ci95_low": -1170.22025,
+      "paired_difference_rag_minus_web_mean": -1007.62,
+      "paired_ratio_rag_over_web_mean": 0.2913523912462026,
+      "questions_paired": 100,
+      "rag_mean": 276.96,
+      "rag_median": 250.5,
+      "rag_p95": 800.9,
+      "web_mean": 1284.58,
+      "web_median": 1066.5,
+      "web_p95": 2686.7999999999997
+    }
+  ],
+  "response_configuration": {
+    "concurrency": 1,
+    "max_output_tokens": 6000,
+    "service_tier_requested": [
+      "default"
+    ],
+    "service_tier_used": [
+      "default"
+    ],
+    "service_tier_used_missing_on_failed_attempts": 2,
+    "stateless": true,
+    "store": false,
+    "text_verbosity": [
+      "medium"
+    ]
+  },
+  "retrieval": {
+    "covered_rag_results": 320,
+    "gold_status": "study_owner_prefreeze_frozen_not_independently_clinically_validated",
+    "mrr": 0.3647181637806638,
+    "not_covered_rag_results": 80,
+    "rag_results": 400,
+    "recall_at_5": 0.59375,
+    "retrieval_outcome_no_evidence_in_snapshot": 68
+  },
+  "retry_details": [
+    {
+      "attempt_id": "rag-vs-web-1.1.0:2_reproducibility:study-q-012:gpt56_sol_high:WEB:attempt-1",
+      "error_class": "StudyResponsesError",
+      "error_code": "network_or_sdk_error",
+      "http_status": null,
+      "retry_number": 0,
+      "retryable": true,
+      "run_id": "rag-vs-web-1.1.0:2_reproducibility:study-q-012:gpt56_sol_high:WEB"
+    },
+    {
+      "attempt_id": "rag-vs-web-1.1.0:2_reproducibility:study-q-035:gpt56_sol_high:WEB:attempt-1",
+      "error_class": "StudyResponsesError",
+      "error_code": "network_or_sdk_error",
+      "http_status": null,
+      "retry_number": 0,
+      "retryable": true,
+      "run_id": "rag-vs-web-1.1.0:2_reproducibility:study-q-035:gpt56_sol_high:WEB"
+    }
+  ],
+  "schema_version": "phase2-technical-completion-1.0.0",
+  "status": "TECHNICAL_STUDY_COMPLETE_CLINICAL_RATING_PENDING",
+  "technical_aggregates": {
+    "answer_status_by_arm_and_coverage": [
+      {
+        "answer_status": "no_validated_evidence",
+        "count": 19,
+        "coverage_stratum": "covered_by_local_corpus",
+        "system_arm": "RAG"
+      },
+      {
+        "answer_status": "partially_supported",
+        "count": 64,
+        "coverage_stratum": "covered_by_local_corpus",
+        "system_arm": "RAG"
+      },
+      {
+        "answer_status": "supported",
+        "count": 237,
+        "coverage_stratum": "covered_by_local_corpus",
+        "system_arm": "RAG"
+      },
+      {
+        "answer_status": "no_validated_evidence",
+        "count": 80,
+        "coverage_stratum": "not_covered_by_local_corpus",
+        "system_arm": "RAG"
+      },
+      {
+        "answer_status": "no_validated_evidence",
+        "count": 16,
+        "coverage_stratum": "covered_by_local_corpus",
+        "system_arm": "WEB"
+      },
+      {
+        "answer_status": "partially_supported",
+        "count": 35,
+        "coverage_stratum": "covered_by_local_corpus",
+        "system_arm": "WEB"
+      },
+      {
+        "answer_status": "supported",
+        "count": 269,
+        "coverage_stratum": "covered_by_local_corpus",
+        "system_arm": "WEB"
+      },
+      {
+        "answer_status": "no_validated_evidence",
+        "count": 1,
+        "coverage_stratum": "not_covered_by_local_corpus",
+        "system_arm": "WEB"
+      },
+      {
+        "answer_status": "partially_supported",
+        "count": 18,
+        "coverage_stratum": "not_covered_by_local_corpus",
+        "system_arm": "WEB"
+      },
+      {
+        "answer_status": "supported",
+        "count": 61,
+        "coverage_stratum": "not_covered_by_local_corpus",
+        "system_arm": "WEB"
+      }
+    ],
+    "per_arm": {
+      "RAG": {
+        "answer_status": {
+          "no_validated_evidence": 99,
+          "partially_supported": 64,
+          "supported": 237
+        },
+        "estimated_cost_usd": 15.965158,
+        "results": 400,
+        "validator_issue_codes": {
+          "abstention_contains_structured_clinical_assertions": 79,
+          "numeric_value_not_in_cited_source": 4,
+          "recommendation_missing_source": 2,
+          "relation_context_only_requires_human_support_review": 24,
+          "unknown_or_not_allowlisted_evidence_id": 1
+        },
+        "validator_status": {
+          "accepted": 316,
+          "downgraded": 5,
+          "rejected": 79
+        }
+      },
+      "WEB": {
+        "answer_status": {
+          "no_validated_evidence": 17,
+          "partially_supported": 53,
+          "supported": 330
+        },
+        "estimated_cost_usd": 62.8051292,
+        "results": 400,
+        "validator_issue_codes": {
+          "source_ref_missing_url_citation_annotation": 382,
+          "web_url_not_returned_by_current_search": 40
+        },
+        "validator_status": {
+          "accepted": 360,
+          "downgraded": 23,
+          "rejected": 17
+        }
+      }
+    },
+    "rag": {
+      "evidence_ids_sent": 3728,
+      "policy_ineligible_package_issues": 0,
+      "retrieval_outcome": {
+        "evidence_found": 332,
+        "no_evidence_in_snapshot": 68
+      },
+      "unknown_or_not_allowlisted_id_issues": 1
+    },
+    "rag_query_embedding": {
+      "cache_hits": 400,
+      "estimated_cost_usd": 0.0,
+      "provider_calls": 0,
+      "tokens": 0
+    },
+    "web": {
+      "search_tool_calls": 1149,
+      "sources_cited": 105,
+      "sources_consulted": 10650
+    }
+  },
+  "token_totals": {
+    "cache_write_tokens": 887876,
+    "cached_input_tokens": 2050014,
+    "input_tokens": 11502615,
+    "output_tokens": 970800,
+    "query_embedding_tokens": 0,
+    "reasoning_tokens": 524899,
+    "total_tokens": 12473415
+  },
+  "validation_summary": {
+    "corpus": {
+      "passed_checks": 50,
+      "path": "outputs/knowledge_corpus/qa/final_validation.json",
+      "status": "passed",
+      "total_checks": 50
+    },
+    "phase1_cli": {
+      "passed_checks": 31,
+      "path": "outputs/retrieval_phase/qa/cli_rag_phase1_completion.json",
+      "status": "passed",
+      "total_checks": 31
+    },
+    "phase2": {
+      "passed_checks": 36,
+      "path": "outputs/study_phase2/qa/phase2_validation.json",
+      "status": "passed",
+      "total_checks": 36
+    },
+    "pytest": {
+      "errors": 0,
+      "failures": 0,
+      "path": "${PROJECT_ROOT}/outputs/study_phase2/qa/pytest_full.xml",
+      "skipped": 0,
+      "status": "passed",
+      "subtests": 12,
+      "tests": 118,
+      "time_seconds": 26.384,
+      "total_cases": 130
+    },
+    "rationale_relations": {
+      "passed_checks": 2,
+      "path": "outputs/retrieval_phase/qa/rationale_relation_audit.json",
+      "status": "passed",
+      "total_checks": 2
+    },
+    "retrieval": {
+      "passed_checks": 37,
+      "path": "outputs/retrieval_phase/cs-f61b3d4e90089c1b890c23cb/qa/retrieval_layer_validation.json",
+      "status": "passed",
+      "total_checks": 37
+    },
+    "ruff": {
+      "issue_count": 0,
+      "path": "outputs/study_phase2/qa/ruff_phase2.json",
+      "status": "passed"
+    }
+  },
+  "validator_status": {
+    "accepted": 676,
+    "downgraded": 28,
+    "rejected": 96
+  },
+  "web_search_tool_calls": 1149
+}

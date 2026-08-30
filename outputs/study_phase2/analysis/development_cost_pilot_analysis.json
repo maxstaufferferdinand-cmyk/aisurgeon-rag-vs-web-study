@@ -1,0 +1,337 @@
+{
+  "api_attempts": 20,
+  "api_window_utc": {
+    "end": "2026-08-29T14:07:02.004081Z",
+    "start": "2026-08-29T14:00:18.978230Z"
+  },
+  "by_model_and_arm": {
+    "gpt55_medium:RAG": {
+      "answer_status": {
+        "no_validated_evidence": 1,
+        "partially_supported": 1,
+        "supported": 3
+      },
+      "api_wall_time_ms": {
+        "maximum": 13721.991967991926,
+        "mean": 10649.539699801244,
+        "median": 11674.369052052498,
+        "minimum": 4777.57657202892,
+        "n": 5,
+        "p50": 11674.369052052498,
+        "p95": 13654.369044373743,
+        "standard_deviation": 3652.661064640807
+      },
+      "cost_usd": {
+        "maximum": 0.085895,
+        "mean": 0.054384,
+        "median": 0.07052,
+        "minimum": 0.013145,
+        "n": 5,
+        "p50": 0.07052,
+        "p95": 0.083455,
+        "standard_deviation": 0.03157669401631526
+      },
+      "end_to_end_time_ms": {
+        "maximum": 14166.12145199906,
+        "mean": 11061.602731607854,
+        "median": 12107.737613026984,
+        "minimum": 5077.665883000009,
+        "n": 5,
+        "p50": 12107.737613026984,
+        "p95": 14101.477287593298,
+        "standard_deviation": 3713.9697313832808
+      },
+      "input_tokens": {
+        "maximum": 10351.0,
+        "mean": 6291.6,
+        "median": 7635.0,
+        "minimum": 853.0,
+        "n": 5,
+        "p50": 7635.0,
+        "p95": 10026.4,
+        "standard_deviation": 3858.7804809291756
+      },
+      "n": 5,
+      "output_tokens": {
+        "maximum": 1184.0,
+        "mean": 764.2,
+        "median": 896.0,
+        "minimum": 296.0,
+        "n": 5,
+        "p50": 896.0,
+        "p95": 1174.8,
+        "standard_deviation": 436.3406925786317
+      },
+      "total_tokens": {
+        "maximum": 11489.0,
+        "mean": 7055.8,
+        "median": 8819.0,
+        "minimum": 1149.0,
+        "n": 5,
+        "p50": 8819.0,
+        "p95": 11116.0,
+        "standard_deviation": 4254.852958681416
+      },
+      "validator_status": {
+        "accepted": 4,
+        "rejected": 1
+      },
+      "web_search_calls": 0
+    },
+    "gpt55_medium:WEB": {
+      "answer_status": {
+        "partially_supported": 2,
+        "supported": 3
+      },
+      "api_wall_time_ms": {
+        "maximum": 33549.67614193447,
+        "mean": 25843.163587967865,
+        "median": 26446.158409002237,
+        "minimum": 20963.58814195264,
+        "n": 5,
+        "p50": 26446.158409002237,
+        "p95": 32270.60053453315,
+        "standard_deviation": 5190.399305410677
+      },
+      "cost_usd": {
+        "maximum": 0.218529,
+        "mean": 0.1510752,
+        "median": 0.143859,
+        "minimum": 0.092624,
+        "n": 5,
+        "p50": 0.143859,
+        "p95": 0.214913,
+        "standard_deviation": 0.057170293091779754
+      },
+      "end_to_end_time_ms": {
+        "maximum": 33616.79252097383,
+        "mean": 25914.60849053692,
+        "median": 26532.778668915853,
+        "minimum": 21030.739250942133,
+        "n": 5,
+        "p50": 26532.778668915853,
+        "p95": 32337.948808562942,
+        "standard_deviation": 5190.82208274787
+      },
+      "input_tokens": {
+        "maximum": 28215.0,
+        "mean": 18414.0,
+        "median": 18113.0,
+        "minimum": 9481.0,
+        "n": 5,
+        "p50": 18113.0,
+        "p95": 27480.2,
+        "standard_deviation": 8035.833124200626
+      },
+      "n": 5,
+      "output_tokens": {
+        "maximum": 2273.0,
+        "mean": 1719.8,
+        "median": 1616.0,
+        "minimum": 1417.0,
+        "n": 5,
+        "p50": 1616.0,
+        "p95": 2178.6,
+        "standard_deviation": 341.67923554117243
+      },
+      "total_tokens": {
+        "maximum": 30488.0,
+        "mean": 20133.8,
+        "median": 19914.0,
+        "minimum": 10898.0,
+        "n": 5,
+        "p50": 19914.0,
+        "p95": 29621.8,
+        "standard_deviation": 8317.872696789727
+      },
+      "validator_status": {
+        "accepted": 5
+      },
+      "web_search_calls": 12
+    },
+    "gpt56_sol_high:RAG": {
+      "answer_status": {
+        "no_validated_evidence": 1,
+        "partially_supported": 1,
+        "supported": 3
+      },
+      "api_wall_time_ms": {
+        "maximum": 14338.235555915162,
+        "mean": 9272.531095775776,
+        "median": 11506.705565028824,
+        "minimum": 3450.3319589421153,
+        "n": 5,
+        "p50": 11506.705565028824,
+        "p95": 14165.65507852938,
+        "standard_deviation": 5349.820546509024
+      },
+      "cost_usd": {
+        "maximum": 0.073052,
+        "mean": 0.045297,
+        "median": 0.058832,
+        "minimum": 0.006252,
+        "n": 5,
+        "p50": 0.058832,
+        "p95": 0.071429,
+        "standard_deviation": 0.028908178341085417
+      },
+      "end_to_end_time_ms": {
+        "maximum": 14778.299134923145,
+        "mean": 9670.22903279867,
+        "median": 11927.395869977772,
+        "minimum": 3841.556945000775,
+        "n": 5,
+        "p50": 11927.395869977772,
+        "p95": 14608.910029148683,
+        "standard_deviation": 5406.731588974889
+      },
+      "input_tokens": {
+        "maximum": 10351.0,
+        "mean": 6291.6,
+        "median": 7635.0,
+        "minimum": 853.0,
+        "n": 5,
+        "p50": 7635.0,
+        "p95": 10026.4,
+        "standard_deviation": 3858.7804809291756
+      },
+      "n": 5,
+      "output_tokens": {
+        "maximum": 1065.0,
+        "mean": 700.6,
+        "median": 1033.0,
+        "minimum": 142.0,
+        "n": 5,
+        "p50": 1033.0,
+        "p95": 1065.0,
+        "standard_deviation": 484.9497912155443
+      },
+      "total_tokens": {
+        "maximum": 11416.0,
+        "mean": 6992.2,
+        "median": 8668.0,
+        "minimum": 995.0,
+        "n": 5,
+        "p50": 8668.0,
+        "p95": 11091.4,
+        "standard_deviation": 4319.078918010181
+      },
+      "validator_status": {
+        "accepted": 5
+      },
+      "web_search_calls": 0
+    },
+    "gpt56_sol_high:WEB": {
+      "answer_status": {
+        "partially_supported": 2,
+        "supported": 3
+      },
+      "api_wall_time_ms": {
+        "maximum": 60263.05943203624,
+        "mean": 33910.26673223823,
+        "median": 27909.15732004214,
+        "minimum": 14602.668893057853,
+        "n": 5,
+        "p50": 27909.15732004214,
+        "p95": 57215.6649392331,
+        "standard_deviation": 18538.413479436145
+      },
+      "cost_usd": {
+        "maximum": 0.27571860000000004,
+        "mean": 0.18274168000000002,
+        "median": 0.1712826,
+        "minimum": 0.093527,
+        "n": 5,
+        "p50": 0.1712826,
+        "p95": 0.2710998,
+        "standard_deviation": 0.07982168932709957
+      },
+      "end_to_end_time_ms": {
+        "maximum": 60331.173336016946,
+        "mean": 33975.59648063034,
+        "median": 27970.42004810646,
+        "minimum": 14664.933067047969,
+        "n": 5,
+        "p50": 27970.42004810646,
+        "p95": 57284.41980481148,
+        "standard_deviation": 18541.697217962737
+      },
+      "input_tokens": {
+        "maximum": 44587.0,
+        "mean": 29976.4,
+        "median": 27446.0,
+        "minimum": 13458.0,
+        "n": 5,
+        "p50": 27446.0,
+        "p95": 44161.0,
+        "standard_deviation": 13352.674537335208
+      },
+      "n": 5,
+      "output_tokens": {
+        "maximum": 2786.0,
+        "mean": 2024.2,
+        "median": 1992.0,
+        "minimum": 1228.0,
+        "n": 5,
+        "p50": 1992.0,
+        "p95": 2740.2,
+        "standard_deviation": 655.0818269498857
+      },
+      "total_tokens": {
+        "maximum": 47373.0,
+        "mean": 32000.6,
+        "median": 29438.0,
+        "minimum": 14686.0,
+        "n": 5,
+        "p50": 29438.0,
+        "p95": 46901.2,
+        "standard_deviation": 14003.73010308325
+      },
+      "validator_status": {
+        "accepted": 5
+      },
+      "web_search_calls": 18
+    }
+  },
+  "cost_totals_usd": {
+    "embedding_cost_usd": 0.0,
+    "model_cost_usd": 1.8674894,
+    "retry_cost_usd": 0.0,
+    "total_estimated_cost_usd": 2.1674894,
+    "web_search_cost_usd": 0.3
+  },
+  "experiment_id": "development_cost_pilot",
+  "http_successes": 20,
+  "openai_processing_ms_present": 20,
+  "planned_responses": 20,
+  "recorded_responses": 20,
+  "request_ids_present": 20,
+  "requested_and_returned_models": [
+    [
+      "gpt-5.5-2026-04-23",
+      "gpt-5.5-2026-04-23"
+    ],
+    [
+      "gpt-5.6-sol",
+      "gpt-5.6-sol"
+    ]
+  ],
+  "response_ids_present": 20,
+  "retries": 0,
+  "schema_version": "development-cost-pilot-analysis-1.0.0",
+  "time_to_first_token_present": 20,
+  "token_totals": {
+    "cache_write_tokens": 35851,
+    "cached_input_tokens": 38848,
+    "input_tokens": 304868,
+    "output_tokens": 26044,
+    "query_embedding_tokens": 0,
+    "reasoning_tokens": 15133,
+    "total_tokens": 330912
+  },
+  "validator_status": {
+    "accepted": 19,
+    "rejected": 1
+  },
+  "web_search_tool_calls": 30
+}

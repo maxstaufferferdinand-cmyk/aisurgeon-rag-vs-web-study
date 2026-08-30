@@ -1,0 +1,123 @@
+{
+  "checked_at_utc": "2026-08-16T10:58:16.240066+00:00",
+  "existing_item_number_corrected_record_ids": [
+    "rec-70f8457904ae104d4422b8ca"
+  ],
+  "existing_item_number_corrections": 1,
+  "gemini_pages": [],
+  "gemini_used": false,
+  "hcc_historical_policy_record_count": 99,
+  "invented_item_number_count": 0,
+  "method": "local_deterministic_pdf_text_and_visual_review",
+  "new_formal_item_count": 2,
+  "new_formal_item_record_ids": [
+    "rec-7a2c99c3a6dffc908b5eb111",
+    "rec-95dfba9075cff2c1f6940c9c"
+  ],
+  "reported_gap_count": 3,
+  "reviews": [
+    {
+      "action": "Keine 15.7 ergänzt; zwei tatsächlich fehlende formale Haupttextitems auf PDF-S. 136 und 139 quellentreu aufgenommen.",
+      "adjacent_formal_items": [
+        "15.5 (PDF-S. 138)",
+        "15.6 (PDF-S. 138)",
+        "15.8 (PDF-S. 139)"
+      ],
+      "audit_id": "gap-vte-15-missing-7",
+      "classification": "C",
+      "classification_label": "source_native_numbering_gap",
+      "gemini_used": false,
+      "new_formal_item_record_ids": [
+        "rec-7a2c99c3a6dffc908b5eb111",
+        "rec-95dfba9075cff2c1f6940c9c"
+      ],
+      "physical_pdf_pages_reviewed_1based": [
+        136,
+        137,
+        138,
+        139,
+        140,
+        141
+      ],
+      "reported_gap": "15.7",
+      "source_evidence": "Zwischen 15.6 und 15.8 ist keine formale Box 15.7 gedruckt. Auf Seite 139 steht stattdessen eine eigenständige, formal ausgezeichnete Box mit der erneut gedruckten Nummer 15.4.",
+      "source_file_name": "003-001l_S3_Prophylaxe-venoese-Thromboembolie-VTE_2026-04.pdf",
+      "source_id": "src-003-001l-s3-prophylaxe-venoese-thromboembolie-vte-2026-04-f82c5686f6b7"
+    },
+    {
+      "action": "Keine 19.2 erfunden; bestehender Record behält die gedruckte 15.4 als Auditmetadatum und source_item_number=null.",
+      "adjacent_formal_items": [
+        "19.1 (PDF-S. 149)",
+        "gedruckt 15.4 (PDF-S. 150)",
+        "19.3 und 19.4 (PDF-S. 151)"
+      ],
+      "audit_id": "gap-vte-19-missing-2",
+      "classification": "C",
+      "classification_label": "source_native_numbering_gap",
+      "corrected_record_ids": [
+        "rec-70f8457904ae104d4422b8ca"
+      ],
+      "gemini_used": false,
+      "physical_pdf_pages_reviewed_1based": [
+        148,
+        149,
+        150,
+        151,
+        152,
+        153
+      ],
+      "reported_gap": "19.2",
+      "source_evidence": "19.2 ist auf Seite 151 eine Unterkapitelüberschrift, keine formale Itembox. Die zwischen 19.1 und 19.3 gedruckte formale Box trägt sichtbar die quellnative Duplikatnummer 15.4.",
+      "source_file_name": "003-001l_S3_Prophylaxe-venoese-Thromboembolie-VTE_2026-04.pdf",
+      "source_id": "src-003-001l-s3-prophylaxe-venoese-thromboembolie-vte-2026-04-f82c5686f6b7"
+    },
+    {
+      "action": "Keine 4.29 ergänzt; das gültige unnummerierte Haupttextitem bleibt unter stabiler interner ID erhalten.",
+      "adjacent_formal_items": [
+        "4.28 (PDF-S. 151)",
+        "unnummerierte formale Box (PDF-S. 152)",
+        "4.30 (PDF-S. 153)"
+      ],
+      "audit_id": "gap-hcc-4-missing-29",
+      "classification": "C",
+      "classification_label": "source_native_numbering_gap",
+      "existing_formal_item_record_ids": [
+        "rec-3b4fd85be9e8c296bdca48da"
+      ],
+      "gemini_used": false,
+      "physical_pdf_pages_reviewed_1based": [
+        149,
+        150,
+        151,
+        152,
+        153,
+        154
+      ],
+      "reported_gap": "4.29",
+      "source_evidence": "Die formale Haupttextbox auf Seite 152 zeigt Empfehlungsgrad, Evidenzlevel und Konsens, aber keine gedruckte Itemnummer. Die nächste gedruckte Nummer ist 4.30.",
+      "source_file_name": "S3_LL_HCC_und_BCC_Konsultationsfassung_Langversion_6.01 (1).pdf",
+      "source_id": "src-s3-ll-hcc-und-bcc-konsultationsfassung-langversion-6-01-1-c1996068a815"
+    }
+  ],
+  "schema_version": "numbering-gap-audit-1.0.0",
+  "source_integrity": {
+    "src-003-001l-s3-prophylaxe-venoese-thromboembolie-vte-2026-04-f82c5686f6b7": true,
+    "src-s3-ll-hcc-und-bcc-konsultationsfassung-langversion-6-01-1-c1996068a815": true
+  },
+  "source_native_numbering_gap_count": 3,
+  "unnumbered_item_review": {
+    "audit_id": "hcc-page-152-unnumbered-formal-item",
+    "canonical_role": "primary",
+    "exact_text_de": "Bei irresektablem, nichtmetastasiertem pCCA, welches die Mayo-Kriterien erfüllt, kann eine Lebertransplantation unter Studienbedingungen erwogen werden.",
+    "gemini_used": false,
+    "item_number_status": "not_printed_in_source",
+    "physical_pdf_page_1based": 152,
+    "printed_page_label": "152",
+    "record_id": "rec-3b4fd85be9e8c296bdca48da",
+    "result": "valid_primary_main_body_formal_item_without_printed_number",
+    "retrieval_eligible": true,
+    "source_id": "src-s3-ll-hcc-und-bcc-konsultationsfassung-langversion-6-01-1-c1996068a815",
+    "source_item_number": null,
+    "source_zone": "main_body"
+  }
+}

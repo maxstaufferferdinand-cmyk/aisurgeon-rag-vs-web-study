@@ -1,0 +1,15 @@
+{
+  "schema_version": "github-archive-1.0.0",
+  "built_at_utc": "2026-08-30T09:45:43.137179Z",
+  "corpus_snapshot_id": "cs-f61b3d4e90089c1b890c23cb",
+  "retrieval_units": 4469,
+  "existing_corpus_embeddings_excluded": 4469,
+  "study_question_count": 100,
+  "study_result_count": 800,
+  "api_attempt_count": 802,
+  "excel_status": "passed",
+  "security_status": "passed",
+  "hash_integrity_status": "passed",
+  "historical_artifacts_modified": false,
+  "external_api_calls": 0
+}

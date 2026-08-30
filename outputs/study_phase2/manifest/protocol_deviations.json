@@ -1,0 +1,28 @@
+{
+  "deviations": [
+    {
+      "amended_requirement": "study_owner_pre_freeze_approval",
+      "deviation_id": "PD-001",
+      "mitigation": "retain all question hashes; report limitation; preserve mandatory two-reviewer blinded answer assessment and citation audit",
+      "previous_requirement": "two independent question reviewers and adjudication before freeze",
+      "question_or_gold_content_changed": false,
+      "reason": "explicit study-owner directive before any main-study call",
+      "recorded_at_utc": "2026-08-29T15:58:53.203120Z",
+      "scientific_impact": "question/gold independence is absent; clinical accuracy cannot be inferred until later independent blinded answer ratings",
+      "title": "Study-owner approval replaces independent question freeze",
+      "type": "pre_freeze_protocol_amendment"
+    },
+    {
+      "amended_cost_ceiling_usd": 500.0,
+      "cost_counters_reset": false,
+      "deviation_id": "PD-002",
+      "historical_artifacts_preserved": true,
+      "previous_cost_ceiling_usd": 400.0,
+      "reason": "explicit study-owner directive before main-study execution",
+      "recorded_at_utc": "2026-08-29T15:58:53.203120Z",
+      "title": "Cumulative Phase-2 cost ceiling increased to 500 USD",
+      "type": "pre_freeze_cost_ceiling_amendment"
+    }
+  ],
+  "schema_version": "study-protocol-amendments-1.1.0"
+}

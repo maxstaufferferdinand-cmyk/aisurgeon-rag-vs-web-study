@@ -1,0 +1,201 @@
+{
+  "blinding": {
+    "blind_exports_omit": [
+      "primary_stratum",
+      "secondary_strata",
+      "sampling_scope",
+      "routing_probe",
+      "seed_evidence",
+      "policy_canary",
+      "gold"
+    ],
+    "reviewer_orders_independent": true
+  },
+  "clinical_gold_status": "empty_pending_independent_human_review",
+  "corpus_snapshot_content_fingerprint_sha256": "f61b3d4e90089c1b890c23cb877117c74938081cd16fdcc19dffbf5b8e3ef9e7",
+  "corpus_snapshot_id": "cs-f61b3d4e90089c1b890c23cb",
+  "corpus_snapshot_manifest": "outputs/knowledge_corpus/manifests/corpus_snapshots/cs-f61b3d4e90089c1b890c23cb.json",
+  "counts": {
+    "development": 50,
+    "no_evidence_or_out_of_scope": 75,
+    "no_evidence_or_out_of_scope_percent": 25.0,
+    "test_untouched": 250,
+    "total": 300
+  },
+  "files": {
+    "README.md": {
+      "bytes": 1067,
+      "sha256": "0bb3c510941c18894af46e1244a688410fbe925e4033d3c738c3d1ae7cac2462"
+    },
+    "REVIEWER_GUIDE.md": {
+      "bytes": 2148,
+      "sha256": "4a982fdbd81753183627e32b8de73622f592ae55b4068dd7e13cc5c43aa00d48"
+    },
+    "adjudication.schema.json": {
+      "bytes": 4103,
+      "sha256": "42b264558c575ed09413f8caf74fe6f397e68948c150ab2298e8b12439568397"
+    },
+    "adjudication_template.csv": {
+      "bytes": 17305,
+      "sha256": "d1d6e5f29437c2c0ec45a82d3b8a5ebe971497dfa5cf7a3e6f0e0b9e1454a374"
+    },
+    "adjudication_template.jsonl": {
+      "bytes": 216300,
+      "sha256": "aebaf55a41b28a025defd8b28ac7c141b302bc0b5b5ad4d2d17a9dc8115ee718"
+    },
+    "annotation.schema.json": {
+      "bytes": 6598,
+      "sha256": "398b9c9bc8063306ba443340f021e1858d7ebb0ad057f50442915f44a04283f2"
+    },
+    "authoring_items.jsonl": {
+      "bytes": 502322,
+      "sha256": "7e72142cd5259722e19ad43709ed3366bcb83dbb6154aba59efadefe62b24feb"
+    },
+    "development_blind_questions.csv": {
+      "bytes": 22251,
+      "sha256": "1cec7ba4e9b538937da6369bc29e3720d2b727046b020185512a1035d6bfa937"
+    },
+    "development_blind_questions.jsonl": {
+      "bytes": 28021,
+      "sha256": "1fbc3edf4c030b6908c23e5386ef37b178d889ef9856b22f6fa4a5e8dc7ae854"
+    },
+    "metrics_plan.json": {
+      "bytes": 2443,
+      "sha256": "5bedafc601a880dc6e0b24f179bd2c3fe04093f3647e82e6b5e5f34fe17b9b20"
+    },
+    "reviewer_a_annotations.csv": {
+      "bytes": 20847,
+      "sha256": "c19ab4ad8ce3417fddb9fecc74e30f60edd9d607fc571f5dfccde12f306fd938"
+    },
+    "reviewer_a_annotations.jsonl": {
+      "bytes": 219842,
+      "sha256": "d0945a5910b464de4701217567762b91446c3f0112034e218df3a1b86b7006f4"
+    },
+    "reviewer_b_annotations.csv": {
+      "bytes": 20847,
+      "sha256": "a8aea370b1851ab208a9b61184d63f82bfa15d849122c01b7e01fdc7c66fd449"
+    },
+    "reviewer_b_annotations.jsonl": {
+      "bytes": 219842,
+      "sha256": "a3a1632766e4f666e155198285247daad6c6844f24d48c06caf800310a47a13d"
+    },
+    "test_blind_questions.csv": {
+      "bytes": 110290,
+      "sha256": "49b685793277e356a3866f096f6fed67ff2b41754bdda3312fe5bec87e6740df"
+    },
+    "test_blind_questions.jsonl": {
+      "bytes": 139500,
+      "sha256": "5c5b935a9ceefbe753d24d99ed321563f8ddf42841fb20217f4f0c5b85ec8733"
+    }
+  },
+  "input_integrity": {
+    "eligible_retrieval_unit_count": 4469,
+    "hcc_historical_exclusions_sha256": "58332c7522e99bcfb17efaf3eafc951477c6c287627b3204fc224425fda7c641",
+    "hcc_policy_canary_count": 99,
+    "retrieval_units_v2_sha256": "afcb11471b5483928f3db0c8e915f93eaa838223563a2428adc3118433d8e523",
+    "snapshot_manifest_sha256": "ec9b09cdc53bf73c63e28c150e0f081eef920c32c34edde65912b207a9da7938"
+  },
+  "limitations": [
+    "Synthetic drafts are not independent clinical validation.",
+    "Sampling seeds aid coverage but never constitute gold evidence.",
+    "Final labels require independent review and adjudication."
+  ],
+  "package_id": "hap-13fca362767b85a7947e135e",
+  "question_origin": "synthetic_draft",
+  "required_strata": [
+    "item_number",
+    "semantic_paraphrase",
+    "recommendation",
+    "statement",
+    "evidence_grade",
+    "rationale",
+    "dose",
+    "preparation",
+    "route",
+    "interval",
+    "contraindication",
+    "warning",
+    "adverse_reaction",
+    "product_substance_mapping",
+    "multi_source",
+    "guideline_smpc_conflict",
+    "near_neighbour_medicine",
+    "negation",
+    "typo",
+    "version",
+    "hcc_history_canary",
+    "consultation_draft_leakage",
+    "multi_turn",
+    "no_evidence",
+    "out_of_scope"
+  ],
+  "sampling_seed": "aisurgeon-annotation-v1-20260816",
+  "schema_version": "human-annotation-package-1.0.0",
+  "scope_counts": {
+    "evidence_candidate": 225,
+    "no_evidence_candidate": 44,
+    "out_of_scope_candidate": 31
+  },
+  "source_snapshot_created_at_utc": "2026-08-16T17:01:30.967055+00:00",
+  "stratum_counts_by_split": {
+    "development": {
+      "adverse_reaction": 2,
+      "consultation_draft_leakage": 2,
+      "contraindication": 2,
+      "dose": 2,
+      "evidence_grade": 2,
+      "guideline_smpc_conflict": 2,
+      "hcc_history_canary": 2,
+      "interval": 2,
+      "item_number": 2,
+      "multi_source": 2,
+      "multi_turn": 2,
+      "near_neighbour_medicine": 2,
+      "negation": 2,
+      "no_evidence": 2,
+      "out_of_scope": 2,
+      "preparation": 2,
+      "product_substance_mapping": 2,
+      "rationale": 2,
+      "recommendation": 2,
+      "route": 2,
+      "semantic_paraphrase": 2,
+      "statement": 2,
+      "typo": 2,
+      "version": 2,
+      "warning": 2
+    },
+    "test": {
+      "adverse_reaction": 10,
+      "consultation_draft_leakage": 10,
+      "contraindication": 10,
+      "dose": 10,
+      "evidence_grade": 10,
+      "guideline_smpc_conflict": 10,
+      "hcc_history_canary": 10,
+      "interval": 10,
+      "item_number": 10,
+      "multi_source": 10,
+      "multi_turn": 10,
+      "near_neighbour_medicine": 10,
+      "negation": 10,
+      "no_evidence": 10,
+      "out_of_scope": 10,
+      "preparation": 10,
+      "product_substance_mapping": 10,
+      "rationale": 10,
+      "recommendation": 10,
+      "route": 10,
+      "semantic_paraphrase": 10,
+      "statement": 10,
+      "typo": 10,
+      "version": 10,
+      "warning": 10
+    }
+  },
+  "test_set_policy": {
+    "release_condition": "predeclared final evaluation after development freeze",
+    "status": "sealed_unannotated",
+    "use_for_development": false
+  }
+}

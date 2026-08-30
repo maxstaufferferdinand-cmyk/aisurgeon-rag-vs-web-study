@@ -1,0 +1,88 @@
+{
+  "results": [
+    {
+      "actual_sha256": "f82c5686f6b71d42a7a43dccc9e28cd70834244ac2376fc011cbb681a757158e",
+      "expected_sha256": "f82c5686f6b71d42a7a43dccc9e28cd70834244ac2376fc011cbb681a757158e",
+      "relative_path": "source_pdfs/003-001l_S3_Prophylaxe-venoese-Thromboembolie-VTE_2026-04.pdf",
+      "source_id": "src-003-001l-s3-prophylaxe-venoese-thromboembolie-vte-2026-04-f82c5686f6b7",
+      "unchanged": true
+    },
+    {
+      "actual_sha256": "44df7e615f31f7386706169183909bec7a479081012914359d66cf887f051587",
+      "expected_sha256": "44df7e615f31f7386706169183909bec7a479081012914359d66cf887f051587",
+      "relative_path": "source_pdfs/032-010OLl_Exokrines-Pankreaskarzinom_2025-06.pdf",
+      "source_id": "src-032-010oll-exokrines-pankreaskarzinom-2025-06-44df7e615f31",
+      "unchanged": true
+    },
+    {
+      "actual_sha256": "1c24cd77ce94e05b0cf0719cc4d75afe2b4a7703059f709cba67457cf33c928a",
+      "expected_sha256": "1c24cd77ce94e05b0cf0719cc4d75afe2b4a7703059f709cba67457cf33c928a",
+      "relative_path": "source_pdfs/5-fu-medac-50-mg-ml-injektionsloesung.pdf",
+      "source_id": "src-5-fu-medac-50-mg-ml-injektionsloesung-1c24cd77ce94",
+      "unchanged": true
+    },
+    {
+      "actual_sha256": "0af3b0c0c51064a253c8368585eaebc833c912bdea92b4d03c1b42be50a1a562",
+      "expected_sha256": "0af3b0c0c51064a253c8368585eaebc833c912bdea92b4d03c1b42be50a1a562",
+      "relative_path": "source_pdfs/abraxane-epar-product-information_de.pdf",
+      "source_id": "src-abraxane-epar-product-information-de-0af3b0c0c510",
+      "unchanged": true
+    },
+    {
+      "actual_sha256": "661ce7c738c450ccbbab5e54a4a1fd82cc173451a206f4a0bc245d1a48defe60",
+      "expected_sha256": "661ce7c738c450ccbbab5e54a4a1fd82cc173451a206f4a0bc245d1a48defe60",
+      "relative_path": "source_pdfs/cisplatin-teva-r-1-mg-ml-konzentrat.pdf",
+      "source_id": "src-cisplatin-teva-r-1-mg-ml-konzentrat-661ce7c738c4",
+      "unchanged": true
+    },
+    {
+      "actual_sha256": "030922bd0124b6db2d0b5261cbe8c92ad4663170762a56191c4134baf87f6e39",
+      "expected_sha256": "030922bd0124b6db2d0b5261cbe8c92ad4663170762a56191c4134baf87f6e39",
+      "relative_path": "source_pdfs/eliquis-epar-product-information_de.pdf",
+      "source_id": "src-eliquis-epar-product-information-de-030922bd0124",
+      "unchanged": true
+    },
+    {
+      "actual_sha256": "2aebd083c6f91390cfa4e6bd71470b5e7913b5f740583c2f4a9727f4d21b4f42",
+      "expected_sha256": "2aebd083c6f91390cfa4e6bd71470b5e7913b5f740583c2f4a9727f4d21b4f42",
+      "relative_path": "source_pdfs/enhertu-epar-product-information_de.pdf",
+      "source_id": "src-enhertu-epar-product-information-de-2aebd083c6f9",
+      "unchanged": true
+    },
+    {
+      "actual_sha256": "9ad38681767fde22dd61e81f97fe62136e5106b058849e5419703dd58b7ed837",
+      "expected_sha256": "9ad38681767fde22dd61e81f97fe62136e5106b058849e5419703dd58b7ed837",
+      "relative_path": "source_pdfs/keytruda-epar-product-information_de.pdf",
+      "source_id": "src-keytruda-epar-product-information-de-9ad38681767f",
+      "unchanged": true
+    },
+    {
+      "actual_sha256": "e98bd4b20729c5c2b07bd2c99bc64d1f5465b4f57da2f9d68197ee970b8eec2b",
+      "expected_sha256": "e98bd4b20729c5c2b07bd2c99bc64d1f5465b4f57da2f9d68197ee970b8eec2b",
+      "relative_path": "source_pdfs/lixiana-epar-product-information_de.pdf",
+      "source_id": "src-lixiana-epar-product-information-de-e98bd4b20729",
+      "unchanged": true
+    },
+    {
+      "actual_sha256": "85be2b1611b747104d2bf49598f704c278d74b49d2fead35204d93ed4e3df872",
+      "expected_sha256": "85be2b1611b747104d2bf49598f704c278d74b49d2fead35204d93ed4e3df872",
+      "relative_path": "source_pdfs/plavix-epar-product-information_de.pdf",
+      "source_id": "src-plavix-epar-product-information-de-85be2b1611b7",
+      "unchanged": true
+    },
+    {
+      "actual_sha256": "c1996068a81551f2fd14a9f4c5384d0d7d82e5a412d0e6b5d4343e495a9118b1",
+      "expected_sha256": "c1996068a81551f2fd14a9f4c5384d0d7d82e5a412d0e6b5d4343e495a9118b1",
+      "relative_path": "source_pdfs/S3_LL_HCC_und_BCC_Konsultationsfassung_Langversion_6.01 (1).pdf",
+      "source_id": "src-s3-ll-hcc-und-bcc-konsultationsfassung-langversion-6-01-1-c1996068a815",
+      "unchanged": true
+    },
+    {
+      "actual_sha256": "c44980ed062d9fa6a6b6a869b2d8eff760357d7719f8934d00e3dca3f5ba7fd4",
+      "expected_sha256": "c44980ed062d9fa6a6b6a869b2d8eff760357d7719f8934d00e3dca3f5ba7fd4",
+      "relative_path": "source_pdfs/xarelto-epar-product-information_de.pdf",
+      "source_id": "src-xarelto-epar-product-information-de-c44980ed062d",
+      "unchanged": true
+    }
+  ]
+}

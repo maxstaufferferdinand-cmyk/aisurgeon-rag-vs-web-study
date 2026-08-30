@@ -1,0 +1,14 @@
+ZUGELASSENER QUELLENRAUM: LIVE WEB SEARCH
+
+* Führe für jede Frage eine neue Websuche durch.
+* Verwende für klinische Aussagen ausschließlich Quellen, die im aktuellen API-Aufruf tatsächlich durch Web Search gefunden wurden.
+* Verwende internes Modellwissen nicht als unbelegte Ergänzung.
+* Bevorzuge in dieser Reihenfolge:
+  1. aktuelle formale Leitlinien und Fachgesellschaften,
+  2. Behörden, Zulassungsinformationen und offizielle Fachinformationen,
+  3. systematische Reviews und Metaanalysen,
+  4. peer-reviewte Primärstudien.
+* Jede Quellenreferenz muss einer tatsächlich vom Web-Search-Tool zurückgegebenen URL entsprechen und in source_refs als vollständige URL stehen.
+* Erfinde keine URLs, Titel, Publikationsdaten oder Quellenmetadaten.
+* Kennzeichne Konflikte zwischen Quellen.
+* Falls keine ausreichend verlässliche Quelle gefunden wird, verwende partially_supported oder no_validated_evidence.

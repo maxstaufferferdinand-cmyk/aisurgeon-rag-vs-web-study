@@ -1,0 +1,134 @@
+{
+  "checks": {
+    "active_cost_gate_is_exactly_500": true,
+    "all_coverage_audits_executed": true,
+    "bridge_unmatched_not_error_preserved": true,
+    "covered_exactly_80": true,
+    "development_questions_not_reused": true,
+    "directed_bridge_only": true,
+    "former_400_gate_is_superseded_not_active": true,
+    "main_study_state_consistent": true,
+    "mi_clear_all_eight_categories": true,
+    "no_hcc_history_expected_gold": true,
+    "no_secret_markers_in_study_outputs": true,
+    "not_covered_exactly_20": true,
+    "official_model_availability_verified": true,
+    "owner_approval_truthfully_scoped": true,
+    "owner_approved_input_hash_exact": true,
+    "pilot_complete_request_telemetry": true,
+    "pilot_cost_projection_within_500": true,
+    "pilot_exactly_20_attempts": true,
+    "pilot_exactly_20_results": true,
+    "pilot_http_200": true,
+    "pilot_no_retries": true,
+    "pilot_projection_includes_all_three_attempts": true,
+    "pilot_provenance_validation_terminal": true,
+    "pilot_returned_models_match_requested": true,
+    "pilot_unique_attempt_ids": true,
+    "pilot_unique_run_ids": true,
+    "planned_results_exactly_800": true,
+    "prefreeze_amendments_recorded": true,
+    "protocol_version_is_owner_amendment": true,
+    "questions_exactly_100": true,
+    "refine_44_items": true,
+    "study_owner_freeze_gate_consistent": true,
+    "two_model_configurations": true,
+    "two_runs": true,
+    "two_systems": true,
+    "unique_run_ids": true
+  },
+  "excel": {
+    "files": [
+      {
+        "autofilter": "A1:BV801",
+        "file": "${PROJECT_ROOT}/outputs/study_phase2/excel/AISurgeon_RAG_vs_WEB_study_master.xlsx",
+        "freeze_panes": "A2",
+        "result_rows": 800,
+        "sheets": [
+          "00_README",
+          "01_MANIFEST",
+          "02_QUESTIONS_GOLD",
+          "03_ALL_RESULTS",
+          "04_API_ATTEMPTS",
+          "05_CLAIMS_SOURCES",
+          "06_RESOURCE_SUMMARY",
+          "07_REPRODUCIBILITY",
+          "08_RATINGS_BLINDED",
+          "09_ADJUDICATION",
+          "10_FINAL_STATISTICS",
+          "11_REFINE_MI_CLEAR"
+        ],
+        "status": "passed",
+        "unique_run_ids": 800
+      },
+      {
+        "autofilter": "A1:BV201",
+        "file": "${PROJECT_ROOT}/outputs/study_phase2/excel/GPT55_MEDIUM_WEB.xlsx",
+        "freeze_panes": "A2",
+        "result_rows": 200,
+        "sheets": [
+          "00_README",
+          "03_ALL_RESULTS"
+        ],
+        "status": "passed",
+        "unique_run_ids": 200
+      },
+      {
+        "autofilter": "A1:BV201",
+        "file": "${PROJECT_ROOT}/outputs/study_phase2/excel/GPT55_MEDIUM_RAG.xlsx",
+        "freeze_panes": "A2",
+        "result_rows": 200,
+        "sheets": [
+          "00_README",
+          "03_ALL_RESULTS"
+        ],
+        "status": "passed",
+        "unique_run_ids": 200
+      },
+      {
+        "autofilter": "A1:BV201",
+        "file": "${PROJECT_ROOT}/outputs/study_phase2/excel/GPT56_SOL_HIGH_WEB.xlsx",
+        "freeze_panes": "A2",
+        "result_rows": 200,
+        "sheets": [
+          "00_README",
+          "03_ALL_RESULTS"
+        ],
+        "status": "passed",
+        "unique_run_ids": 200
+      },
+      {
+        "autofilter": "A1:BV201",
+        "file": "${PROJECT_ROOT}/outputs/study_phase2/excel/GPT56_SOL_HIGH_RAG.xlsx",
+        "freeze_panes": "A2",
+        "result_rows": 200,
+        "sheets": [
+          "00_README",
+          "03_ALL_RESULTS"
+        ],
+        "status": "passed",
+        "unique_run_ids": 200
+      }
+    ],
+    "status": "passed"
+  },
+  "human_freeze_present": true,
+  "main_results_present": true,
+  "model_availability_verification": {
+    "status": "verified",
+    "verified_at_utc": "2026-08-29T16:00:24.147279Z"
+  },
+  "pilot": {
+    "attempts": 20,
+    "conservative_total_projection_usd": 394.0843100800001,
+    "cost_limit_usd": 500.0,
+    "results": 20,
+    "validator_status": {
+      "accepted": 19,
+      "downgraded": 0,
+      "rejected": 1
+    }
+  },
+  "secret_paths": [],
+  "status": "passed"
+}

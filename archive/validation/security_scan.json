@@ -1,0 +1,88 @@
+{
+  "schema_version": "repository-security-scan-1.0.0",
+  "scope": "all project files except .git internals, virtual environments and cache trees",
+  "status": "passed",
+  "scanned_file_count": 1858,
+  "blocking_findings": [],
+  "expected_excluded_findings": [
+    {
+      "path": ".env.retrieval",
+      "finding_class": "nonempty_secret_environment_value",
+      "included": false
+    },
+    {
+      "path": "outputs/knowledge_corpus/qa/backups/targeted_repair_20260816T082738Z/src/aisurgeon_decentralised/knowledge_corpus_pipeline.py",
+      "finding_class": "absolute_user_path",
+      "included": false
+    },
+    {
+      "path": "outputs/study_phase2/analysis/claims_sources.csv",
+      "finding_class": "absolute_user_path",
+      "included": false
+    },
+    {
+      "path": "outputs/study_phase2/excel/AISurgeon_RAG_vs_WEB_study_master.xlsx",
+      "finding_class": "absolute_user_path:03_ALL_RESULTS",
+      "included": false
+    },
+    {
+      "path": "outputs/study_phase2/excel/AISurgeon_RAG_vs_WEB_study_master.xlsx",
+      "finding_class": "absolute_user_path:05_CLAIMS_SOURCES",
+      "included": false
+    },
+    {
+      "path": "outputs/study_phase2/excel/GPT55_MEDIUM_WEB.xlsx",
+      "finding_class": "absolute_user_path:03_ALL_RESULTS",
+      "included": false
+    },
+    {
+      "path": "outputs/study_phase2/excel/GPT56_SOL_HIGH_WEB.xlsx",
+      "finding_class": "absolute_user_path:03_ALL_RESULTS",
+      "included": false
+    },
+    {
+      "path": "outputs/study_phase2/ratings/citation_audit.xlsx",
+      "finding_class": "absolute_user_path:CITATION_AUDIT",
+      "included": false
+    },
+    {
+      "path": "outputs/study_phase2/results/planned_results.csv",
+      "finding_class": "absolute_user_path",
+      "included": false
+    },
+    {
+      "path": "outputs/study_phase2/results/planned_results.jsonl",
+      "finding_class": "absolute_user_path",
+      "included": false
+    },
+    {
+      "path": "outputs/study_phase2/results/study_results.csv",
+      "finding_class": "absolute_user_path",
+      "included": false
+    },
+    {
+      "path": "outputs/study_phase2/results/study_results.jsonl",
+      "finding_class": "absolute_user_path",
+      "included": false
+    }
+  ],
+  "temporary_office_files": [],
+  "files_over_50_mib": [],
+  "files_over_100_mib": [],
+  "question_and_reviewer_checks": {
+    "question_count": 100,
+    "all_synthetic": true,
+    "patient_identifier_fields_present": false,
+    "reviewer_name_recorded": false,
+    "signature_recorded": false,
+    "independent_clinical_question_validation_claimed": false
+  },
+  "operational_data_policy": {
+    "raw_api_attempts_included": false,
+    "redacted_attempts_included": true,
+    "source_pdfs_included": false,
+    "canonical_fulltext_included": false,
+    "embedding_vectors_included": false
+  },
+  "note": "Only finding classes and file paths are recorded; matched values are never persisted."
+}

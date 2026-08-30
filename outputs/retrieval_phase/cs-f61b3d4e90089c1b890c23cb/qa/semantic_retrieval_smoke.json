@@ -1,0 +1,26 @@
+{
+  "checkpoint_relative_path": "outputs/retrieval_phase/cs-f61b3d4e90089c1b890c23cb/qa/semantic_paraphrase_vector.json.gz",
+  "completed_at_utc": "2026-08-16T17:44:57.943240+00:00",
+  "corpus_snapshot_id": "cs-f61b3d4e90089c1b890c23cb",
+  "dimension": 1536,
+  "estimated_cost_usd": 1.02e-06,
+  "expected_rank_at_20": 1,
+  "expected_retrieval_unit_id": "ru-17bac05292fff9021867e999",
+  "input_tokens": 51,
+  "model": "text-embedding-3-small",
+  "passed": true,
+  "pricing_as_of": "2026-08-16",
+  "provider_calls_this_run": 0,
+  "query_sha256": "435dcd76f348627b30a2762de2a1517f0c6e0bd4fbaa2fcfe8f05638745c929b",
+  "query_text_logged_in_report": false,
+  "schema_version": "semantic-retrieval-smoke-1.0.0",
+  "synthetic_non_patient_query": true,
+  "top_5_ids": [
+    "ru-17bac05292fff9021867e999",
+    "ru-1cd8192d7030d56f550f9bac",
+    "ru-5ec7b47f24c19b3a0c7a13e2",
+    "ru-b2bd12c0d3d38ca2ba6543ca",
+    "ru-3ce072b379019e998f90dc73"
+  ],
+  "vector_l2_norm": 1.0003545266466414
+}

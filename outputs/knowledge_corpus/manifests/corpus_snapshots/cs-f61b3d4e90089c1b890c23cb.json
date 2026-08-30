@@ -1,0 +1,448 @@
+{
+  "artifact_integrity": [
+    {
+      "line_count": 12492,
+      "relative_path": "outputs/retrieval_phase/cs-f61b3d4e90089c1b890c23cb/provenance/evidence_spans.jsonl",
+      "sha256": "398b518fa08e41e3e74795b4eb2476966709359317b2f29c773069cf38edd264",
+      "size_bytes": 12885305
+    },
+    {
+      "line_count": 4469,
+      "relative_path": "outputs/retrieval_phase/cs-f61b3d4e90089c1b890c23cb/provenance/retrieval_units_v2.jsonl",
+      "sha256": "afcb11471b5483928f3db0c8e915f93eaa838223563a2428adc3118433d8e523",
+      "size_bytes": 37948787
+    },
+    {
+      "line_count": 195,
+      "relative_path": "outputs/retrieval_phase/cs-f61b3d4e90089c1b890c23cb/provenance/semantic_relations.jsonl",
+      "sha256": "329c55b60a95f425ab22785ef2a4ef13d8ab3fc22240acf98cc3f9cc9d617a8f",
+      "size_bytes": 94587
+    },
+    {
+      "line_count": 12,
+      "relative_path": "outputs/retrieval_phase/cs-f61b3d4e90089c1b890c23cb/provenance/source_versions.jsonl",
+      "sha256": "5e92fb676bcd9b72aeeebf736743fba987e1b050951c6510e9501dd46ce6e5cc",
+      "size_bytes": 15108
+    }
+  ],
+  "artifacts": {
+    "evidence_spans": "outputs/retrieval_phase/cs-f61b3d4e90089c1b890c23cb/provenance/evidence_spans.jsonl",
+    "retrieval_units_v2": "outputs/retrieval_phase/cs-f61b3d4e90089c1b890c23cb/provenance/retrieval_units_v2.jsonl",
+    "semantic_relations": "outputs/retrieval_phase/cs-f61b3d4e90089c1b890c23cb/provenance/semantic_relations.jsonl",
+    "source_versions": "outputs/retrieval_phase/cs-f61b3d4e90089c1b890c23cb/provenance/source_versions.jsonl"
+  },
+  "canonical_files": [
+    {
+      "line_count": 19,
+      "relative_path": "outputs/knowledge_corpus/canonical/active_substance_evidence.jsonl",
+      "sha256": "9c00601f5689a8d413807ca17752d53d94246aa615be54aaabf3148410144856",
+      "size_bytes": 75985
+    },
+    {
+      "line_count": 10,
+      "relative_path": "outputs/knowledge_corpus/canonical/active_substances.jsonl",
+      "sha256": "8149fa22821bf3e2e646202645f5674c6a07871e59d28d62d61789dace19935c",
+      "size_bytes": 45887
+    },
+    {
+      "line_count": 577,
+      "relative_path": "outputs/knowledge_corpus/canonical/adverse_reactions.jsonl",
+      "sha256": "f3e3af5b4eebd75ea548bd93e50e6c8e14b78383c2b48b5733ee658b6e60c5d6",
+      "size_bytes": 2542767
+    },
+    {
+      "line_count": 324,
+      "relative_path": "outputs/knowledge_corpus/canonical/chapter_structure.jsonl",
+      "sha256": "8969dc6075573f5f255350333039a30a3d9e8b00f984ce33f9e292da9e6d4abd",
+      "size_bytes": 1206647
+    },
+    {
+      "line_count": 15,
+      "relative_path": "outputs/knowledge_corpus/canonical/compositions.jsonl",
+      "sha256": "5cbc2bdab65f186bdfb82cd574e28796691fa65098c0918d850fe4a8a96fd911",
+      "size_bytes": 63778
+    },
+    {
+      "line_count": 69,
+      "relative_path": "outputs/knowledge_corpus/canonical/contraindications.jsonl",
+      "sha256": "16c54c151bc84b387e81d9c3152bbc56bcf48a616be70b55d675a3ef62ffdb55",
+      "size_bytes": 311558
+    },
+    {
+      "line_count": 30,
+      "relative_path": "outputs/knowledge_corpus/canonical/document_metadata_extracted.jsonl",
+      "sha256": "6d70f00669f9b1708d5845ea23746af994abd3b91eddaa4cfa1c09528713c146",
+      "size_bytes": 142179
+    },
+    {
+      "line_count": 12,
+      "relative_path": "outputs/knowledge_corpus/canonical/documents.jsonl",
+      "sha256": "a5dc33da8e359fffa04af6d185ccbab1cfe298a3b8012a2fd7535c21961af178",
+      "size_bytes": 41451
+    },
+    {
+      "line_count": 510,
+      "relative_path": "outputs/knowledge_corpus/canonical/dosing_rules.jsonl",
+      "sha256": "6a835d797b97453df2cd1967fa1d7f79da6cf33ddbb83eaca9f311584d40ed9e",
+      "size_bytes": 2440717
+    },
+    {
+      "line_count": 40,
+      "relative_path": "outputs/knowledge_corpus/canonical/drug_product_evidence.jsonl",
+      "sha256": "f695a57db8f369f13aa77d6c000d142706f3ff760de5285132f015d81ae38665",
+      "size_bytes": 170653
+    },
+    {
+      "line_count": 28,
+      "relative_path": "outputs/knowledge_corpus/canonical/drug_products.jsonl",
+      "sha256": "0a5fe6bb7854883d813f2b6062628e304682d7209219b2c2ad75843e08e1180e",
+      "size_bytes": 115687
+    },
+    {
+      "line_count": 59,
+      "relative_path": "outputs/knowledge_corpus/canonical/excipients.jsonl",
+      "sha256": "4367f4fe11749bf2a2b338205562218c7148f3e6a883939960281266a286eb28",
+      "size_bytes": 233405
+    },
+    {
+      "line_count": 558,
+      "relative_path": "outputs/knowledge_corpus/canonical/formal_items.jsonl",
+      "sha256": "8e9083005180ddc5ee26fad117124c468c8383efc0be9e12a793f0af426289a1",
+      "size_bytes": 2710288
+    },
+    {
+      "line_count": 8,
+      "relative_path": "outputs/knowledge_corpus/canonical/grading_systems.jsonl",
+      "sha256": "ef622837ce4c2c373f5a0e5f8b0810f4db1d757c2f6f36894c952e894be8cac0",
+      "size_bytes": 36911
+    },
+    {
+      "line_count": 2350,
+      "relative_path": "outputs/knowledge_corpus/canonical/guideline_references.jsonl",
+      "sha256": "d2e3cd3cfff49092528d24d1cc09778797379ad36aca32098f24491132914adc",
+      "size_bytes": 10131323
+    },
+    {
+      "line_count": 19,
+      "relative_path": "outputs/knowledge_corpus/canonical/incompatibilities.jsonl",
+      "sha256": "2ec14b13435863c1d5763344d801e0d594984cd63482db5bd2832b287dfa4db9",
+      "size_bytes": 73726
+    },
+    {
+      "line_count": 206,
+      "relative_path": "outputs/knowledge_corpus/canonical/interactions.jsonl",
+      "sha256": "16145e97d7808b0c16a1b64d5fcb3c681beb3b255f134511bbf96db2c6ea78d1",
+      "size_bytes": 1005981
+    },
+    {
+      "line_count": 30,
+      "relative_path": "outputs/knowledge_corpus/canonical/overdose.jsonl",
+      "sha256": "f1a3d773ab207f549894fc78d4520b44a6b64b3e1d39410669e3a4d1be8f09dc",
+      "size_bytes": 177331
+    },
+    {
+      "line_count": 684,
+      "relative_path": "outputs/knowledge_corpus/canonical/pharmacodynamics.jsonl",
+      "sha256": "a4a5a3ec9979a5c2936097db98a0f3911d784af013943cc87829f58ecd99ff9d",
+      "size_bytes": 3821669
+    },
+    {
+      "line_count": 154,
+      "relative_path": "outputs/knowledge_corpus/canonical/pharmacokinetics.jsonl",
+      "sha256": "dd016e81e4761d83b618e250e559f1c9e5e97e9940fe4fa228110d7eb289d9f6",
+      "size_bytes": 863967
+    },
+    {
+      "line_count": 868,
+      "relative_path": "outputs/knowledge_corpus/canonical/pharmacology.jsonl",
+      "sha256": "46b1d5bda3811a49a9661f98887b95c5dc9baa38640c004103c88e5c5f389d5b",
+      "size_bytes": 4862967
+    },
+    {
+      "line_count": 63,
+      "relative_path": "outputs/knowledge_corpus/canonical/pregnancy_lactation_fertility.jsonl",
+      "sha256": "0c3b423c93e51a1a526c5bee9df2f81c1677d963463ea97b7cda5cd0eab8a002",
+      "size_bytes": 318022
+    },
+    {
+      "line_count": 63,
+      "relative_path": "outputs/knowledge_corpus/canonical/preparation_administration.jsonl",
+      "sha256": "9ec366a1f19f954576b0fc7656e612430cd5622b7e3185617bad70f91e6f38ae",
+      "size_bytes": 335454
+    },
+    {
+      "line_count": 555,
+      "relative_path": "outputs/knowledge_corpus/canonical/rationale_blocks.jsonl",
+      "sha256": "f8f8fc08255813f7a332c9820764993428ba7d53e17c05e442aa5e32aed13806",
+      "size_bytes": 3862707
+    },
+    {
+      "line_count": 93,
+      "relative_path": "outputs/knowledge_corpus/canonical/regulatory_metadata.jsonl",
+      "sha256": "7c1be239979d41bed39a5af23701f545a1411d9a8ab969accb9f9fcca647c664",
+      "size_bytes": 377118
+    },
+    {
+      "line_count": 51,
+      "relative_path": "outputs/knowledge_corpus/canonical/storage_handling.jsonl",
+      "sha256": "d46ee45900e45f9154de842f8295f51383867c352dbf8730f97edde5c3dab383",
+      "size_bytes": 213155
+    },
+    {
+      "line_count": 275,
+      "relative_path": "outputs/knowledge_corpus/canonical/tables_figures_algorithms.jsonl",
+      "sha256": "c5d216c6c52996059a8dea075d653fc084b88c8d92d43e46261a01c9ceb44920",
+      "size_bytes": 2041534
+    },
+    {
+      "line_count": 121,
+      "relative_path": "outputs/knowledge_corpus/canonical/therapeutic_indications.jsonl",
+      "sha256": "eca290d7d7e6ffbdebfe4e9eef73bdab027d76de14416e67cf34108f41aeb60c",
+      "size_bytes": 556196
+    },
+    {
+      "line_count": 433,
+      "relative_path": "outputs/knowledge_corpus/canonical/warnings.jsonl",
+      "sha256": "bd7a2130065567aa260c7ba68c8169ff1225dc60cf5375d878e37455bf95f85b",
+      "size_bytes": 2103899
+    }
+  ],
+  "canonical_record_count": 7306,
+  "canonical_source_of_truth": "outputs/knowledge_corpus/canonical/*.jsonl",
+  "content_fingerprint_sha256": "f61b3d4e90089c1b890c23cb877117c74938081cd16fdcc19dffbf5b8e3ef9e7",
+  "corpus_snapshot_id": "cs-f61b3d4e90089c1b890c23cb",
+  "created_at_utc": "2026-08-16T17:01:30.967055+00:00",
+  "eligibility_policy_statistics": {
+    "consultation_draft_sources": 1,
+    "document_component_counts": {
+      "guideline": 1263,
+      "smPC": 3206
+    },
+    "eligible_canonical_records": 4794,
+    "eligible_retrieval_units": 4469,
+    "excluded_hcc_historical_records": 99,
+    "ineligible_canonical_records": 2512,
+    "secondary_formal_items_excluded": 125
+  },
+  "evidence_span_count": 12492,
+  "extraction_pipeline_version": {
+    "canonical_schema": "knowledge-corpus-1.0.0",
+    "gemini_reused_in_retrieval_phase": false,
+    "model": "gemini-3.5-flash",
+    "prompt": "clinical-corpus-de-v1.2.0",
+    "repair_overlay": "targeted-repair-20260816-v2-final-gap-policy"
+  },
+  "known_qa_limitations": [
+    {
+      "artifact": "outputs/knowledge_corpus/qa/unresolved_items.csv",
+      "code": "open_review_flags",
+      "count": 2785,
+      "detail": "Open review-severity flags remain; a header-only targeted repair queue does not mean zero QA limitations."
+    },
+    {
+      "code": "quote_not_locally_verified",
+      "count": 710
+    },
+    {
+      "code": "dosing_fields_not_explicit_or_missing",
+      "count": 440
+    },
+    {
+      "code": "dose_value_not_explicit",
+      "count": 273
+    },
+    {
+      "code": "adverse_reaction_frequency_not_explicit_or_missing",
+      "count": 264
+    },
+    {
+      "code": "formal_item_number_unclear",
+      "count": 177
+    },
+    {
+      "code": "unresolved_reference_links",
+      "count": 154
+    },
+    {
+      "code": "formal_candidate_pages_without_item",
+      "count": 12
+    },
+    {
+      "code": "technical_scope_only",
+      "detail": "Technical extraction coverage and provenance completeness are not clinical accuracy guarantees."
+    }
+  ],
+  "page_count": 2060,
+  "physical_canonical_jsonl_rows": 8224,
+  "postgres_role": "regenerable_index_only",
+  "previous_corpus_snapshot_id": "cs-d248f3d2c72bbaadd8fbe89d",
+  "record_counts": {
+    "active_substance": 19,
+    "adverse_reaction": 577,
+    "chapter_structure": 324,
+    "composition": 15,
+    "contraindication": 69,
+    "document_metadata": 30,
+    "dosing_rule": 510,
+    "drug_product": 40,
+    "excipient": 59,
+    "formal_item": 558,
+    "grading_system": 8,
+    "guideline_reference": 2350,
+    "incompatibility": 19,
+    "interaction": 206,
+    "overdose": 30,
+    "pharmacodynamics": 684,
+    "pharmacokinetics": 154,
+    "pregnancy_lactation_fertility": 63,
+    "preparation_administration": 63,
+    "rationale_block": 555,
+    "regulatory_metadata": 93,
+    "storage_handling": 51,
+    "table_figure_algorithm": 275,
+    "therapeutic_indication": 121,
+    "warning": 433
+  },
+  "record_partition_policy": [
+    "active_substance_evidence.jsonl",
+    "adverse_reactions.jsonl",
+    "chapter_structure.jsonl",
+    "compositions.jsonl",
+    "contraindications.jsonl",
+    "document_metadata_extracted.jsonl",
+    "dosing_rules.jsonl",
+    "drug_product_evidence.jsonl",
+    "excipients.jsonl",
+    "formal_items.jsonl",
+    "grading_systems.jsonl",
+    "guideline_references.jsonl",
+    "incompatibilities.jsonl",
+    "interactions.jsonl",
+    "overdose.jsonl",
+    "pharmacodynamics.jsonl",
+    "pharmacokinetics.jsonl",
+    "pregnancy_lactation_fertility.jsonl",
+    "preparation_administration.jsonl",
+    "rationale_blocks.jsonl",
+    "regulatory_metadata.jsonl",
+    "storage_handling.jsonl",
+    "tables_figures_algorithms.jsonl",
+    "therapeutic_indications.jsonl",
+    "warnings.jsonl"
+  ],
+  "reported_baseline_discrepancies": [
+    {
+      "delta": -116,
+      "explanation": "4,585 is present only in the pre-final-policy backup; the current post-policy source of truth and validator both contain 4,469.",
+      "metric": "retrieval_unit_count",
+      "reported": 4585,
+      "verified": 4469
+    },
+    {
+      "explanation": "The final repair added 29 formal records; totals and primary/secondary policy classes must not be conflated.",
+      "metric": "formal_item_count",
+      "reported": 529,
+      "verified_primary": 433,
+      "verified_secondary": 125,
+      "verified_total": 558
+    },
+    {
+      "explanation": "Two distinct VTE main-text records preserve printed_source_item_number=15.4 and deliberately keep source_item_number=null.",
+      "metric": "printed_duplicate_15.4_records",
+      "reported": 1,
+      "verified": 2
+    }
+  ],
+  "retrieval_pipeline_version": "retrieval-phase-1.2.0",
+  "retrieval_unit_count": 4469,
+  "schema_version": "corpus-snapshot-1.0.0",
+  "schema_version_retrieval": "retrieval-provenance-1.0.0",
+  "semantic_relation_count": 195,
+  "source_count": 12,
+  "source_pdfs": [
+    {
+      "file_size_bytes": 3805273,
+      "page_count": 294,
+      "relative_path": "source_pdfs/003-001l_S3_Prophylaxe-venoese-Thromboembolie-VTE_2026-04.pdf",
+      "source_id": "src-003-001l-s3-prophylaxe-venoese-thromboembolie-vte-2026-04-f82c5686f6b7",
+      "source_sha256": "f82c5686f6b71d42a7a43dccc9e28cd70834244ac2376fc011cbb681a757158e"
+    },
+    {
+      "file_size_bytes": 6573095,
+      "page_count": 282,
+      "relative_path": "source_pdfs/032-010OLl_Exokrines-Pankreaskarzinom_2025-06.pdf",
+      "source_id": "src-032-010oll-exokrines-pankreaskarzinom-2025-06-44df7e615f31",
+      "source_sha256": "44df7e615f31f7386706169183909bec7a479081012914359d66cf887f051587"
+    },
+    {
+      "file_size_bytes": 95907,
+      "page_count": 7,
+      "relative_path": "source_pdfs/5-fu-medac-50-mg-ml-injektionsloesung.pdf",
+      "source_id": "src-5-fu-medac-50-mg-ml-injektionsloesung-1c24cd77ce94",
+      "source_sha256": "1c24cd77ce94e05b0cf0719cc4d75afe2b4a7703059f709cba67457cf33c928a"
+    },
+    {
+      "file_size_bytes": 631310,
+      "page_count": 51,
+      "relative_path": "source_pdfs/abraxane-epar-product-information_de.pdf",
+      "source_id": "src-abraxane-epar-product-information-de-0af3b0c0c510",
+      "source_sha256": "0af3b0c0c51064a253c8368585eaebc833c912bdea92b4d03c1b42be50a1a562"
+    },
+    {
+      "file_size_bytes": 138204,
+      "page_count": 12,
+      "relative_path": "source_pdfs/cisplatin-teva-r-1-mg-ml-konzentrat.pdf",
+      "source_id": "src-cisplatin-teva-r-1-mg-ml-konzentrat-661ce7c738c4",
+      "source_sha256": "661ce7c738c450ccbbab5e54a4a1fd82cc173451a206f4a0bc245d1a48defe60"
+    },
+    {
+      "file_size_bytes": 2455435,
+      "page_count": 204,
+      "relative_path": "source_pdfs/eliquis-epar-product-information_de.pdf",
+      "source_id": "src-eliquis-epar-product-information-de-030922bd0124",
+      "source_sha256": "030922bd0124b6db2d0b5261cbe8c92ad4663170762a56191c4134baf87f6e39"
+    },
+    {
+      "file_size_bytes": 1522334,
+      "page_count": 59,
+      "relative_path": "source_pdfs/enhertu-epar-product-information_de.pdf",
+      "source_id": "src-enhertu-epar-product-information-de-2aebd083c6f9",
+      "source_sha256": "2aebd083c6f91390cfa4e6bd71470b5e7913b5f740583c2f4a9727f4d21b4f42"
+    },
+    {
+      "file_size_bytes": 10361122,
+      "page_count": 393,
+      "relative_path": "source_pdfs/keytruda-epar-product-information_de.pdf",
+      "source_id": "src-keytruda-epar-product-information-de-9ad38681767f",
+      "source_sha256": "9ad38681767fde22dd61e81f97fe62136e5106b058849e5419703dd58b7ed837"
+    },
+    {
+      "file_size_bytes": 881599,
+      "page_count": 73,
+      "relative_path": "source_pdfs/lixiana-epar-product-information_de.pdf",
+      "source_id": "src-lixiana-epar-product-information-de-e98bd4b20729",
+      "source_sha256": "e98bd4b20729c5c2b07bd2c99bc64d1f5465b4f57da2f9d68197ee970b8eec2b"
+    },
+    {
+      "file_size_bytes": 407221,
+      "page_count": 56,
+      "relative_path": "source_pdfs/plavix-epar-product-information_de.pdf",
+      "source_id": "src-plavix-epar-product-information-de-85be2b1611b7",
+      "source_sha256": "85be2b1611b747104d2bf49598f704c278d74b49d2fead35204d93ed4e3df872"
+    },
+    {
+      "file_size_bytes": 7128923,
+      "page_count": 282,
+      "relative_path": "source_pdfs/S3_LL_HCC_und_BCC_Konsultationsfassung_Langversion_6.01 (1).pdf",
+      "source_id": "src-s3-ll-hcc-und-bcc-konsultationsfassung-langversion-6-01-1-c1996068a815",
+      "source_sha256": "c1996068a81551f2fd14a9f4c5384d0d7d82e5a412d0e6b5d4343e495a9118b1"
+    },
+    {
+      "file_size_bytes": 4513447,
+      "page_count": 347,
+      "relative_path": "source_pdfs/xarelto-epar-product-information_de.pdf",
+      "source_id": "src-xarelto-epar-product-information-de-c44980ed062d",
+      "source_sha256": "c44980ed062d9fa6a6b6a869b2d8eff760357d7719f8934d00e3dca3f5ba7fd4"
+    }
+  ]
+}

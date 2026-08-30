@@ -1,0 +1,11 @@
+{
+  "canonical_clinical_record_count": 4602,
+  "canonical_failures": [],
+  "checked_at_utc": "2026-08-16T10:57:56.880943+00:00",
+  "citation_completeness_percent": 100.0,
+  "complete_count": 9071,
+  "denominator": 9071,
+  "retrieval_failures": [],
+  "retrieval_unit_count": 4469,
+  "schema_version": "citation-completeness-1.0.0"
+}

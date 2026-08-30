@@ -1,0 +1,20 @@
+{
+  "checked_at_utc": "2026-08-16T10:57:56.815131+00:00",
+  "coverage_percent": 100.0,
+  "covered_pages": 2060,
+  "duplicate_page_locators": [],
+  "expected_pages": 2060,
+  "missing_pages": [],
+  "schema_version": "coverage-report-1.0.0",
+  "status_counts": {
+    "appendix": 172,
+    "blank": 14,
+    "extracted": 1308,
+    "front_matter": 20,
+    "label_or_leaflet_noncanonical": 393,
+    "references": 132,
+    "table_of_contents": 19,
+    "unreadable_flagged": 2
+  },
+  "unique_page_locators": 2060
+}

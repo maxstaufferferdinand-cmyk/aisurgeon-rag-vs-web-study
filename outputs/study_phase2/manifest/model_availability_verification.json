@@ -1,0 +1,25 @@
+{
+  "detected_gpt55_dated_snapshots": [
+    "gpt-5.5-2026-04-23"
+  ],
+  "detected_gpt56_sol_dated_snapshots": [],
+  "frozen_gpt55_snapshot": "gpt-5.5-2026-04-23",
+  "frozen_gpt56_sol_request": "gpt-5.6-sol",
+  "gpt56_sol_alias_limitation": true,
+  "issues": [],
+  "official_sources_only": true,
+  "page_sha256": {
+    "gpt55": "178d9c8c0c1a5400108da7bf760bce67dc15c76ba52e9e9bfa868a20acde0e9f",
+    "gpt56_sol": "0d62edc64c86525e6fa3bec263732d742db76864d0942f50ef7d42fd35ed8f27",
+    "pricing": "e1975d9c39f1a0880ab9d7375081679f2edc2331050f1b9ae518a311fafea938"
+  },
+  "pricing_page_retrieved": true,
+  "schema_version": "official-model-availability-verification-1.0.0",
+  "status": "verified",
+  "urls": {
+    "gpt55": "https://developers.openai.com/api/docs/models/gpt-5.5",
+    "gpt56_sol": "https://developers.openai.com/api/docs/models/gpt-5.6-sol",
+    "pricing": "https://developers.openai.com/api/docs/pricing"
+  },
+  "verified_at_utc": "2026-08-29T16:00:24.147279Z"
+}

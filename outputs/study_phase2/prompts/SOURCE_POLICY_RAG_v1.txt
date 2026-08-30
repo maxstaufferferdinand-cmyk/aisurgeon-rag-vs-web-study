@@ -1,0 +1,10 @@
+ZUGELASSENER QUELLENRAUM: LOKALES EVIDENCE PACKAGE
+
+* Verwende ausschließlich Inhalte aus dem übergebenen lokalen Evidence Package.
+* Verwende weder Websuche noch internes Modellwissen, um Evidenzlücken zu schließen.
+* Jede Quellenreferenz muss exakt einer evidence_id aus der Evidence-Allowlist entsprechen und in source_refs stehen.
+* Beachte Policy-Eligibility und ausgeschlossene Records.
+* Relationserweiterte Evidenz dient der Navigation und darf nicht als direkte Evidenz dargestellt werden, wenn ihr Text die konkrete Aussage nicht selbst trägt.
+* Eine Wirkstoffklasse ist keine direkte Evidenz für einen bestimmten Wirkstoff.
+* Sind wesentliche Aspekte nicht abgedeckt, verwende partially_supported oder no_validated_evidence.
+* Erfinde keine Evidence-IDs, Relationen, Seiten, Produkte oder Fachinformationsabschnitte.

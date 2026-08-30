@@ -1,0 +1,208 @@
+{
+  "annotation_package": {
+    "clinical_gold_status": "empty_pending_independent_human_review",
+    "development": 50,
+    "no_evidence_or_out_of_scope_percent": 25.0,
+    "package_id": "hap-13fca362767b85a7947e135e",
+    "question_origin": "synthetic_draft",
+    "test_untouched": 250
+  },
+  "blockers": [],
+  "completed_at_utc": "2026-08-16T17:58:50.040279+00:00",
+  "corpus_snapshot_id": "cs-f61b3d4e90089c1b890c23cb",
+  "created_or_updated": [
+    "AGENTS.md",
+    ".gitignore",
+    ".env.example",
+    "README.md",
+    "pyproject.toml",
+    "uv.lock",
+    "docker-compose.yml",
+    "db/migrations/0001_extensions.sql .. 0009_balanced_relation_expansion.sql",
+    "src/aisurgeon_decentralised/corpus_snapshot.py",
+    "src/aisurgeon_decentralised/retrieval_config.py",
+    "src/aisurgeon_decentralised/retrieval_database.py",
+    "src/aisurgeon_decentralised/retrieval_embeddings.py",
+    "src/aisurgeon_decentralised/hybrid_retrieval.py",
+    "src/aisurgeon_decentralised/evidence_contract.py",
+    "src/aisurgeon_decentralised/retrieval_evidence_backend.py",
+    "src/aisurgeon_decentralised/retrieval_run_store.py",
+    "src/aisurgeon_decentralised/retrieval_telemetry.py",
+    "src/aisurgeon_decentralised/structured_output_smoke.py",
+    "src/aisurgeon_decentralised/retrieval_semantic_smoke.py",
+    "src/aisurgeon_decentralised/retrieval_evaluation.py",
+    "src/aisurgeon_decentralised/retrieval_validation.py",
+    "scripts/retrieval_stack.py and retrieval phase CLI scripts",
+    "tests/test_hybrid_retrieval.py, test_evidence_contract.py, test_retrieval_telemetry.py",
+    "tests/test_retrieval_evaluation.py, test_retrieval_embeddings.py, test_retrieval_live.py",
+    "docs/ARCHITECTURE.md, DATA_DICTIONARY.md, CORPUS_SNAPSHOT.md",
+    "docs/POLICY_AND_ELIGIBILITY.md, RETRIEVAL.md, REPRODUCIBILITY.md",
+    "docs/EVALUATION_PROTOCOL.md, LIMITATIONS.md, METHODS_DRAFT.md",
+    "outputs/retrieval_phase/cs-f61b3d4e90089c1b890c23cb/ and outputs/retrieval_phase/evaluation/"
+  ],
+  "database": {
+    "full_rebuild_passed": true,
+    "image": "pgvector/pgvector:0.8.6-pg18-trixie@sha256:78bf48b801e792f99e3ac62b5036fd3876e9be48afda16c1e331af1c75ceb2ff",
+    "import_idempotent": true,
+    "live_counts": {
+      "active_substance": 10,
+      "canonical_record": 7306,
+      "corpus_snapshot_source": 12,
+      "entity_reference": 107,
+      "evidence_span": 12492,
+      "formal_item": 558,
+      "medicine_product": 28,
+      "retrieval_embedding": 4469,
+      "retrieval_unit": 4469,
+      "semantic_relation": 195
+    },
+    "loopback_port": "127.0.0.1:55432",
+    "migration_idempotent": true,
+    "pgvector": "0.8.6",
+    "postgresql": "18.6 (Debian 18.6-1.pgdg13+2)",
+    "runtime_image_id": "sha256:78bf48b801e792f99e3ac62b5036fd3876e9be48afda16c1e331af1c75ceb2ff"
+  },
+  "embedding": {
+    "checkpoint_count": 71,
+    "dimension": 1536,
+    "distance_metric": "cosine",
+    "estimated_cost_usd": 0.02435718,
+    "input_tokens": 1217859,
+    "model": "text-embedding-3-small",
+    "price_as_of": "2026-08-16",
+    "price_usd_per_million_input_tokens": 0.02,
+    "resume_provider_calls": 0,
+    "resume_skipped": 4469,
+    "retrieval_unit_count": 4469,
+    "semantic_query_estimated_cost_usd": 1.02e-06,
+    "semantic_query_tokens": 51,
+    "smoke_input_tokens": 2168
+  },
+  "external_api_cost_summary": {
+    "embedding_baseline_usd": 0.02435718,
+    "pricing_as_of": "2026-08-16",
+    "semantic_query_usd": 1.02e-06,
+    "structured_output_usd": 0.00011025,
+    "total_estimated_usd": 0.02446845
+  },
+  "gemini_used_in_retrieval_phase": false,
+  "git": {
+    "commit_created": false,
+    "configured_remotes": [],
+    "push_performed": false,
+    "repository_has_commit": false
+  },
+  "implementation": {
+    "evidence_allowlist_and_claim_contract": true,
+    "exact_german_simple_trigram_dense_rrf": true,
+    "human_annotation_package_prepared": true,
+    "local_data_minimising_telemetry": true,
+    "postgres_pgvector": true,
+    "snapshot_and_provenance": true,
+    "source_routing_and_typed_relations": true
+  },
+  "non_blocking_limitations": [
+    "2,785 review-severity QA flags remain.",
+    "Current generalisability is limited to three guidelines and nine medicinal-product PDFs.",
+    "HCC/BCC is a consultation draft, not a demonstrated final version.",
+    "39 product and 30 active-substance references remain deliberately unresolved.",
+    "Table header paths are not explicitly encoded and remain null/QA-flagged.",
+    "The WSL/NTFS workspace does not enforce POSIX mode 0600 for .env.retrieval; the file is git-ignored and governed by host ACLs.",
+    "Retrieval defaults and synthetic drafts are not clinically validated."
+  ],
+  "passed": true,
+  "patient_data_processed": false,
+  "policy_leakage": {
+    "eligible_view_leaks": 0,
+    "embedding_leaks": 0,
+    "hcc_canary_count": 99,
+    "normal_evidence_package_leaks": 0,
+    "passed": true,
+    "retrieval_leaks": 0
+  },
+  "project_status": "offline_research_prototype_not_clinically_validated",
+  "resume_command": "uv run python scripts/retrieval_stack.py start && uv run python scripts/migrate_retrieval_db.py && uv run python scripts/import_corpus_snapshot.py --verify-idempotent && uv run python scripts/embed_retrieval_units.py --full --resume --batch-size 64 && uv run python scripts/validate_retrieval_layer.py",
+  "retrieval_smoke": {
+    "embedding_self_rank_1_count": 3,
+    "embedding_three_unit_smoke_passed": true,
+    "end_to_end_checks": 37,
+    "end_to_end_passed": 37,
+    "passed": true,
+    "semantic_paraphrase_rank": 1
+  },
+  "schema_version": "retrieval-phase-completion-1.0.0",
+  "source_pdfs_unchanged_after_phase": true,
+  "structured_output_smoke": {
+    "allowlist_passed": true,
+    "attempts": 1,
+    "backend_citation_passed": true,
+    "cached_tokens": 0,
+    "estimated_cost_usd": 0.00011025,
+    "input_tokens": 270,
+    "model": "gpt-5.4-nano-2026-03-17",
+    "no_query_or_answer_text_logged": true,
+    "output_tokens": 45,
+    "passed": true
+  },
+  "tests": {
+    "legacy_final_validator": {
+      "passed": 50,
+      "total": 50
+    },
+    "legacy_regression": {
+      "passed": 18,
+      "total": 18
+    },
+    "pytest": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "subtests": 12,
+      "tests": 70
+    },
+    "retrieval_validator": {
+      "passed": 37,
+      "total": 37
+    }
+  },
+  "verified_corpus": {
+    "canonical_records": 7306,
+    "evidence_spans": 12492,
+    "formal_items": 558,
+    "guideline_retrieval_units": 1263,
+    "hcc_history_excluded": 99,
+    "open_review_flags": 2785,
+    "pages": 2060,
+    "physical_canonical_rows": 8224,
+    "primary_formal_items": 433,
+    "reported_discrepancies": [
+      {
+        "delta": -116,
+        "explanation": "4,585 is present only in the pre-final-policy backup; the current post-policy source of truth and validator both contain 4,469.",
+        "metric": "retrieval_unit_count",
+        "reported": 4585,
+        "verified": 4469
+      },
+      {
+        "explanation": "The final repair added 29 formal records; totals and primary/secondary policy classes must not be conflated.",
+        "metric": "formal_item_count",
+        "reported": 529,
+        "verified_primary": 433,
+        "verified_secondary": 125,
+        "verified_total": 558
+      },
+      {
+        "explanation": "Two distinct VTE main-text records preserve printed_source_item_number=15.4 and deliberately keep source_item_number=null.",
+        "metric": "printed_duplicate_15.4_records",
+        "reported": 1,
+        "verified": 2
+      }
+    ],
+    "retrieval_units": 4469,
+    "secondary_formal_items": 125,
+    "semantic_relations": 195,
+    "smpc_retrieval_units": 3206,
+    "source_pdfs": 12,
+    "validated_batches": "831/831"
+  }
+}

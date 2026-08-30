@@ -1,0 +1,34 @@
+{
+  "schema_version": "archive-hash-integrity-1.0.0",
+  "status": "passed",
+  "corpus_snapshot_id": "cs-f61b3d4e90089c1b890c23cb",
+  "groups": [
+    {
+      "group": "source_pdfs",
+      "expected": 12,
+      "matched": 12
+    },
+    {
+      "group": "canonical_files",
+      "expected": 29,
+      "matched": 29
+    },
+    {
+      "group": "snapshot_provenance_artifacts",
+      "expected": 4,
+      "matched": 4
+    },
+    {
+      "group": "study_owner_freeze",
+      "expected": 18,
+      "matched": 18
+    },
+    {
+      "group": "technical_completion",
+      "expected": 48,
+      "matched": 48
+    }
+  ],
+  "mismatches": [],
+  "technical_completion_manifest_sha256": "3db36fb33b31d194599984c81c926de5f0d9f82814d4e77b41c8aa02c54b67ca"
+}

@@ -1,0 +1,24 @@
+{
+  "approval_scope": "exact unchanged 100-question candidate and provisional-gold files, including existing gold IDs and coverage assignments",
+  "approval_type": "study_owner_pre_freeze_approval",
+  "approved_by_role": "study_owner",
+  "comments_recorded": false,
+  "independent_clinical_question_validation_claimed": false,
+  "independent_question_set_review_completed": false,
+  "later_blinded_answer_accuracy_review_required": true,
+  "question_candidates_sha256": "c87a274eed277c262bc3b2343f3c56aad8f80c19eacbff3e63d76adbdf17e69c",
+  "question_count": 100,
+  "question_gold_provisional_sha256": "c87a274eed277c262bc3b2343f3c56aad8f80c19eacbff3e63d76adbdf17e69c",
+  "recorded_at_utc": "2026-08-29T15:58:53.203120Z",
+  "review_workbook": {
+    "path": "${PROJECT_ROOT}/outputs/study_phase2/questions/question_freeze_review.xlsx",
+    "question_rows": 100,
+    "reviewer_and_adjudication_fields_intentionally_blank": true,
+    "sha256": "cd62ce4b5df97fc2f1071c0ba9d84f53fe0b5d7c00cf2693a6fa145a3276d401",
+    "used_as_independent_review": false
+  },
+  "reviewer_name_recorded": false,
+  "schema_version": "study-owner-prefreeze-approval-1.0.0",
+  "signature_recorded": false,
+  "status": "study_owner_pre_freeze_approval_recorded"
+}

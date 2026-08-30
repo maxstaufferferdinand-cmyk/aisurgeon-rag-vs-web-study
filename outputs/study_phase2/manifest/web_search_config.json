@@ -1,0 +1,13 @@
+{
+  "domain_allowlist": null,
+  "external_web_access": true,
+  "include": [
+    "web_search_call.action.sources"
+  ],
+  "max_tool_calls": 6,
+  "other_tools": [],
+  "return_token_budget": "default",
+  "tool": "web_search",
+  "tool_choice": "required",
+  "version": "live-web-search-frozen-v1"
+}

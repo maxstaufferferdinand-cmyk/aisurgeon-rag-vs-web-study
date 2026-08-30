@@ -1,0 +1,233 @@
+{
+  "$id": "human-annotation-adjudication-1.0.0",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "adjudication_rationale": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "adjudication_status": {
+      "enum": [
+        "pending",
+        "adjudicated",
+        "requires_third_review"
+      ]
+    },
+    "adjudicator_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "disagreement_fields": {
+      "items": {
+        "type": "string"
+      },
+      "type": [
+        "array",
+        "null"
+      ]
+    },
+    "gold_answer_notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "gold_applicability_status": {
+      "enum": [
+        "applicable",
+        "uncertain",
+        "not_applicable",
+        null
+      ],
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "gold_conflict_status": {
+      "enum": [
+        "none",
+        "guideline_vs_smpc",
+        "within_guideline",
+        "version_conflict",
+        null
+      ],
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "gold_dose_unit": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "gold_dose_value": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "gold_entailment_status": {
+      "enum": [
+        "supported",
+        "partial",
+        "contradicted",
+        "insufficient",
+        null
+      ],
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "gold_evidence_groups": {
+      "type": [
+        "array",
+        "null"
+      ]
+    },
+    "gold_evidence_ids": {
+      "type": [
+        "array",
+        "null"
+      ]
+    },
+    "gold_frequency_interval": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "gold_negation": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "gold_page_locators": {
+      "type": [
+        "array",
+        "null"
+      ]
+    },
+    "gold_population": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "gold_retrieval_outcome": {
+      "enum": [
+        "evidence_found",
+        "retrieval_failure",
+        "no_evidence_in_snapshot",
+        null
+      ],
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "gold_route": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "gold_should_abstain": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "gold_source_authority": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "gold_source_spans": {
+      "type": [
+        "array",
+        "null"
+      ]
+    },
+    "gold_source_status": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "gold_support_label": {
+      "enum": [
+        "supported",
+        "partially_supported",
+        "no_validated_evidence",
+        null
+      ],
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "potential_harm_if_wrong": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "question_id": {
+      "type": "string"
+    },
+    "reviewer_a_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "reviewer_b_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "question_id",
+    "reviewer_a_id",
+    "reviewer_b_id",
+    "disagreement_fields",
+    "adjudicator_id",
+    "adjudication_status",
+    "adjudication_rationale",
+    "gold_evidence_ids",
+    "gold_evidence_groups",
+    "gold_source_spans",
+    "gold_support_label",
+    "gold_entailment_status",
+    "gold_retrieval_outcome",
+    "gold_conflict_status",
+    "gold_applicability_status",
+    "gold_source_status",
+    "gold_source_authority",
+    "gold_should_abstain",
+    "gold_dose_value",
+    "gold_dose_unit",
+    "gold_frequency_interval",
+    "gold_route",
+    "gold_population",
+    "gold_negation",
+    "gold_page_locators",
+    "gold_answer_notes",
+    "potential_harm_if_wrong"
+  ],
+  "title": "AISurgeon annotation adjudication",
+  "type": "object"
+}

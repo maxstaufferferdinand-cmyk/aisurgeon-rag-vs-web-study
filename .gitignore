@@ -1,0 +1,91 @@
+# Secrets and local environment files
+.env
+.env.*
+!.env.example
+.envrc
+.direnv/
+*.secret
+*.secrets
+credentials/
+.credentials/
+secrets/
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+
+# Python environments and caches
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Local database, Docker and migration state
+.retrieval-locks/
+pgdata/
+postgres-data/
+docker-volumes/
+volumes/
+*.dump
+*.backup
+*.sql.gz
+
+# Rights-restricted sources and derived full-text corpus
+source_pdfs/
+data/canonical/
+data/extraction_runs/
+data/logs/
+outputs/
+
+# Embedding/vector and checkpoint material wherever generated
+**/embeddings/
+**/query_embeddings/
+**/checkpoints/
+*.npy
+*.npz
+*.faiss
+*.hnsw
+*.ivf
+*.vectors
+
+# Logs, traces and raw SDK/API material
+*.log
+logs/
+sdk-logs/
+api-dumps/
+request-dumps/
+response-dumps/
+
+# Editor, OS, Office and temporary files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+~$*.xlsx
+~$*.xls
+.~lock.*
+*.tmp
+*.temp
+
+# Local agent/session/authentication state
+.codex/
+.openai/
+.claude/
+codex-sessions/
+auth.json
+hosts.yml
+
+# Archive builder scratch space (final files live under archive/)
+.archive-work/

@@ -1,0 +1,94 @@
+{
+  "duplicates": [
+    {
+      "deduplication_key": "bc4557a1f150bc5a1349f912",
+      "kept_record_id": "rec-a962152c36c8e9787ceae5c6",
+      "reason": "Deterministischer Schlüssel aus Quelle, Identifier, Seiten, Text-Hash und Record-Typ",
+      "record_type": "adverse_reaction",
+      "removed_record_ids": [
+        "rec-a962152c36c8e9787ceae5c6"
+      ],
+      "source_id": "src-enhertu-epar-product-information-de-2aebd083c6f9"
+    },
+    {
+      "deduplication_key": "ef0e3ad7edea3c0c4f3c9e44",
+      "kept_record_id": "rec-9205b67adc45b50b088f5a61",
+      "reason": "Deterministischer Schlüssel aus Quelle, Identifier, Seiten, Text-Hash und Record-Typ",
+      "record_type": "adverse_reaction",
+      "removed_record_ids": [
+        "rec-9205b67adc45b50b088f5a61"
+      ],
+      "source_id": "src-enhertu-epar-product-information-de-2aebd083c6f9"
+    },
+    {
+      "deduplication_key": "69f8d3bcf852c8fd9f787438",
+      "kept_record_id": "rec-c70780e91ec21666f9aee837",
+      "reason": "Deterministischer Schlüssel aus Quelle, Identifier, Seiten, Text-Hash und Record-Typ",
+      "record_type": "adverse_reaction",
+      "removed_record_ids": [
+        "rec-c70780e91ec21666f9aee837"
+      ],
+      "source_id": "src-enhertu-epar-product-information-de-2aebd083c6f9"
+    },
+    {
+      "deduplication_key": "2f46382d09c44742be44dc56",
+      "kept_record_id": "rec-5a2c45b6c35f5abcfd2bd4b7",
+      "reason": "Deterministischer Schlüssel aus Quelle, Identifier, Seiten, Text-Hash und Record-Typ",
+      "record_type": "adverse_reaction",
+      "removed_record_ids": [
+        "rec-5a2c45b6c35f5abcfd2bd4b7"
+      ],
+      "source_id": "src-enhertu-epar-product-information-de-2aebd083c6f9"
+    },
+    {
+      "deduplication_key": "44a02b97777b2e1d620b75bc",
+      "kept_record_id": "rec-c3f2357914745b6ff295fa40",
+      "reason": "Deterministischer Schlüssel aus Quelle, Identifier, Seiten, Text-Hash und Record-Typ",
+      "record_type": "adverse_reaction",
+      "removed_record_ids": [
+        "rec-c3f2357914745b6ff295fa40"
+      ],
+      "source_id": "src-enhertu-epar-product-information-de-2aebd083c6f9"
+    },
+    {
+      "deduplication_key": "c66daa90a2ede6068502a46b",
+      "kept_record_id": "rec-149eeaa2606c6d3efb2ce909",
+      "reason": "Deterministischer Schlüssel aus Quelle, Identifier, Seiten, Text-Hash und Record-Typ",
+      "record_type": "adverse_reaction",
+      "removed_record_ids": [
+        "rec-149eeaa2606c6d3efb2ce909"
+      ],
+      "source_id": "src-enhertu-epar-product-information-de-2aebd083c6f9"
+    },
+    {
+      "deduplication_key": "2dfc99d104cbf8155072f9d9",
+      "kept_record_id": "rec-53f2d9f507a0a2b11dcf9bc3",
+      "reason": "Deterministischer Schlüssel aus Quelle, Identifier, Seiten, Text-Hash und Record-Typ",
+      "record_type": "adverse_reaction",
+      "removed_record_ids": [
+        "rec-53f2d9f507a0a2b11dcf9bc3"
+      ],
+      "source_id": "src-enhertu-epar-product-information-de-2aebd083c6f9"
+    },
+    {
+      "deduplication_key": "80df04d9caa63ce29baed3b4",
+      "kept_record_id": "rec-f8b51813c11c4368271aa503",
+      "reason": "Deterministischer Schlüssel aus Quelle, Identifier, Seiten, Text-Hash und Record-Typ",
+      "record_type": "excipient",
+      "removed_record_ids": [
+        "rec-f8b51813c11c4368271aa503"
+      ],
+      "source_id": "src-plavix-epar-product-information-de-85be2b1611b7"
+    },
+    {
+      "deduplication_key": "f39b4cac28f9e67422eb5d0d",
+      "kept_record_id": "rec-acbd091b53e751e1c0b52b27",
+      "reason": "Deterministischer Schlüssel aus Quelle, Identifier, Seiten, Text-Hash und Record-Typ",
+      "record_type": "excipient",
+      "removed_record_ids": [
+        "rec-acbd091b53e751e1c0b52b27"
+      ],
+      "source_id": "src-plavix-epar-product-information-de-85be2b1611b7"
+    }
+  ]
+}

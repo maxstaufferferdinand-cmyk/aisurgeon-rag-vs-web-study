@@ -1,0 +1,19 @@
+{
+  "schema_version": "github-archive-validation-1.0.0",
+  "archive_build_timestamp_utc": "2026-08-30T09:45:43.137179Z",
+  "status": "passed",
+  "included_file_count": 270,
+  "included_bytes": 32912484,
+  "included_mib": 31.388,
+  "largest_file_bytes": 16093070,
+  "issues": [],
+  "assertions": {
+    "no_source_pdfs": true,
+    "no_canonical_fulltext": true,
+    "no_embedding_vectors": true,
+    "no_raw_api_attempts": true,
+    "no_git_lfs_required": true,
+    "study_results": 800,
+    "corpus_snapshot_id": "cs-f61b3d4e90089c1b890c23cb"
+  }
+}

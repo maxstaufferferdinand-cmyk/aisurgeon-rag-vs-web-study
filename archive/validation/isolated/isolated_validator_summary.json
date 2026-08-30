@@ -1,0 +1,13 @@
+{
+  "schema_version": "isolated-validator-summary-1.0.0",
+  "status": "passed",
+  "validator_count": 4,
+  "validators": [
+    "knowledge_corpus_validation.json",
+    "retrieval_layer_validation.json",
+    "cli_rag_phase1_validation.json",
+    "phase2_study_validation.json"
+  ],
+  "source_workspace_redacted": true,
+  "external_api_calls": 0
+}

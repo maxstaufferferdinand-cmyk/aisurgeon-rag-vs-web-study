@@ -1,0 +1,57 @@
+{
+  "completed_at_utc": "2026-08-13T19:48:04.802656+00:00",
+  "model_name": "gemini-3.5-flash",
+  "prompt_version": "clinical-corpus-de-v1.2.0",
+  "results": [
+    {
+      "checks": {
+        "all_pages_assessed": true,
+        "formal_item_exact_text": true,
+        "formal_item_extracted": true,
+        "formal_item_identifier": true,
+        "nonempty_source_quotes": true,
+        "original_page_mapping_exact": true,
+        "quotes_locally_verified": true,
+        "schema_conformant": true,
+        "source_identity_exact": true,
+        "visible_table_or_layout_understood": true
+      },
+      "document_type": "guideline",
+      "notes": [],
+      "pages": [
+        152,
+        153,
+        154
+      ],
+      "passed": true,
+      "preflight_id": "preflight-97b4024c59e63488def835c3",
+      "source_id": "src-003-001l-s3-prophylaxe-venoese-thromboembolie-vte-2026-04-f82c5686f6b7",
+      "task_family": "guideline_preflight"
+    },
+    {
+      "checks": {
+        "all_pages_assessed": true,
+        "dose_source_quote_contains_unit": true,
+        "dose_values_and_units": true,
+        "dosing_rule_extracted": true,
+        "nonempty_source_quotes": true,
+        "original_page_mapping_exact": true,
+        "product_or_active_substance_extracted": true,
+        "quotes_locally_verified": true,
+        "schema_conformant": true,
+        "source_identity_exact": true
+      },
+      "document_type": "drug_label",
+      "notes": [],
+      "pages": [
+        1,
+        2,
+        3
+      ],
+      "passed": true,
+      "preflight_id": "preflight-d35b043128c1a0b5fae89c47",
+      "source_id": "src-5-fu-medac-50-mg-ml-injektionsloesung-1c24cd77ce94",
+      "task_family": "drug_label_preflight"
+    }
+  ]
+}

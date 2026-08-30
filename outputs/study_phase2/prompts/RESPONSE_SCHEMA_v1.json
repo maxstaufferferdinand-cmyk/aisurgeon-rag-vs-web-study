@@ -1,0 +1,138 @@
+{
+  "name": "rag_vs_web_study_response_v1",
+  "schema": {
+    "$defs": {
+      "StudyClaim": {
+        "additionalProperties": false,
+        "properties": {
+          "claim_id": {
+            "minLength": 1,
+            "title": "Claim Id",
+            "type": "string"
+          },
+          "claim_text": {
+            "minLength": 1,
+            "title": "Claim Text",
+            "type": "string"
+          },
+          "claim_type": {
+            "enum": [
+              "fact",
+              "recommendation",
+              "uncertainty"
+            ],
+            "title": "Claim Type",
+            "type": "string"
+          },
+          "source_refs": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Source Refs",
+            "type": "array"
+          },
+          "support_status": {
+            "enum": [
+              "supported",
+              "partially_supported",
+              "no_validated_evidence"
+            ],
+            "title": "Support Status",
+            "type": "string"
+          }
+        },
+        "required": [
+          "claim_id",
+          "claim_text",
+          "claim_type",
+          "support_status",
+          "source_refs"
+        ],
+        "title": "StudyClaim",
+        "type": "object"
+      },
+      "StudyRecommendation": {
+        "additionalProperties": false,
+        "properties": {
+          "recommendation_text": {
+            "minLength": 1,
+            "title": "Recommendation Text",
+            "type": "string"
+          },
+          "source_refs": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Source Refs",
+            "type": "array"
+          }
+        },
+        "required": [
+          "recommendation_text",
+          "source_refs"
+        ],
+        "title": "StudyRecommendation",
+        "type": "object"
+      }
+    },
+    "additionalProperties": false,
+    "properties": {
+      "abstention_reason": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "title": "Abstention Reason"
+      },
+      "answer_status": {
+        "enum": [
+          "supported",
+          "partially_supported",
+          "no_validated_evidence"
+        ],
+        "title": "Answer Status",
+        "type": "string"
+      },
+      "answer_text": {
+        "title": "Answer Text",
+        "type": "string"
+      },
+      "claims": {
+        "items": {
+          "$ref": "#/$defs/StudyClaim"
+        },
+        "title": "Claims",
+        "type": "array"
+      },
+      "limitations": {
+        "items": {
+          "type": "string"
+        },
+        "title": "Limitations",
+        "type": "array"
+      },
+      "recommendations": {
+        "items": {
+          "$ref": "#/$defs/StudyRecommendation"
+        },
+        "title": "Recommendations",
+        "type": "array"
+      }
+    },
+    "required": [
+      "answer_status",
+      "answer_text",
+      "claims",
+      "recommendations",
+      "limitations",
+      "abstention_reason"
+    ],
+    "title": "StudyStructuredAnswer",
+    "type": "object"
+  },
+  "strict": true
+}

@@ -1,0 +1,321 @@
+{
+  "$id": "human-annotation-item-1.0.0",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "corpus_snapshot_id": {
+      "type": "string"
+    },
+    "gold": {
+      "additionalProperties": false,
+      "properties": {
+        "gold_answer_notes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "gold_applicability_status": {
+          "enum": [
+            "applicable",
+            "uncertain",
+            "not_applicable",
+            null
+          ],
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "gold_conflict_status": {
+          "enum": [
+            "none",
+            "guideline_vs_smpc",
+            "within_guideline",
+            "version_conflict",
+            null
+          ],
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "gold_dose_unit": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "gold_dose_value": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "gold_entailment_status": {
+          "enum": [
+            "supported",
+            "partial",
+            "contradicted",
+            "insufficient",
+            null
+          ],
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "gold_evidence_groups": {
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "gold_evidence_ids": {
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "gold_frequency_interval": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "gold_negation": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "gold_page_locators": {
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "gold_population": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "gold_retrieval_outcome": {
+          "enum": [
+            "evidence_found",
+            "retrieval_failure",
+            "no_evidence_in_snapshot",
+            null
+          ],
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "gold_route": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "gold_should_abstain": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "gold_source_authority": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "gold_source_spans": {
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "gold_source_status": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "gold_support_label": {
+          "enum": [
+            "supported",
+            "partially_supported",
+            "no_validated_evidence",
+            null
+          ],
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "potential_harm_if_wrong": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "gold_evidence_ids",
+        "gold_evidence_groups",
+        "gold_source_spans",
+        "gold_support_label",
+        "gold_entailment_status",
+        "gold_retrieval_outcome",
+        "gold_conflict_status",
+        "gold_applicability_status",
+        "gold_source_status",
+        "gold_source_authority",
+        "gold_should_abstain",
+        "gold_dose_value",
+        "gold_dose_unit",
+        "gold_frequency_interval",
+        "gold_route",
+        "gold_population",
+        "gold_negation",
+        "gold_page_locators",
+        "gold_answer_notes",
+        "potential_harm_if_wrong"
+      ],
+      "type": "object"
+    },
+    "language": {
+      "const": "de"
+    },
+    "origin": {
+      "const": "synthetic_draft"
+    },
+    "policy_canary": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "primary_stratum": {
+      "enum": [
+        "item_number",
+        "semantic_paraphrase",
+        "recommendation",
+        "statement",
+        "evidence_grade",
+        "rationale",
+        "dose",
+        "preparation",
+        "route",
+        "interval",
+        "contraindication",
+        "warning",
+        "adverse_reaction",
+        "product_substance_mapping",
+        "multi_source",
+        "guideline_smpc_conflict",
+        "near_neighbour_medicine",
+        "negation",
+        "typo",
+        "version",
+        "hcc_history_canary",
+        "consultation_draft_leakage",
+        "multi_turn",
+        "no_evidence",
+        "out_of_scope"
+      ]
+    },
+    "question_id": {
+      "pattern": "^q-[a-f0-9]{20}$",
+      "type": "string"
+    },
+    "question_text": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "routing_probe": {
+      "enum": [
+        "guideline_first",
+        "smpc_first",
+        "dual_source",
+        "full_fallback"
+      ]
+    },
+    "sampling_scope": {
+      "enum": [
+        "evidence_candidate",
+        "no_evidence_candidate",
+        "out_of_scope_candidate"
+      ]
+    },
+    "schema_version": {
+      "const": "human-annotation-item-1.0.0"
+    },
+    "secondary_strata": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "seed_evidence": {
+      "items": {
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "split": {
+      "enum": [
+        "development",
+        "test"
+      ]
+    },
+    "split_lock": {
+      "enum": [
+        "development",
+        "untouched_test"
+      ]
+    },
+    "split_ordinal": {
+      "minimum": 1,
+      "type": "integer"
+    },
+    "turns": {
+      "items": {
+        "properties": {
+          "role": {
+            "const": "user"
+          },
+          "text": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "turn_index": {
+            "minimum": 1,
+            "type": "integer"
+          }
+        },
+        "required": [
+          "turn_index",
+          "role",
+          "text"
+        ],
+        "type": "object"
+      },
+      "minItems": 1,
+      "type": "array"
+    }
+  },
+  "required": [
+    "schema_version",
+    "question_id",
+    "split",
+    "origin",
+    "question_text",
+    "turns",
+    "gold"
+  ],
+  "title": "AISurgeon human annotation item",
+  "type": "object"
+}

@@ -1,0 +1,9 @@
+{
+  "covered_rag_results": 320,
+  "gold_status": "study_owner_prefreeze_frozen_not_independently_clinically_validated",
+  "mrr": 0.3647181637806638,
+  "not_covered_rag_results": 80,
+  "rag_results": 400,
+  "recall_at_5": 0.59375,
+  "retrieval_outcome_no_evidence_in_snapshot": 68
+}

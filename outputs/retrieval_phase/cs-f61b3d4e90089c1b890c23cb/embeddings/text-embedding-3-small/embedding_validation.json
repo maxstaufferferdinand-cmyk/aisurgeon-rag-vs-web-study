@@ -1,0 +1,27 @@
+{
+  "checks": {
+    "complete_count": true,
+    "dimension_1536": true,
+    "embedding_text_hashes": true,
+    "exact_baseline_no_ann_index": true,
+    "no_policy_leakage": true,
+    "normalised_vectors": true,
+    "source_text_hashes": true
+  },
+  "corpus_snapshot_id": "cs-f61b3d4e90089c1b890c23cb",
+  "measurements": {
+    "approximate_vector_indexes": 0,
+    "count": 4469,
+    "embedding_text_hash_mismatches": 0,
+    "ineligible_or_excluded_embeddings": 0,
+    "max_dimension": 1536,
+    "max_l2_norm": 1.0005392805195223,
+    "min_dimension": 1536,
+    "min_l2_norm": 0.9994077663845079,
+    "source_text_hash_mismatches": 0
+  },
+  "model": "text-embedding-3-small",
+  "passed": true,
+  "schema_version": "embedding-validation-1.0.0",
+  "validated_at_utc": "2026-08-16T17:44:40.534862+00:00"
+}

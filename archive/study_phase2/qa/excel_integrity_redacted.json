@@ -1,0 +1,75 @@
+{
+  "files": [
+    {
+      "autofilter": "A1:BV801",
+      "file": "${PROJECT_ROOT}/outputs/study_phase2/excel/AISurgeon_RAG_vs_WEB_study_master.xlsx",
+      "freeze_panes": "A2",
+      "result_rows": 800,
+      "sheets": [
+        "00_README",
+        "01_MANIFEST",
+        "02_QUESTIONS_GOLD",
+        "03_ALL_RESULTS",
+        "04_API_ATTEMPTS",
+        "05_CLAIMS_SOURCES",
+        "06_RESOURCE_SUMMARY",
+        "07_REPRODUCIBILITY",
+        "08_RATINGS_BLINDED",
+        "09_ADJUDICATION",
+        "10_FINAL_STATISTICS",
+        "11_REFINE_MI_CLEAR"
+      ],
+      "status": "passed",
+      "unique_run_ids": 800
+    },
+    {
+      "autofilter": "A1:BV201",
+      "file": "${PROJECT_ROOT}/outputs/study_phase2/excel/GPT55_MEDIUM_WEB.xlsx",
+      "freeze_panes": "A2",
+      "result_rows": 200,
+      "sheets": [
+        "00_README",
+        "03_ALL_RESULTS"
+      ],
+      "status": "passed",
+      "unique_run_ids": 200
+    },
+    {
+      "autofilter": "A1:BV201",
+      "file": "${PROJECT_ROOT}/outputs/study_phase2/excel/GPT55_MEDIUM_RAG.xlsx",
+      "freeze_panes": "A2",
+      "result_rows": 200,
+      "sheets": [
+        "00_README",
+        "03_ALL_RESULTS"
+      ],
+      "status": "passed",
+      "unique_run_ids": 200
+    },
+    {
+      "autofilter": "A1:BV201",
+      "file": "${PROJECT_ROOT}/outputs/study_phase2/excel/GPT56_SOL_HIGH_WEB.xlsx",
+      "freeze_panes": "A2",
+      "result_rows": 200,
+      "sheets": [
+        "00_README",
+        "03_ALL_RESULTS"
+      ],
+      "status": "passed",
+      "unique_run_ids": 200
+    },
+    {
+      "autofilter": "A1:BV201",
+      "file": "${PROJECT_ROOT}/outputs/study_phase2/excel/GPT56_SOL_HIGH_RAG.xlsx",
+      "freeze_panes": "A2",
+      "result_rows": 200,
+      "sheets": [
+        "00_README",
+        "03_ALL_RESULTS"
+      ],
+      "status": "passed",
+      "unique_run_ids": 200
+    }
+  ],
+  "status": "passed"
+}

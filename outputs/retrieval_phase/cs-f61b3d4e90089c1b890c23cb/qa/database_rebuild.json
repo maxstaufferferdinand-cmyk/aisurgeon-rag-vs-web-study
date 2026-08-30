@@ -1,0 +1,74 @@
+{
+  "completed_at_utc": "2026-08-16T17:45:16.877862+00:00",
+  "corpus_snapshot_id": "cs-f61b3d4e90089c1b890c23cb",
+  "database_counts": {
+    "active_substance": 10,
+    "canonical_record": 7306,
+    "corpus_snapshot_source": 12,
+    "entity_reference": 107,
+    "evidence_span": 12492,
+    "formal_item": 558,
+    "medicine_product": 28,
+    "retrieval_embedding": 0,
+    "retrieval_unit": 4469,
+    "semantic_relation": 195
+  },
+  "destructive_scope": "named_regenerable_volume_aisurgeon_retrieval_pgdata_only",
+  "embedding_restore": {
+    "checkpointed_embedding_count": 4469,
+    "complete": true,
+    "database_embedding_count": 4469,
+    "estimated_cost_usd": 0.02435718,
+    "input_tokens": 1217859,
+    "new_embedding_count": 0,
+    "provider_calls_this_run": 0,
+    "resume_skipped_count": 4469
+  },
+  "final_validation": {
+    "passed": true,
+    "passed_check_count": 37,
+    "total_check_count": 37
+  },
+  "first_migration_applied": [
+    "0001_extensions",
+    "0002_core_schema",
+    "0003_search_indexes",
+    "0004_eligibility_and_search",
+    "0005_claims_and_telemetry",
+    "0006_lossless_text_bytes",
+    "0007_refresh_eligibility_view",
+    "0008_typed_relation_expansion",
+    "0009_balanced_relation_expansion"
+  ],
+  "import_idempotent": true,
+  "migration_idempotent": true,
+  "passed": true,
+  "pinned_image": "pgvector/pgvector:0.8.6-pg18-trixie@sha256:78bf48b801e792f99e3ac62b5036fd3876e9be48afda16c1e331af1c75ceb2ff",
+  "runtime_image_id": "sha256:78bf48b801e792f99e3ac62b5036fd3876e9be48afda16c1e331af1c75ceb2ff",
+  "schema_version": "retrieval-database-rebuild-1.0.0",
+  "second_migration_applied": [],
+  "semantic_checkpoint_resume": {
+    "expected_rank_at_20": 1,
+    "passed": true,
+    "provider_calls_this_run": 0
+  },
+  "source_pdf_hashes_unchanged": true,
+  "step_durations_seconds": {
+    "embedding_restore_seconds": 27.926705083984416,
+    "first_migration_seconds": 1.08381818595808,
+    "import_seconds": 20.841244436975103,
+    "reset_seconds": 1.1044065079768188,
+    "second_migration_seconds": 0.9881403020117432,
+    "semantic_resume_seconds": 13.830029346980155,
+    "start_seconds": 6.300078946980648,
+    "structured_restore_seconds": 3.255496417055838,
+    "validation_seconds": 17.040169146028347
+  },
+  "structured_contract_restore": {
+    "answer_claim_id": "claim-smoke-f8cc44ce9e801361f301501c",
+    "api_calls": 0,
+    "evidence_package_id": "evidence-package-eaacbc46dbcd4fab5d587fb0",
+    "restored": true,
+    "trace_id": "trace-structured-smoke-f61b3d4e90089c1b890c23cb"
+  }
+}

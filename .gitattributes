@@ -1,0 +1,10 @@
+# Preserve byte-exact study artefacts while teaching Git's whitespace checker
+# about Windows CSV line endings and intentional Markdown hard breaks.
+*.csv whitespace=cr-at-eol
+docs/STATISTICAL_ANALYSIS_PLAN_RAG_VS_WEB.md whitespace=-blank-at-eol
+docs/STUDY_PROTOCOL_RAG_VS_WEB.md whitespace=-blank-at-eol
+outputs/retrieval_phase/bridges/bridge_matrix.md whitespace=-blank-at-eol
+outputs/retrieval_phase/cs-f61b3d4e90089c1b890c23cb/qa/phase_completion_report.md whitespace=-blank-at-eol
+outputs/retrieval_phase/vte_development/vte_development_report.md whitespace=-blank-at-eol
+outputs/study_phase2/manifest/history/400usd_pre_owner_approval/STATISTICAL_ANALYSIS_PLAN_RAG_VS_WEB.md whitespace=-blank-at-eol,-blank-at-eof
+outputs/study_phase2/manifest/history/400usd_pre_owner_approval/STUDY_PROTOCOL_RAG_VS_WEB.md whitespace=-blank-at-eol

@@ -1,0 +1,11 @@
+{
+  "checkpoint_count": 20,
+  "dimension": 1536,
+  "estimated_cost_usd": 1.0939999999999999e-05,
+  "input_tokens": 547,
+  "missing_question_ids": [],
+  "model": "text-embedding-3-small",
+  "price_as_of": "2026-08-16",
+  "price_usd_per_million_input_tokens": 0.02,
+  "question_count": 20
+}

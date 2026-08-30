@@ -1,0 +1,50 @@
+{
+  "canonical_explicit_and_indexed": 2,
+  "checks": [
+    {
+      "already_repaired": true,
+      "canonical_explicit_link": true,
+      "formal_pdf_pages_1based": [
+        136
+      ],
+      "formal_record_id": "rec-7a2c99c3a6dffc908b5eb111",
+      "formal_retrieval_unit_id": "ru-066542701b7beb6b2cb10311",
+      "mutation_performed": false,
+      "printed_source_item_number": "15.4",
+      "rationale_pdf_pages_1based": [
+        137
+      ],
+      "rationale_record_id": "rec-5ea56ee4466171d5d4fe21dd",
+      "rationale_retrieval_unit_id": "ru-da717f9727a24b7cff661fa3",
+      "semantic_relation_id": "rel-600ad302afb6ec1a2475b753",
+      "semantic_relation_qa_status": "validated",
+      "source_item_number": "15.4"
+    },
+    {
+      "already_repaired": true,
+      "canonical_explicit_link": true,
+      "formal_pdf_pages_1based": [
+        139
+      ],
+      "formal_record_id": "rec-95dfba9075cff2c1f6940c9c",
+      "formal_retrieval_unit_id": "ru-c1adeb11a58205b82cd404da",
+      "mutation_performed": false,
+      "printed_source_item_number": "15.4",
+      "rationale_pdf_pages_1based": [
+        139
+      ],
+      "rationale_record_id": "rec-f89ace17e294f2bf3cac9942",
+      "rationale_retrieval_unit_id": "ru-f00b542dd84e0bcc15f2ee11",
+      "semantic_relation_id": "rel-220d3f8515817d603ef0ee3c",
+      "semantic_relation_qa_status": "validated",
+      "source_item_number": null
+    }
+  ],
+  "corpus_snapshot_id": "cs-f61b3d4e90089c1b890c23cb",
+  "created_at_utc": "2026-08-29T20:30:37.957253+00:00",
+  "decision": "no_change_required",
+  "mutation_performed": false,
+  "passed": true,
+  "reported_pairs": 2,
+  "schema_version": "rationale-relation-audit-1.0.0"
+}

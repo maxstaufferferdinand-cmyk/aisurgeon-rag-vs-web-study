@@ -1,0 +1,258 @@
+{
+  "cost_limit_usd": 2.0,
+  "decision": "proceed",
+  "estimated_additional_max_usd": 0.07272540000000001,
+  "max_output_tokens": 700,
+  "method": "UTF-8-byte upper bound for input tokens plus configured output cap",
+  "model": "gpt-5.4-nano-2026-03-17",
+  "pending_api_calls_on_this_resume": 0,
+  "per_call_estimates": [
+    {
+      "arm": "closed_corpus_rag",
+      "input_token_upper_bound": 21010,
+      "max_cost_usd": 0.005077,
+      "max_output_tokens": 700,
+      "question_id": "vte-dev-002"
+    },
+    {
+      "arm": "no_retrieval_context",
+      "input_token_upper_bound": 559,
+      "max_cost_usd": 0.0009868,
+      "max_output_tokens": 700,
+      "question_id": "vte-dev-002"
+    },
+    {
+      "arm": "closed_corpus_rag",
+      "input_token_upper_bound": 9151,
+      "max_cost_usd": 0.0027051999999999996,
+      "max_output_tokens": 700,
+      "question_id": "vte-dev-003"
+    },
+    {
+      "arm": "no_retrieval_context",
+      "input_token_upper_bound": 577,
+      "max_cost_usd": 0.0009904,
+      "max_output_tokens": 700,
+      "question_id": "vte-dev-003"
+    },
+    {
+      "arm": "closed_corpus_rag",
+      "input_token_upper_bound": 9424,
+      "max_cost_usd": 0.0027598,
+      "max_output_tokens": 700,
+      "question_id": "vte-dev-004"
+    },
+    {
+      "arm": "no_retrieval_context",
+      "input_token_upper_bound": 573,
+      "max_cost_usd": 0.0009896,
+      "max_output_tokens": 700,
+      "question_id": "vte-dev-004"
+    },
+    {
+      "arm": "closed_corpus_rag",
+      "input_token_upper_bound": 33307,
+      "max_cost_usd": 0.0075364,
+      "max_output_tokens": 700,
+      "question_id": "vte-dev-006"
+    },
+    {
+      "arm": "no_retrieval_context",
+      "input_token_upper_bound": 553,
+      "max_cost_usd": 0.0009856,
+      "max_output_tokens": 700,
+      "question_id": "vte-dev-006"
+    },
+    {
+      "arm": "closed_corpus_rag",
+      "input_token_upper_bound": 15598,
+      "max_cost_usd": 0.0039946,
+      "max_output_tokens": 700,
+      "question_id": "vte-dev-007"
+    },
+    {
+      "arm": "no_retrieval_context",
+      "input_token_upper_bound": 558,
+      "max_cost_usd": 0.0009866,
+      "max_output_tokens": 700,
+      "question_id": "vte-dev-007"
+    },
+    {
+      "arm": "closed_corpus_rag",
+      "input_token_upper_bound": 10241,
+      "max_cost_usd": 0.0029232000000000004,
+      "max_output_tokens": 700,
+      "question_id": "vte-dev-008"
+    },
+    {
+      "arm": "no_retrieval_context",
+      "input_token_upper_bound": 570,
+      "max_cost_usd": 0.000989,
+      "max_output_tokens": 700,
+      "question_id": "vte-dev-008"
+    },
+    {
+      "arm": "closed_corpus_rag",
+      "input_token_upper_bound": 11172,
+      "max_cost_usd": 0.0031094,
+      "max_output_tokens": 700,
+      "question_id": "vte-dev-009"
+    },
+    {
+      "arm": "no_retrieval_context",
+      "input_token_upper_bound": 539,
+      "max_cost_usd": 0.0009828,
+      "max_output_tokens": 700,
+      "question_id": "vte-dev-009"
+    },
+    {
+      "arm": "closed_corpus_rag",
+      "input_token_upper_bound": 10722,
+      "max_cost_usd": 0.0030194,
+      "max_output_tokens": 700,
+      "question_id": "vte-dev-010"
+    },
+    {
+      "arm": "no_retrieval_context",
+      "input_token_upper_bound": 585,
+      "max_cost_usd": 0.000992,
+      "max_output_tokens": 700,
+      "question_id": "vte-dev-010"
+    },
+    {
+      "arm": "closed_corpus_rag",
+      "input_token_upper_bound": 9020,
+      "max_cost_usd": 0.002679,
+      "max_output_tokens": 700,
+      "question_id": "vte-dev-011"
+    },
+    {
+      "arm": "no_retrieval_context",
+      "input_token_upper_bound": 553,
+      "max_cost_usd": 0.0009856,
+      "max_output_tokens": 700,
+      "question_id": "vte-dev-011"
+    },
+    {
+      "arm": "closed_corpus_rag",
+      "input_token_upper_bound": 9277,
+      "max_cost_usd": 0.0027304,
+      "max_output_tokens": 700,
+      "question_id": "vte-dev-012"
+    },
+    {
+      "arm": "no_retrieval_context",
+      "input_token_upper_bound": 544,
+      "max_cost_usd": 0.0009838,
+      "max_output_tokens": 700,
+      "question_id": "vte-dev-012"
+    },
+    {
+      "arm": "closed_corpus_rag",
+      "input_token_upper_bound": 10953,
+      "max_cost_usd": 0.0030656,
+      "max_output_tokens": 700,
+      "question_id": "vte-dev-013"
+    },
+    {
+      "arm": "no_retrieval_context",
+      "input_token_upper_bound": 507,
+      "max_cost_usd": 0.0009764,
+      "max_output_tokens": 700,
+      "question_id": "vte-dev-013"
+    },
+    {
+      "arm": "closed_corpus_rag",
+      "input_token_upper_bound": 15778,
+      "max_cost_usd": 0.0040306000000000005,
+      "max_output_tokens": 700,
+      "question_id": "vte-dev-014"
+    },
+    {
+      "arm": "no_retrieval_context",
+      "input_token_upper_bound": 562,
+      "max_cost_usd": 0.0009874,
+      "max_output_tokens": 700,
+      "question_id": "vte-dev-014"
+    },
+    {
+      "arm": "closed_corpus_rag",
+      "input_token_upper_bound": 12393,
+      "max_cost_usd": 0.0033536000000000004,
+      "max_output_tokens": 700,
+      "question_id": "vte-dev-015"
+    },
+    {
+      "arm": "no_retrieval_context",
+      "input_token_upper_bound": 532,
+      "max_cost_usd": 0.0009814,
+      "max_output_tokens": 700,
+      "question_id": "vte-dev-015"
+    },
+    {
+      "arm": "closed_corpus_rag",
+      "input_token_upper_bound": 17534,
+      "max_cost_usd": 0.0043818,
+      "max_output_tokens": 700,
+      "question_id": "vte-dev-016"
+    },
+    {
+      "arm": "no_retrieval_context",
+      "input_token_upper_bound": 563,
+      "max_cost_usd": 0.0009876,
+      "max_output_tokens": 700,
+      "question_id": "vte-dev-016"
+    },
+    {
+      "arm": "closed_corpus_rag",
+      "input_token_upper_bound": 8497,
+      "max_cost_usd": 0.0025744,
+      "max_output_tokens": 700,
+      "question_id": "vte-dev-017"
+    },
+    {
+      "arm": "no_retrieval_context",
+      "input_token_upper_bound": 561,
+      "max_cost_usd": 0.0009872000000000001,
+      "max_output_tokens": 700,
+      "question_id": "vte-dev-017"
+    },
+    {
+      "arm": "closed_corpus_rag",
+      "input_token_upper_bound": 704,
+      "max_cost_usd": 0.0010157999999999999,
+      "max_output_tokens": 700,
+      "question_id": "vte-dev-019"
+    },
+    {
+      "arm": "no_retrieval_context",
+      "input_token_upper_bound": 489,
+      "max_cost_usd": 0.0009727999999999999,
+      "max_output_tokens": 700,
+      "question_id": "vte-dev-019"
+    },
+    {
+      "arm": "closed_corpus_rag",
+      "input_token_upper_bound": 743,
+      "max_cost_usd": 0.0010236,
+      "max_output_tokens": 700,
+      "question_id": "vte-dev-020"
+    },
+    {
+      "arm": "no_retrieval_context",
+      "input_token_upper_bound": 528,
+      "max_cost_usd": 0.0009806,
+      "max_output_tokens": 700,
+      "question_id": "vte-dev-020"
+    }
+  ],
+  "planned_additional_api_calls_at_gate": 34,
+  "reasoning_effort": "none",
+  "smoke_actual_cost_usd": 0.0045786,
+  "smoke_api_calls": 6,
+  "smoke_question_ids": [
+    "vte-dev-001",
+    "vte-dev-005",
+    "vte-dev-018"
+  ]
+}

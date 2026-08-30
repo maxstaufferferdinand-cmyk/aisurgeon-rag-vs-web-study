@@ -1,0 +1,100 @@
+{
+  "approval_basis": "study_owner_pre_freeze_approval",
+  "artifacts": [
+    {
+      "bytes": 5380,
+      "path": "docs/STATISTICAL_ANALYSIS_PLAN_RAG_VS_WEB.md",
+      "sha256": "288dce10ddb2552502008396432a7c914d97a879847d524e654946534362e196"
+    },
+    {
+      "bytes": 9281,
+      "path": "docs/STUDY_PROTOCOL_RAG_VS_WEB.md",
+      "sha256": "14fbd86f7a3e842f2f36907d944692c9542ab18a3adf6e3539411c2402ccb3f3"
+    },
+    {
+      "bytes": 977,
+      "path": "outputs/study_phase2/manifest/model_availability_verification.json",
+      "sha256": "f5b3111dde88ddeb992b3230a12373589f50433b1f3765a6d7b84a63b1a6784c"
+    },
+    {
+      "bytes": 1474,
+      "path": "outputs/study_phase2/manifest/price_table.json",
+      "sha256": "fb959009c1cdeba1ec41c7f0c09a4afab28d39b1b07d09176dd03a1622ad61c5"
+    },
+    {
+      "bytes": 1356,
+      "path": "outputs/study_phase2/manifest/protocol_deviations.json",
+      "sha256": "28a70162a4d9d1dda3ffa066d0e7abfbf01538770a13660431c5571c7dcd234e"
+    },
+    {
+      "bytes": 199880,
+      "path": "outputs/study_phase2/manifest/randomization_manifest.csv",
+      "sha256": "d8daf7a01f9ebb069903698863d50977ffdaf59510bb7b2b75fc33ee915604a5"
+    },
+    {
+      "bytes": 606,
+      "path": "outputs/study_phase2/manifest/retrieval_config.json",
+      "sha256": "e57de219135229a1fc025f1065a931376cd01832cb2e58bddd394ed5a6d4f752"
+    },
+    {
+      "bytes": 46348,
+      "path": "outputs/study_phase2/manifest/study_manifest_at_freeze_v2_500usd.json",
+      "sha256": "e0c72776f3b8fb71b7b2d47f124bac958da8c0d0ba295a3cce99db6542a8bc71"
+    },
+    {
+      "bytes": 294,
+      "path": "outputs/study_phase2/manifest/web_search_config.json",
+      "sha256": "860edc72a9ee7bc8d7b802a15c70d3d11fd6b2671bc90d5f737d3e9d4b3e349c"
+    },
+    {
+      "bytes": 1361,
+      "path": "outputs/study_phase2/prompts/COMMON_TASK_v1.txt",
+      "sha256": "c3cbd83a81ddebf5a89b72c64309d7a87d9c8dab6fa348419db1c08dcc6213b2"
+    },
+    {
+      "bytes": 3165,
+      "path": "outputs/study_phase2/prompts/RESPONSE_SCHEMA_v1.json",
+      "sha256": "95928fd72ee26e05704371cd15db761c9ca09dda1a8865b6f41b71fe14213dac"
+    },
+    {
+      "bytes": 834,
+      "path": "outputs/study_phase2/prompts/SOURCE_POLICY_RAG_v1.txt",
+      "sha256": "c4c2f4ec49755042587eedd9b3480a56bdcc2b37e99ede5545065378b4cfe3ff"
+    },
+    {
+      "bytes": 920,
+      "path": "outputs/study_phase2/prompts/SOURCE_POLICY_WEB_v1.txt",
+      "sha256": "a67219ea6c00a3c196fc4d6f658f6afb9e10f7c0d8cbe3cd05ea7bebc4035b79"
+    },
+    {
+      "bytes": 1179892,
+      "path": "outputs/study_phase2/questions/question_candidates.jsonl",
+      "sha256": "c87a274eed277c262bc3b2343f3c56aad8f80c19eacbff3e63d76adbdf17e69c"
+    },
+    {
+      "bytes": 35617,
+      "path": "outputs/study_phase2/questions/question_freeze_review.xlsx",
+      "sha256": "cd62ce4b5df97fc2f1071c0ba9d84f53fe0b5d7c00cf2693a6fa145a3276d401"
+    },
+    {
+      "bytes": 1179892,
+      "path": "outputs/study_phase2/questions/question_gold_provisional.jsonl",
+      "sha256": "c87a274eed277c262bc3b2343f3c56aad8f80c19eacbff3e63d76adbdf17e69c"
+    },
+    {
+      "bytes": 1243,
+      "path": "outputs/study_phase2/questions/study_owner_pre_freeze_approval.json",
+      "sha256": "a17e5e376f79ec80fa5d01f29e90dba25c3392c8490991eea77e44f1bf4ae76a"
+    },
+    {
+      "bytes": 1186092,
+      "path": "outputs/study_phase2/questions/study_questions_frozen.jsonl",
+      "sha256": "b336637a1c954fdeef0d21635a7778b95b008fa947ee88f5ec1652430346c3bd"
+    }
+  ],
+  "created_at_utc": "2026-08-29T16:00:50.655030Z",
+  "freeze_scope": "study_owner_pre_freeze_approval; cost ceiling 500 USD",
+  "independent_question_set_review_completed": false,
+  "schema_version": "pre-human-freeze-artifact-hashes-1.0.0",
+  "supersedes": "outputs/study_phase2/manifest/artifact_hashes_pre_human_freeze.json"
+}

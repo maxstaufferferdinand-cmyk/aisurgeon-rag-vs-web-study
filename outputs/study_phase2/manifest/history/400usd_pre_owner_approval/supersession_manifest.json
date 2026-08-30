@@ -1,0 +1,51 @@
+{
+  "historical_artifacts": [
+    {
+      "path": "outputs/study_phase2/manifest/history/400usd_pre_owner_approval/STATISTICAL_ANALYSIS_PLAN_RAG_VS_WEB.md",
+      "sha256": "e9c18efae911f1dde9d1cc8eadf8ff9e60920101dc53ae704146d04fbd506538"
+    },
+    {
+      "path": "outputs/study_phase2/manifest/history/400usd_pre_owner_approval/STUDY_PROTOCOL_RAG_VS_WEB.md",
+      "sha256": "47b6009cce76584054355542d26f5eea876ccf5f699264bfff6380d068342ad9"
+    },
+    {
+      "path": "outputs/study_phase2/manifest/history/400usd_pre_owner_approval/artifact_hashes_pre_human_freeze.json",
+      "sha256": "f8ca7934d925f1936e43264196b60bd875a566ccfb16c848c39ebdb1cac61a48"
+    },
+    {
+      "path": "outputs/study_phase2/manifest/history/400usd_pre_owner_approval/development_cost_pilot_summary.json",
+      "sha256": "f1aca5613954a12b880344eb919905fabf5438084d8db479aeb0f76c8bf295ed"
+    },
+    {
+      "path": "outputs/study_phase2/manifest/history/400usd_pre_owner_approval/phase2_validation.json",
+      "sha256": "d0a3f5e9a2b34ee046db61543c757cb665da119ef13fa153e8f9cebe84b8d3dd"
+    },
+    {
+      "path": "outputs/study_phase2/manifest/history/400usd_pre_owner_approval/price_table.json",
+      "sha256": "4363302530acdc69872e95c5b14974a172818168e67926459d0918a3fcd87613"
+    },
+    {
+      "path": "outputs/study_phase2/manifest/history/400usd_pre_owner_approval/protocol_deviations.json",
+      "sha256": "17138b1ce37a0e3484772b0c08f291d2f097943dc4d6f483987b06d6c1ed1b34"
+    },
+    {
+      "path": "outputs/study_phase2/manifest/history/400usd_pre_owner_approval/study_manifest.json",
+      "sha256": "41ed248b8542ccb35b15df6dbabc0c58e99241d079e9f7fcb9191f9b57c4cd3f"
+    },
+    {
+      "path": "outputs/study_phase2/manifest/history/400usd_pre_owner_approval/technical_completion_report.json",
+      "sha256": "43c2a7df5efa5a7096a49d3883e0d8689363eff5cd0a0f8d955635c4fdb8c098"
+    },
+    {
+      "path": "outputs/study_phase2/manifest/history/400usd_pre_owner_approval/technical_completion_report.md",
+      "sha256": "84ffe9fde76b97c3f82a6496c51c217ed6c58e10a14088b1713ecc46c6175862"
+    }
+  ],
+  "historical_cost_ceiling_usd": 400.0,
+  "historical_files_modified": false,
+  "historical_status": "superseded_pre_main_study",
+  "recorded_at_utc": "2026-08-29T15:58:53.203120Z",
+  "schema_version": "study-cost-ceiling-supersession-1.0.0",
+  "superseded_by_cost_ceiling_usd": 500.0,
+  "superseded_by_protocol_version": "rag-vs-web-1.1.0"
+}

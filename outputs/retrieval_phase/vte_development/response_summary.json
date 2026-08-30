@@ -1,0 +1,74 @@
+{
+  "closed_corpus_rag": {
+    "api_wall_time_ms": {
+      "max": 8785.698551975656,
+      "mean": 2533.6891277402174,
+      "p50": 2381.7361575202085,
+      "p95": 3536.627750028856
+    },
+    "backend_answer_status_counts": {
+      "no_validated_evidence": 7,
+      "supported": 13
+    },
+    "backend_publishable": 20,
+    "citation_ids_total": 26,
+    "citation_ids_valid": 26,
+    "citation_validity_rate": 1.0,
+    "estimated_cost_usd": 0.0197394,
+    "http_status_counts": {
+      "200": 20
+    },
+    "model_answer_status_counts": {
+      "no_validated_evidence": 7,
+      "supported": 13
+    },
+    "openai_processing_ms_present": 20,
+    "rate_limit_headers_present": 20,
+    "retry_count_total": 0,
+    "runs": 20,
+    "tokens": {
+      "cached": 0,
+      "embedding": 0,
+      "input": 74447,
+      "output": 3880,
+      "reasoning": 0
+    },
+    "x_request_id_present": 20
+  },
+  "no_retrieval_context": {
+    "api_wall_time_ms": {
+      "max": 9326.22030499624,
+      "mean": 3593.2859740016283,
+      "p50": 2954.8842829826754,
+      "p95": 7448.06567201158
+    },
+    "backend_answer_status_counts": {
+      "rejected": 20
+    },
+    "backend_publishable": 0,
+    "citation_ids_total": 0,
+    "citation_ids_valid": 0,
+    "citation_validity_rate": null,
+    "estimated_cost_usd": 0.0098028,
+    "http_status_counts": {
+      "200": 20
+    },
+    "model_answer_status_counts": {
+      "no_validated_evidence": 7,
+      "partially_supported": 12,
+      "supported": 1
+    },
+    "openai_processing_ms_present": 20,
+    "rate_limit_headers_present": 20,
+    "retry_count_total": 0,
+    "runs": 20,
+    "tokens": {
+      "cached": 0,
+      "embedding": 0,
+      "input": 6939,
+      "output": 6732,
+      "reasoning": 0
+    },
+    "x_request_id_present": 20
+  }
+}

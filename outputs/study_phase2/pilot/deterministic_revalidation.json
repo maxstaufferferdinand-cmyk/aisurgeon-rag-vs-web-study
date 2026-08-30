@@ -1,0 +1,18 @@
+{
+  "after_sha256": "f4d0ce4e06ec8cf095646886c4cc713e03dbccc7804100e2e7c5f706d3ba7de1",
+  "after_validator_status": {
+    "accepted": 19,
+    "rejected": 1
+  },
+  "before_sha256": "f4d0ce4e06ec8cf095646886c4cc713e03dbccc7804100e2e7c5f706d3ba7de1",
+  "before_validator_status": {
+    "accepted": 19,
+    "rejected": 1
+  },
+  "created_at_utc": "2026-08-29T14:58:04.452371Z",
+  "external_api_calls": 0,
+  "results_path": "outputs/study_phase2/pilot/development_cost_pilot_results.jsonl",
+  "rows": 20,
+  "rows_changed": 0,
+  "schema_version": "study-deterministic-revalidation-1.0.0"
+}

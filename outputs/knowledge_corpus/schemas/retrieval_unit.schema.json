@@ -1,0 +1,161 @@
+{
+  "$id": "retrieval-unit-1.0.0",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "properties": {
+    "active_substance_ids": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "citation_label": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "corpus_namespace": {
+      "enum": [
+        "guideline",
+        "drug_label"
+      ]
+    },
+    "evidence_metadata": {
+      "type": "object"
+    },
+    "exact_source_text": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "extraction_batch_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "formal_item_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "indication_ids": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "indications": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "keywords": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "normalized_entities": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "parent_record_ids": {
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "pdf_pages_1based": {
+      "items": {
+        "minimum": 1,
+        "type": "integer"
+      },
+      "type": "array"
+    },
+    "populations": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "product_ids": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "retrieval_text": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "retrieval_unit_id": {
+      "type": "string"
+    },
+    "review_flags": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "routes": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "section_path": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "semantic_summary_de": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "source_file_name": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "source_id": {
+      "type": "string"
+    },
+    "source_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "title": {
+      "minLength": 1,
+      "type": "string"
+    }
+  },
+  "required": [
+    "retrieval_unit_id",
+    "corpus_namespace",
+    "parent_record_ids",
+    "source_id",
+    "active_substance_ids",
+    "product_ids",
+    "indication_ids",
+    "formal_item_id",
+    "section_path",
+    "title",
+    "retrieval_text",
+    "exact_source_text",
+    "semantic_summary_de",
+    "normalized_entities",
+    "keywords",
+    "indications",
+    "populations",
+    "routes",
+    "evidence_metadata",
+    "pdf_pages_1based",
+    "citation_label",
+    "source_file_name",
+    "source_sha256",
+    "extraction_batch_id",
+    "review_flags"
+  ],
+  "type": "object"
+}

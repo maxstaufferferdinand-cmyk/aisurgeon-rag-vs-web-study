@@ -1,0 +1,47 @@
+{
+  "schema_version": "github-archive-test-summary-1.0.0",
+  "status": "passed",
+  "external_api_calls": 0,
+  "pytest": {
+    "tests_passed": 123,
+    "subtests_passed": 12,
+    "failed": 0,
+    "duration_seconds": 30.95
+  },
+  "ruff": {
+    "scope": [
+      "src",
+      "scripts",
+      "tests"
+    ],
+    "configured_rules": [
+      "E4",
+      "E7",
+      "E9",
+      "F",
+      "I"
+    ],
+    "status": "passed"
+  },
+  "compileall": {
+    "scope": [
+      "src",
+      "scripts",
+      "tests"
+    ],
+    "status": "passed"
+  },
+  "isolated_validators": {
+    "knowledge_corpus": "50/50",
+    "retrieval_layer": "37/37",
+    "cli_rag_phase1": "31/31",
+    "study_phase2": "36/36",
+    "status": "passed"
+  },
+  "database_runtime": {
+    "postgresql": "18.6",
+    "pgvector": "0.8.6",
+    "health": "healthy",
+    "binding": "127.0.0.1:55432"
+  }
+}

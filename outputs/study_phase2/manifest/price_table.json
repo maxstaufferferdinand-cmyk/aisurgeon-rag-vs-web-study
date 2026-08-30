@@ -1,0 +1,35 @@
+{
+  "accounting_notes": [
+    "Reasoning tokens are a subset of output tokens and are never charged twice.",
+    "Search-content tokens are billed at model input rates and are assumed to be included in Responses input-token usage unless separately reported as excluded.",
+    "If cache-write tokens are reported, they are removed from ordinary uncached input before applying the cache-write rate.",
+    "Prices are frozen for prospective immediate estimates; invoice reconciliation is a separate later step."
+  ],
+  "cost_ceiling_scope": "cumulative Phase 2 preparation, pilot, main-study attempts and retries",
+  "currency": "USD",
+  "effective_as_of": "2026-08-29",
+  "embedding": {
+    "text-embedding-3-small": {
+      "input_usd_per_million_tokens": 0.02
+    }
+  },
+  "models": {
+    "gpt-5.5-2026-04-23": {
+      "cache_write_usd_per_million_tokens": 5.0,
+      "cached_input_usd_per_million_tokens": 0.5,
+      "input_usd_per_million_tokens": 5.0,
+      "output_usd_per_million_tokens": 30.0
+    },
+    "gpt-5.6-sol": {
+      "cache_write_usd_per_million_tokens": 5.0,
+      "cached_input_usd_per_million_tokens": 0.4,
+      "input_usd_per_million_tokens": 4.0,
+      "output_usd_per_million_tokens": 20.0
+    }
+  },
+  "price_version": "openai-public-prices-2026-08-29-v2-cap-500",
+  "source": "https://developers.openai.com/api/docs/pricing",
+  "study_cost_ceiling_usd": 500.0,
+  "supersedes_study_cost_ceiling_usd": 400.0,
+  "web_search_usd_per_1000_calls": 10.0
+}

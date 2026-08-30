@@ -1,0 +1,30 @@
+{
+  "allowlist_ids": [
+    "ru-3bec9a407fd42ae3bfc7f270"
+  ],
+  "api_attempts": 1,
+  "backend_citation_count": 1,
+  "backend_citation_has_locator": true,
+  "cached_input_tokens": 0,
+  "completed_at_utc": "2026-08-16T17:31:17.219116+00:00",
+  "corpus_snapshot_id": "cs-f61b3d4e90089c1b890c23cb",
+  "derived_entailment_status": "supported",
+  "derived_public_support_label": "supported",
+  "estimated_cost_usd": 0.00011025,
+  "evidence_package_id": "evidence-package-eaacbc46dbcd4fab5d587fb0",
+  "evidence_package_sha256": "eaacbc46dbcd4fab5d587fb0055545f6df7ef0d5074e1eb1b0de70a59f249e19",
+  "input_tokens": 270,
+  "latency_ms": 8491.639435989782,
+  "model": "gpt-5.4-nano-2026-03-17",
+  "output_tokens": 45,
+  "parsed_public_support_label": "supported",
+  "passed": true,
+  "pricing_as_of": "2026-08-16",
+  "prompt_version": "evidence-contract-smoke-1.0.0",
+  "public_non_patient_evidence_only": true,
+  "query_or_answer_text_logged": false,
+  "returned_ids_within_allowlist": true,
+  "schema_version": "structured-output-smoke-1.0.0",
+  "trace_id": "trace-structured-smoke-f61b3d4e90089c1b890c23cb",
+  "validator_status": "accepted"
+}
