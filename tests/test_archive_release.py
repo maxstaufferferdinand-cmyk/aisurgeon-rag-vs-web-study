@@ -7,6 +7,7 @@ from aisurgeon_decentralised.archive_release import (
     SECRET_PATTERNS,
     SNAPSHOT_ID,
     archive_allowlist,
+    load_security_approval,
     pseudonymize,
     sanitize_string,
 )
@@ -57,3 +58,21 @@ def test_archive_core_counts_when_built() -> None:
     rows = [json.loads(line) for line in results.read_text(encoding="utf-8").splitlines()]
     assert len(rows) == 800
     assert len({row["run_id"] for row in rows}) == 800
+
+
+def test_security_approval_falls_back_to_redacted_archive(tmp_path: Path) -> None:
+    archive_root = tmp_path / "archive"
+    approval_path = (
+        archive_root
+        / "study_phase2/questions/study_owner_pre_freeze_approval_redacted.json"
+    )
+    approval_path.parent.mkdir(parents=True)
+    approval_path.write_text(
+        json.dumps({"approval_type": "study_owner_pre_freeze_approval"}) + "\n",
+        encoding="utf-8",
+    )
+
+    approval, selected_path = load_security_approval(tmp_path, archive_root)
+
+    assert approval["approval_type"] == "study_owner_pre_freeze_approval"
+    assert selected_path == approval_path

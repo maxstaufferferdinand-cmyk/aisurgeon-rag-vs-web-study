@@ -24,7 +24,7 @@
     },
     {
       "file": "study_phase2/excel/GPT55_MEDIUM_RAG.xlsx",
-      "bytes": 124034,
+      "bytes": 124033,
       "data_rows": 200,
       "sheet_names": [
         "00_README",
@@ -33,7 +33,7 @@
     },
     {
       "file": "study_phase2/excel/GPT55_MEDIUM_WEB.xlsx",
-      "bytes": 134902,
+      "bytes": 134901,
       "data_rows": 200,
       "sheet_names": [
         "00_README",
@@ -42,7 +42,7 @@
     },
     {
       "file": "study_phase2/excel/GPT56_SOL_HIGH_RAG.xlsx",
-      "bytes": 107345,
+      "bytes": 107344,
       "data_rows": 200,
       "sheet_names": [
         "00_README",
@@ -51,7 +51,7 @@
     },
     {
       "file": "study_phase2/excel/GPT56_SOL_HIGH_WEB.xlsx",
-      "bytes": 117589,
+      "bytes": 117586,
       "data_rows": 200,
       "sheet_names": [
         "00_README",
@@ -60,7 +60,7 @@
     },
     {
       "file": "study_phase2/ratings/citation_audit.xlsx",
-      "bytes": 133026,
+      "bytes": 133025,
       "data_rows": null,
       "sheet_names": [
         "CITATION_AUDIT"

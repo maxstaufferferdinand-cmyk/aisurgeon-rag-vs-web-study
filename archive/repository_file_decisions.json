@@ -176,7 +176,7 @@
       "category": "reviewed_reproducibility_artifact",
       "reason": "Explicitly selected by the archive allowlist and subject to repository validation.",
       "bytes": 478,
-      "sha256": "bab2af4aff23055f9aa615aee98655525b73df437a506ccea3797c73b5634d21"
+      "sha256": "5c5d9d34592ae6547a580543b4d31094363357cd19d2d5be23cece0508f8a51e"
     },
     {
       "path": "archive/repository_allowlist.txt",
@@ -240,39 +240,39 @@
       "category": "reviewed_reproducibility_artifact",
       "reason": "Explicitly selected by the archive allowlist and subject to repository validation.",
       "bytes": 1351054,
-      "sha256": "3fa7b5085d21288b0dd16beb2920ed3b0e6641769311eb705058d1692326e117"
+      "sha256": "a626969a0ec67bd61888d996d416c9d0b0beec147237b677404f5191e93d9087"
     },
     {
       "path": "archive/study_phase2/excel/GPT55_MEDIUM_RAG.xlsx",
       "decision": "include",
       "category": "reviewed_reproducibility_artifact",
       "reason": "Explicitly selected by the archive allowlist and subject to repository validation.",
-      "bytes": 124034,
-      "sha256": "64deb3db7327bf4c6a86e63583d5272b73cf188a764ab64eb24f35bb3bd4e705"
+      "bytes": 124033,
+      "sha256": "4d1289cc8bbffcead89ed37ad88441d34a54b8a054193be1d6865d78fdb5d794"
     },
     {
       "path": "archive/study_phase2/excel/GPT55_MEDIUM_WEB.xlsx",
       "decision": "include",
       "category": "reviewed_reproducibility_artifact",
       "reason": "Explicitly selected by the archive allowlist and subject to repository validation.",
-      "bytes": 134902,
-      "sha256": "5295a7db3641ca701d7470093dba111a6ec48ae32835d1ceb356b8db92517bc7"
+      "bytes": 134901,
+      "sha256": "7fd4baa7eb2148783a7c9b9a157be8c9d0d64a3ece3371d2830eef32d2ee0574"
     },
     {
       "path": "archive/study_phase2/excel/GPT56_SOL_HIGH_RAG.xlsx",
       "decision": "include",
       "category": "reviewed_reproducibility_artifact",
       "reason": "Explicitly selected by the archive allowlist and subject to repository validation.",
-      "bytes": 107345,
-      "sha256": "db8bb1696fc60eba16e3487a72f0163c3c040562dbc9fd51d31ac044659129db"
+      "bytes": 107344,
+      "sha256": "a217f5fe058b33cbd010b4f717ee756a8412fd1a024d0e6effdc21b82b4d9112"
     },
     {
       "path": "archive/study_phase2/excel/GPT56_SOL_HIGH_WEB.xlsx",
       "decision": "include",
       "category": "reviewed_reproducibility_artifact",
       "reason": "Explicitly selected by the archive allowlist and subject to repository validation.",
-      "bytes": 117589,
-      "sha256": "68570535fc77760d590e32f9a76e20f1faf5c8985d15d3e052b84683c5512b67"
+      "bytes": 117586,
+      "sha256": "020a1e2d7b58da1b8033aa91d92839570cdb8ed6dbe5c6db364012ba76548fe6"
     },
     {
       "path": "archive/study_phase2/manifest/study_manifest_at_freeze_v2_500usd_redacted.json",
@@ -319,8 +319,8 @@
       "decision": "include",
       "category": "reviewed_reproducibility_artifact",
       "reason": "Explicitly selected by the archive allowlist and subject to repository validation.",
-      "bytes": 133026,
-      "sha256": "c163fbb48e7112095eb29472352a18a66d5275870e7f9b056ac6c83547d578cb"
+      "bytes": 133025,
+      "sha256": "07aea346dee5ed6b1f4b276f64f47897c7ed7c0e1c7221c59e00d32f5b63efe1"
     },
     {
       "path": "archive/study_phase2/ratings/clinical_ratings_blinded.xlsx",
@@ -328,7 +328,7 @@
       "category": "reviewed_reproducibility_artifact",
       "reason": "Explicitly selected by the archive allowlist and subject to repository validation.",
       "bytes": 122361,
-      "sha256": "ef8268a9c1aec220e2881f973b18c61226fa13a60e1616875b8a6955d1476163"
+      "sha256": "7b4e3b2d8f0083991a9c81d6dee749f10ec457da2c5b7d201a1ad63ee1a9ff1b"
     },
     {
       "path": "archive/study_phase2/reports/technical_completion_report_redacted.json",
@@ -392,7 +392,7 @@
       "category": "reviewed_reproducibility_artifact",
       "reason": "Explicitly selected by the archive allowlist and subject to repository validation.",
       "bytes": 548,
-      "sha256": "a3eff6e792d21ba183a76298d46cf15c6587524638be357c7fd185469223f545"
+      "sha256": "5881fb60136daa11129607c73f1938c067a16bb0efe4266b3f0fe5af1ba0aa34"
     },
     {
       "path": "archive/validation/excel_integrity.json",
@@ -400,7 +400,7 @@
       "category": "reviewed_reproducibility_artifact",
       "reason": "Explicitly selected by the archive allowlist and subject to repository validation.",
       "bytes": 1729,
-      "sha256": "2c4567ab0507ff13b330917b5b09e4c528faec0aef10699ea1060f4d3d41a10b"
+      "sha256": "89c5dd5365969bc0f7ae41b4b3af4bb265ea7ddf45251770747a44d9ce5c75ae"
     },
     {
       "path": "archive/validation/hash_integrity.json",
@@ -14423,8 +14423,8 @@
       "decision": "include",
       "category": "reviewed_reproducibility_artifact",
       "reason": "Explicitly selected by the archive allowlist and subject to repository validation.",
-      "bytes": 67414,
-      "sha256": "be35d5fd74a1e0ed7f39485f8264d5610391d955989354d96e3b4e8181214579"
+      "bytes": 68085,
+      "sha256": "811dd705b093c9b15cb4322898f8bdb2fa412559292bf1413abb00fcd10d6d8b"
     },
     {
       "path": "src/aisurgeon_decentralised/corpus_snapshot.py",
@@ -14791,8 +14791,8 @@
       "decision": "include",
       "category": "reviewed_reproducibility_artifact",
       "reason": "Explicitly selected by the archive allowlist and subject to repository validation.",
-      "bytes": 2298,
-      "sha256": "afb8be46d8cfc2d27a30d91f3ea38766325156d2caa86a35c98cbaa64bb7fdec"
+      "bytes": 2964,
+      "sha256": "a0380c2bdf70975f40a66cc6dace4e4b4cf992a849021ada89757bb5ccda4d99"
     },
     {
       "path": "tests/test_cli_rag_phase1.py",

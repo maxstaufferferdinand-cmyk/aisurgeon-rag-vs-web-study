@@ -1022,6 +1022,19 @@ def _scan_workbook(path: Path) -> list[str]:
     return sorted(set(issues))
 
 
+def load_security_approval(root: Path, archive_root: Path) -> tuple[dict[str, Any], Path]:
+    """Load the private approval locally or its redacted archive counterpart."""
+
+    candidates = (
+        root / "outputs/study_phase2/questions/study_owner_pre_freeze_approval.json",
+        archive_root / "study_phase2/questions/study_owner_pre_freeze_approval_redacted.json",
+    )
+    for candidate in candidates:
+        if candidate.is_file():
+            return json.loads(candidate.read_text(encoding="utf-8")), candidate
+    raise FileNotFoundError("neither the local nor redacted study-owner approval is available")
+
+
 def build_security_report(root: Path, archive_root: Path) -> dict[str, Any]:
     """Scan the complete project scope without ever recording matched values."""
 
@@ -1065,9 +1078,8 @@ def build_security_report(root: Path, archive_root: Path) -> dict[str, Any]:
             else:
                 excluded_findings.append(entry)
 
-    approval = json.loads(
-        (root / "outputs/study_phase2/questions/study_owner_pre_freeze_approval.json").read_text(encoding="utf-8")
-    )
+    approval, approval_path = load_security_approval(root, archive_root)
+    approval_relative = approval_path.relative_to(root).as_posix()
     questions = read_jsonl(root / "outputs/study_phase2/questions/study_questions_frozen.jsonl")
     question_checks = {
         "question_count": len(questions),
@@ -1086,7 +1098,13 @@ def build_security_report(root: Path, archive_root: Path) -> dict[str, Any]:
     if len(questions) != 100 or not question_checks["all_synthetic"] or question_checks["patient_identifier_fields_present"]:
         blocking.append({"path": "outputs/study_phase2/questions/study_questions_frozen.jsonl", "finding_class": "question_privacy_or_cardinality", "included": True})
     if question_checks["reviewer_name_recorded"] or question_checks["signature_recorded"]:
-        blocking.append({"path": "outputs/study_phase2/questions/study_owner_pre_freeze_approval.json", "finding_class": "reviewer_identity_or_signature", "included": False})
+        blocking.append(
+            {
+                "path": approval_relative,
+                "finding_class": "reviewer_identity_or_signature",
+                "included": approval_relative in included,
+            }
+        )
     if any(item["included"] for item in files_over_50_mib):
         blocking.append({"path": "archive/repository_allowlist.txt", "finding_class": "included_file_over_50_mib", "included": True})
     report = {
